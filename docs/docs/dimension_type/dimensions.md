@@ -12,45 +12,45 @@ Unlike other worldgen files, they are **not** stored in the `/worldgen` folder. 
 
 Let's take a look at an example dimension file. This one is identical to the Overworld, except the only biome is the Plains:
 
-```
+```json
 {
-  "type": "minecraft:overworld",
-  "generator": {
-    "type": "minecraft:noise",
-    "settings": "minecraft:overworld",
-    "biome_source": {
-      "type": "minecraft:multi_noise",
-      "biomes": [
-        {
-          "biome": "minecraft:plains",
-          "parameters": {
-            "temperature": [
-              -1,
-              1
-            ],
-            "humidity": [
-              -1,
-              1
-            ],
-            "continentalness": [
-              -1,
-              1
-            ],
-            "erosion": [
-              -1,
-              1
-            ],
-            "weirdness": [
-              -1,
-              1
-            ],
-            "depth": 0,
-            "offset": 0
-          }
+    "type": "minecraft:overworld",
+    "generator": {
+        "type": "minecraft:noise",
+        "settings": "minecraft:overworld",
+        "biome_source": {
+            "type": "minecraft:multi_noise",
+            "biomes": [
+                {
+                    "biome": "minecraft:plains",
+                    "parameters": {
+                        "temperature": [
+                            -1,
+                            1
+                        ],
+                        "humidity": [
+                            -1,
+                            1
+                        ],
+                        "continentalness": [
+                            -1,
+                            1
+                        ],
+                        "erosion": [
+                            -1,
+                            1
+                        ],
+                        "weirdness": [
+                            -1,
+                            1
+                        ],
+                        "depth": 0,
+                        "offset": 0
+                    }
+                }
+            ]
         }
-      ]
     }
-  }
 }
 ```
 

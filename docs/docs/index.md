@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Worldgen Docs
+title: Documentation
 nav_order: 2
 has_children: true
 ---

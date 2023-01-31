@@ -3,6 +3,7 @@ layout: page
 title: Dimension Types
 permalink: /docs/dimension-types/
 parent: Documentation
+nav_order: 2
 ---
 
 # Dimension Types

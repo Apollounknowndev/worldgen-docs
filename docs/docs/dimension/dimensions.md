@@ -3,6 +3,7 @@ layout: page
 title: Dimensions
 permalink: /docs/dimensions/
 parent: Documentation
+nav_order: 1
 ---
 
 # Dimensions

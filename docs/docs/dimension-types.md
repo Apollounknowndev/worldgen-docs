@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Dimensions
-permalink: /docs/dimension_type/
+title: Dimension Types
+permalink: /docs/dimension-types/
 ---
 
 # Dimension Types

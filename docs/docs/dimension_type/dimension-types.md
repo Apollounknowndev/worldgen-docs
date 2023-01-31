@@ -14,29 +14,29 @@ Let's take a look at an example dimension type file, this one being for the Over
 
 ```json
 {
-  "ambient_light": 0.0,
-  "bed_works": true,
-  "coordinate_scale": 1.0,
-  "effects": "minecraft:overworld",
-  "has_ceiling": false,
-  "has_raids": true,
-  "has_skylight": true,
-  "height": 384,
-  "infiniburn": "#minecraft:infiniburn_overworld",
-  "logical_height": 384,
-  "min_y": -64,
-  "monster_spawn_block_light_limit": 0,
-  "monster_spawn_light_level": {
-    "type": "minecraft:uniform",
-    "value": {
-      "max_inclusive": 7,
-      "min_inclusive": 0
-    }
-  },
-  "natural": true,
-  "piglin_safe": false,
-  "respawn_anchor_works": false,
-  "ultrawarm": false
+    "ambient_light": 0,
+    "bed_works": true,
+    "coordinate_scale": 1,
+    "effects": "minecraft:overworld",
+    "has_ceiling": false,
+    "has_raids": true,
+    "has_skylight": true,
+    "height": 384,
+    "infiniburn": "#minecraft:infiniburn_overworld",
+    "logical_height": 384,
+    "min_y": -64,
+    "monster_spawn_block_light_limit": 0,
+    "monster_spawn_light_level": {
+        "type": "minecraft:uniform",
+        "value": {
+            "max_inclusive": 7,
+            "min_inclusive": 0
+        }
+    },
+    "natural": true,
+    "piglin_safe": false,
+    "respawn_anchor_works": false,
+    "ultrawarm": false
 }
 ```
 

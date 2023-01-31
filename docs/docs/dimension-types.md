@@ -11,7 +11,7 @@ Unlike other worldgen files, they are **not** stored in the `/worldgen` folder. 
 
 Let's take a look at an example dimension type file, this one being for the Overworld:
 
-```
+```json
 {
   "ambient_light": 0.0,
   "bed_works": true,

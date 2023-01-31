@@ -2,6 +2,7 @@
 layout: page
 title: Dimension Types
 permalink: /docs/dimension-types/
+parent: Worldgen Docs
 ---
 
 # Dimension Types

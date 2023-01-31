@@ -9,6 +9,9 @@ grand_parent: Documentation
 # Biomes
 Biome files contain information about a biome such as the sky/water colors, mob spawning, and features used in generation.
 
+They are stored in the `/worldgen/biome` folder.
+
+
 Let's take a look at an example biome configuration:
 ```json
 {

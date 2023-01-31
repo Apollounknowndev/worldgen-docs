@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Biomes
-permalink: /docs/worldgen/biomes
+permalink: /docs/worldgen/biomes/
 parent: Worldgen
 ---
 

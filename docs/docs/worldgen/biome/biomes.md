@@ -110,11 +110,45 @@ There's a lot to configure in biomes. The settings are as follows:
         * `sound`: The ID for the sound to be used.
         * `tick_change`: The chance per tick for the sound to start being played, as a value between 0 and 1.
     * `ambient_sound`: (optional) The ID for the amount sound to be used.
-    * `fog_color`: The fog color in the biome, as a decimal value.
-    * `foliage_color`: (optional) The foliage color in the biome, as a decimal value. The downfall and temperature values will determine the foliage color if none is provided.
-    * `grass_color`: (optional) The grass color in the biome, as a decimal value. The downfall and temperature values will determine the grass color if none is provided.
+    * `fog_color`: The biome's fog color, as a decimal value.
+    * `foliage_color`: (optional) The biome's foliage color, as a decimal value. The downfall and temperature values will determine the foliage color if none is provided.
+    * `grass_color`: (optional) The biome's grass color, as a decimal value. The downfall and temperature values will determine the grass color if none is provided.
     * `grass_color_modifier`: (optional) The grass color modifier to use.
         * If set to `none`, no color modifier will be applied. This is the default.
-        * If set to `dark_forest`, 
+        * If set to `dark_forest`, the grass will have the dark forest color.
+        * If set to `swamp`, the grass will alternate between the two swamp colors.
+    * `mood_sound`: (optional) The mood sound settings.
+        * `sound`: The ID for the sound to be used.
+        * `tick_delay`: The minimum delay between mood sounds.
+        * `block_search_extent`: The range of areas where the mood sound will be played. Centered on the player, the cubic range where a mood sound can be played is calulated as `2 * block_search_extent`.
+        * `offset`: The minimum distance from the player that the mood sound can play from.
+    * `music`: (optional) The music settings.
+        * `sound`: The ID for the music to be played.
+        * `min_delay`: The minimum delay being two pieces of music being started, in ticks.
+        * `max_delay`: The maximum delay between two pieces of music being started, in ticks.
+        * `replace_current_music`: Whether or not music that is already playing should be replaced with new music.
+    * `particle`: (optional) The biome particle settings.
+        * `probability`: How often the particle should spawn, as a value between 0 and 1. 
+        * `options`: The particle options. 
+            * `type`: The particle type. For more information on particle fields, see the [wiki article](https://minecraft.fandom.com/wiki/Commands/particle) on particles for more information. 
+    * `sky_color`: The biome's sky color, as a decimal value.
+    * `water_color`: The biome's water color, as a decimal value.
+    * `water_fog_color`: The biome's water fog color, as a decimal value.
+* `features`: The list of placed features to use. Inside this list can be up to 11 lists of placed features. Without any features this will look like this:
+```json
+"features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+```
 
 ### 🚧 Under construction 🚧

@@ -104,6 +104,7 @@ There's a lot to configure in biomes. The settings are as follows:
 * `carvers`: The configured carvers the biome should use.
     * `air`: (optional) A list of carvers that carve through terrain in the `air` cave generation step. 
     * `liquid`: (optional) A list of carvers that carve through terrain in the `liquid` cave generation step. Unused in vanilla as of 1.18.
+* `creature_spawn_probability`: (optional) Controls how frequently creatures spawn, as a value between 0 and 1.
 * `downfall`: Controls the grass and foliage color if those colors are unset.
 * `effects`: The effects in the biome.
     * `additions_sound`: (optional) The additional sound settings.
@@ -135,6 +136,7 @@ There's a lot to configure in biomes. The settings are as follows:
     * `water_color`: The biome's water color, as a decimal value.
     * `water_fog_color`: The biome's water fog color, as a decimal value.
 * `features`: The list of placed features to use. Inside this list can be up to 11 lists of placed features. Without any features this will look like this:
+
 ```json
 "features": [
     [],
@@ -150,5 +152,18 @@ There's a lot to configure in biomes. The settings are as follows:
     []
 ]
 ```
+
+Each list corresponds to a generation step. At least in vanilla, certain steps are used to place certain features. The steps are as follows:
+    * `RAW_GENERATION`: Only used for the small end islands in the End dimension in vanilla.
+    * `LAKES`: Used for placement of lava lakes.
+    * `LOCAL_MODIFICATIONS`: Used for placement of Amethyst Geodes and Icebergs.
+    * `UNDERGROUND_STRUCTURES`: Used for Monster Rooms (dungeons) and Fossils. **Underground structures such as Mineshafts and Ancient Cities generate during this generation step.**
+    * `SURFACE_STRUCTURES`: Used for desert wells and blue ice patches. **Surface structures such as Villages and Shipwrecks generate during this generation step.**
+    * `STRONGHOLDS`: Unused. **Strongholds generate during this generation step.**
+    * `UNDERGROUND_ORES`: Used for Overworld blobs of alternate stone and ores, and the disks of sand, gravel and clay in rivers.
+    * `UNDERGROUND_DECORATION`: Used for Nether blocks of alternate stone and ores, and infested stone.
+    * `FLUID_SPRINGS`: Used for the single blocks of lava and water.
+    * `VEGETAL_DECORATION`: Used for vegetation like trees, grass, mushrooms, etc.
+    * `TOP_LAYER_MODIFICATION`: Used for placing snow and ice in cold areas.
 
 ### 🚧 Under construction 🚧

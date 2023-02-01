@@ -9,7 +9,9 @@ grand_parent: Documentation
 # Vertical Anchors
 Vertical anchors are used to provide the world height for some configured feature types and placement modifiers. There's three vertical anchors: one absolute, and two relative. All of these take integer providers (these are explained [here]).
 
-## `absolute`
+## `absolute` 
+Integer
+{: .label .label-blue }
 An absolute height, as used in commands or coordinates.
 
 ## `above_bottom`

@@ -104,5 +104,17 @@ There's a lot to configure in biomes. The settings are as follows:
 * `carvers`: The configured carvers the biome should use.
     * `air`: (optional) A list of carvers that carve through terrain in the `air` cave generation step. 
     * `liquid`: (optional) A list of carvers that carve through terrain in the `liquid` cave generation step. Unused in vanilla as of 1.18.
+* `downfall`: Controls the grass and foliage color if those colors are unset.
+* `effects`: The effects in the biome.
+    * `additions_sound`: (optional) The additional sound settings.
+        * `sound`: The ID for the sound to be used.
+        * `tick_change`: The chance per tick for the sound to start being played, as a value between 0 and 1.
+    * `ambient_sound`: (optional) The ID for the amount sound to be used.
+    * `fog_color`: The fog color in the biome, as a decimal value.
+    * `foliage_color`: (optional) The foliage color in the biome, as a decimal value. The downfall and temperature values will determine the foliage color if none is provided.
+    * `grass_color`: (optional) The grass color in the biome, as a decimal value. The downfall and temperature values will determine the grass color if none is provided.
+    * `grass_color_modifier`: (optional) The grass color modifier to use.
+        * If set to `none`, no color modifier will be applied. This is the default.
+        * If set to `dark_forest`, 
 
 ### 🚧 Under construction 🚧

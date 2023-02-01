@@ -12,6 +12,8 @@ permalink: /
 
 This website provides documentation on the data-driven world generation system for Minecraft: Java edition. 
 
+The information here is currently for **1.19.3**. Versions 1.18.1, 1.18.2, and 1.19.4 will eventually receive support as well.
+
 ### 🚧 **Under construction** 🚧
 
 Future plans include:

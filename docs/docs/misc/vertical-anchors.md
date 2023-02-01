@@ -10,9 +10,8 @@ grand_parent: Documentation
 Vertical anchors are used to provide the world height for some configured feature types and placement modifiers. There's three vertical anchors: one absolute, and two relative. All of these take integer providers (these are explained [here]).
 
 ## `absolute` 
-Integer {: .label .label-blue }
-
-An absolute height, as used in commands or coordinates.
+Integer 
+{: .label .label-blue } An absolute height, as used in commands or coordinates.
 
 ## `above_bottom`
 The height relative to the minimum build height of the dimension. An `above_bottom` value of 10 in a dimension with a minimum build height of -64 would be -54 in coordinates.

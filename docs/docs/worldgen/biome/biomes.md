@@ -7,6 +7,7 @@ grand_parent: Documentation
 ---
 
 # Biomes
+
 Biome files contain information about a biome such as the sky/water colors, mob spawning, and features used in generation.
 
 They are stored in the `/worldgen/biome` folder.
@@ -100,7 +101,7 @@ Let's take a look at an example biome configuration:
 
 There's a lot to configure in biomes. The settings are as follows:
 
-* `carvers`: The configured carvers the biome should use. Learn more about configured carvers [here].
+* `carvers`: The configured carvers the biome should use.
     * `air`: (optional) A list of carvers that carve through terrain in the `air` cave generation step. 
     * `liquid`: (optional) A list of carvers that carve through terrain in the `liquid` cave generation step. Unused in vanilla as of 1.18.
 

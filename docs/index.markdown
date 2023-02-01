@@ -9,3 +9,11 @@ permalink: /
 ---
 
 # Home Page
+
+This website provides documentation on the data-driven world generation system for Minecraft: Java edition. 
+
+**IT IS CURRENTLY UNDER CONSTRUCTION!** 
+
+Future plans include:
+* Documentation on all aspects of worldgen
+* Guides on how to add things like biomes, ores, trees, structures, etc.

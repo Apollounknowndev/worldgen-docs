@@ -7,6 +7,7 @@ nav_order: 2
 ---
 
 # Dimension Types
+
 Dimension type files control the properties of a dimension. These properties include things like whether beds work or not, whether sky light should be calculated, etc.
 
 Unlike other worldgen files, they are **not** stored in the `/worldgen` folder. They are stored in their own `/dimension_type` folder.

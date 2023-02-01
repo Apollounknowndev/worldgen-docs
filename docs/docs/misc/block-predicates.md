@@ -7,6 +7,7 @@ grand_parent: Documentation
 ---
 
 # Block Predicates
+
 Block predicates are used to check the properties of blocks relative to the current position. They're used in some configured feature types and placement modifiers.
 
 The configuration for a block predicate is as follows:

@@ -7,6 +7,7 @@ nav_order: 1
 ---
 
 # Dimensions
+
 Dimension files control the biomes a dimension uses, as well as the generator settings and dimension type file it uses.
 
 Unlike other worldgen files, they are **not** stored in the `/worldgen` folder. They are stored in their own `/dimension` folder.
@@ -71,7 +72,7 @@ The settings are as follows:
 					* `height`: The number of blocks thick the layer is.
 				* `structure_overrides`: A list of structures that the dimension generates. *(May or may not be required, more research needed.)*
 		* If set to `minecraft:noise`, the further fields are as follows:
-			* `settings`: The noise settings file this dimension uses. Learn how noise setting files work [here].
+			* `settings`: The noise settings file this dimension uses.
 			* `biome_source`: The biome source this dimension uses.
 				* `type`: The biome source type.
 					* If set to `minecraft:the_end`, there are no further fields. This is used for the End dimension's biome layout, and cannot be configured at all.
@@ -82,4 +83,4 @@ The settings are as follows:
 						* `biomes`: A list of biomes that is used in the checkerboard.
 					* If set to `minecraft:multi_noise`, the settings are as follows:
 						* `preset`: The preset for the biome layout. Can be either `minecraft:overworld` or `minecraft:nether`. **Mutually exclusive with the `biomes` field!**
-						* `biomes`: A list of biomes with their respective parameters. Biome parameters are a complex subject and have their own page [here]. **Mutually exclusive with the `preset` field!**
+						* `biomes`: A list of biomes with their respective parameters. Biome parameters are a complex subject and will soon have their own page. **Mutually exclusive with the `preset` field!**

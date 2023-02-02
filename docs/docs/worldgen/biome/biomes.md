@@ -12,6 +12,7 @@ Biome files contain information about a biome such as the sky/water colors, mob 
 
 They are stored in the `/worldgen/biome` folder.
 
+## JSON format
 
 Let's take a look at an example biome configuration:
 ```json
@@ -135,7 +136,7 @@ There's a lot to configure in biomes. The settings are as follows:
     * `sky_color`: The biome's sky color, as a decimal value.
     * `water_color`: The biome's water color, as a decimal value.
     * `water_fog_color`: The biome's water fog color, as a decimal value.
-* `features`: The list of placed features to use. Inside this list can be up to 11 lists of placed features. Without any features this will look like this:
+* `features`: (can be empty) The list of placed features to use. Inside this list can be up to 11 lists of placed features. Without any features this will look like this:
     ```json
     "features": [
         [],
@@ -166,7 +167,7 @@ There's a lot to configure in biomes. The settings are as follows:
     * `TOP_LAYER_MODIFICATION`: Used for placing snow and ice in cold areas.
 
 * `has_precipitation`: Determines whether or not preciptation happens. If the biome temperature is low enough, the precipitation will be snow instead of rain.
-* `spawn_costs`: The list of mobs that use the spawn cost mechanism. The spawn cost mechanism is effectively social distancing for mob spawning, where mobs cannot spawn too close to each other. Learn more about this mechanic [here](https://minecraft.fandom.com/wiki/Spawn#Spawn_costs).
+* `spawn_costs`: (can be empty) The list of mobs that use the spawn cost mechanism. The spawn cost mechanism is effectively social distancing for mob spawning, where mobs cannot spawn too close to each other. Learn more about this mechanic [here](https://minecraft.fandom.com/wiki/Spawn#Spawn_costs).
     * `<entity id>`: The entity ID of the mob.
         * `energy_budget`: The maximum potential for a possible mob spawn.
         * `charge`: The mob's charge.
@@ -175,20 +176,51 @@ There's a lot to configure in biomes. The settings are as follows:
     
     ```json
     "spawn_costs": {
-    "minecraft:enderman": {
-      "energy_budget": 0.15,
-      "charge": 0.7
-    },
-    "minecraft:ghast": {
-      "energy_budget": 0.15,
-      "charge": 0.7
-    }
+        "minecraft:enderman": {
+            "energy_budget": 0.15,
+            "charge": 0.7
+        },
+        "minecraft:ghast": {
+            "energy_budget": 0.15,
+            "charge": 0.7
+        }
   }
     ```
-* `spawners`:
+* `spawners`: (can be empty) The mob spawn settings.
+    * `<mob category>`: The mob category. Must be `monster`, `creature`, `ambient`, `axolotls`, `underground_water_creature`, `water_creature`, `water_ambient`, or `misc`. A list of elements.
+        * `type`: The entity ID of the mob.
+        * `weight`: The weight of the mob in comparison to other mobs in the category.
+        * `minCount`: The minimum amount of mobs that can spawn as a pack.
+        * `maxCount`: The maximum amount of mobs that can spawn as a pack.
+
+    Example of how this looks:
+
+    ```json
+    "spawners": {
+		"creature": [
+			{
+				"type": "minecraft:strider",
+				"weight": 60,
+				"minCount": 1,
+				"maxCount": 2
+			}
+		],
+		"monster": [
+			{
+				"type": "minecraft:zombified_piglin",
+				"weight": 1,
+				"minCount": 2,
+				"maxCount": 4
+			}
+		]
+	}
+    ```
+
 * `temperature`: Controls the grass and foliage color if those colors are unset. Also controls things like the altitude where snow starts, whether rain or so is the precipitation of the biome, and details of some generation features.
 * `temperature_modifier`: (optional) The temperature modifier to use.
     * If set to `none`, no temperature modifier will be applied.
     * If set to `frozen`, the temperature will flucuate in the biome somewhat, occasionally reaching above 0.2 where it can rain. Only used in the Frozen Ocean biomes in vanilla.
+
+## Examples
 
 ### 🚧 Under construction 🚧

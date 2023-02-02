@@ -165,11 +165,9 @@ There's a lot to configure in biomes. The settings are as follows:
     * `VEGETAL_DECORATION`: Used for vegetation like trees, grass, mushrooms, etc.
     * `TOP_LAYER_MODIFICATION`: Used for placing snow and ice in cold areas.
 
-With those generation steps explained, let's get back to all the other fields.
-
 * `has_precipitation`: Determines whether or not preciptation happens. If the biome temperature is low enough, the precipitation will be snow instead of rain.
 * `spawn_costs`: The list of mobs that use the spawn cost mechanism. The spawn cost mechanism is effectively social distancing for mob spawning, where mobs cannot spawn too close to each other. Learn more about this mechanic [here](https://minecraft.fandom.com/wiki/Spawn#Spawn_costs).
-    * `\<entity id\>: The entity ID of the mob.
+    * `<entity id>`: The entity ID of the mob.
         * `energy_budget`: The maximum potential for a possible mob spawn.
         * `charge`: The mob's charge.
     Example of how this looks:

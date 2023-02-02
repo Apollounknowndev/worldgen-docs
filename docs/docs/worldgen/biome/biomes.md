@@ -136,34 +136,59 @@ There's a lot to configure in biomes. The settings are as follows:
     * `water_color`: The biome's water color, as a decimal value.
     * `water_fog_color`: The biome's water fog color, as a decimal value.
 * `features`: The list of placed features to use. Inside this list can be up to 11 lists of placed features. Without any features this will look like this:
+    ```json
+    "features": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+    ]
+    ```
 
-```json
-"features": [
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    []
-]
-```
+    Each list corresponds to a generation step. At least in vanilla, certain steps are used to place certain features. The steps are as follows:
+    * `RAW_GENERATION`: Only used for the small end islands in the End dimension in vanilla.
+    * `LAKES`: Used for placement of lava lakes.
+    * `LOCAL_MODIFICATIONS`: Used for placement of Amethyst Geodes and Icebergs.
+    * `UNDERGROUND_STRUCTURES`: Used for Monster Rooms (dungeons) and Fossils. **Underground structures such as Mineshafts and Ancient Cities generate during this generation step.**
+    * `SURFACE_STRUCTURES`: Used for desert wells and blue ice patches. **Surface structures such as Villages and Shipwrecks generate during this generation step.**
+    * `STRONGHOLDS`: Unused. **Strongholds generate during this generation step.**
+    * `UNDERGROUND_ORES`: Used for Overworld blobs of alternate stone and ores, and the disks of sand, gravel and clay in rivers.
+    * `UNDERGROUND_DECORATION`: Used for Nether blocks of alternate stone and ores, and infested stone.
+    * `FLUID_SPRINGS`: Used for the single blocks of lava and water.
+    * `VEGETAL_DECORATION`: Used for vegetation like trees, grass, mushrooms, etc.
+    * `TOP_LAYER_MODIFICATION`: Used for placing snow and ice in cold areas.
 
-Each list corresponds to a generation step. At least in vanilla, certain steps are used to place certain features. The steps are as follows:
-* `RAW_GENERATION`: Only used for the small end islands in the End dimension in vanilla.
-* `LAKES`: Used for placement of lava lakes.
-* `LOCAL_MODIFICATIONS`: Used for placement of Amethyst Geodes and Icebergs.
-* `UNDERGROUND_STRUCTURES`: Used for Monster Rooms (dungeons) and Fossils. **Underground structures such as Mineshafts and Ancient Cities generate during this generation step.**
-* `SURFACE_STRUCTURES`: Used for desert wells and blue ice patches. **Surface structures such as Villages and Shipwrecks generate during this generation step.**
-* `STRONGHOLDS`: Unused. **Strongholds generate during this generation step.**
-* `UNDERGROUND_ORES`: Used for Overworld blobs of alternate stone and ores, and the disks of sand, gravel and clay in rivers.
-* `UNDERGROUND_DECORATION`: Used for Nether blocks of alternate stone and ores, and infested stone.
-* `FLUID_SPRINGS`: Used for the single blocks of lava and water.
-* `VEGETAL_DECORATION`: Used for vegetation like trees, grass, mushrooms, etc.
-* `TOP_LAYER_MODIFICATION`: Used for placing snow and ice in cold areas.
+With those generation steps explained, let's get back to all the other fields.
+
+* `has_precipitation`: Determines whether or not preciptation happens. If the biome temperature is low enough, the precipitation will be snow instead of rain.
+* `spawn_costs`: The list of mobs that use the spawn cost mechanism. The spawn cost mechanism is effectively social distancing for mob spawning, where mobs cannot spawn too close to each other. Learn more about this mechanic [here](https://minecraft.fandom.com/wiki/Spawn#Spawn_costs).
+    * `\<entity id\>: The entity ID of the mob.
+        * `energy_budget`: The maximum potential for a possible mob spawn.
+        * `charge`: The mob's charge.
+    Example of how this looks:
+    ```json
+    "spawn_costs": {
+    "minecraft:enderman": {
+      "energy_budget": 0.15,
+      "charge": 0.7
+    },
+    "minecraft:ghast": {
+      "energy_budget": 0.15,
+      "charge": 0.7
+    }
+  }
+    ```
+* `spawners`:
+* `temperature`: Controls the grass and foliage color if those colors are unset. Also controls things like the altitude where snow starts, whether rain or so is the precipitation of the biome, and details of some generation features.
+* `temperature_modifier`: (optional) The temperature modifier to use.
+    * If set to `none`, no temperature modifier will be applied.
+    * If set to `frozen`, the temperature will flucuate in the biome somewhat, occasionally reaching above 0.2 where it can rain. Only used in the Frozen Ocean biomes in vanilla.
 
 ### 🚧 Under construction 🚧

@@ -8,7 +8,7 @@ grand_parent: Documentation
 
 # Vertical Anchors
 
-Vertical anchors are used to provide the world height for some configured feature types and placement modifiers. There's three vertical anchors: one absolute, and two relative. All of these take integer providers.
+Vertical anchors are used to provide the elevation for some configured feature types and placement modifiers. There's three vertical anchors: one absolute, and two relative. All of these take integer providers.
 
 ## `absolute` 
 

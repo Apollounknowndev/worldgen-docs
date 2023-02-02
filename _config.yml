@@ -14,7 +14,7 @@ plugins:
   - jekyll-feed
 
 # JTD Theme Settings
-search_enabled: false
+search_enabled: true
 color_scheme: dark
 
 # JTD Footer

@@ -2,7 +2,7 @@
 layout: default
 title: Adding Structures
 nav_order: 1
-permalink: /guides/adding-structures
+permalink: /guides/adding-structures/
 parent: Guides
 ---
 [1.18.2](/worldgen-docs/guides/adding-structures/1.18.2/){: .btn .btn-purple }

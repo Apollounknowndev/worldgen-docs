@@ -170,7 +170,9 @@ There's a lot to configure in biomes. The settings are as follows:
     * `<entity id>`: The entity ID of the mob.
         * `energy_budget`: The maximum potential for a possible mob spawn.
         * `charge`: The mob's charge.
+    
     Example of how this looks:
+    
     ```json
     "spawn_costs": {
     "minecraft:enderman": {

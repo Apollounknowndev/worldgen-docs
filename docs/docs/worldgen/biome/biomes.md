@@ -12,6 +12,15 @@ Biome files contain information about a biome such as the sky/water colors, mob 
 
 They are stored in the `/worldgen/biome` folder.
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
 ## JSON format
 
 Let's take a look at an example biome configuration:

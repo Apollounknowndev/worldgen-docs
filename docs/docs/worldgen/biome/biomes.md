@@ -223,4 +223,78 @@ There's a lot to configure in biomes. The settings are as follows:
 
 ## Examples
 
-### 🚧 Under construction 🚧
+This is the absolute bare minimum a biome file needs to be a valid biome:
+```json
+{
+	"temperature": 0.5,
+	"downfall": 0.5,
+	"has_precipitation": false,
+	"effects": {
+		"sky_color": 8103167,
+		"fog_color": 12638463,
+		"water_color": 4159204,
+		"water_fog_color": 329011
+	},
+	"spawners": {},
+	"spawn_costs": {},
+	"carvers": {},
+	"features": []
+}
+```
+
+This biome would have no features like ores/trees, no old caves/ravines, no rain, and no mob spawns. The Void biome in vanilla is exactly the same to this, although it includes ambient cave sounds.
+
+```json
+{
+	"temperature": 0.8,
+	"downfall": 0.4,
+	"has_precipitation": true,
+	"effects": {
+		"sky_color": 7907327,
+		"fog_color": 12638463,
+		"water_color": 4159204,
+		"water_fog_color": 329011,
+		"mood_sound": {
+			"sound": "minecraft:ambient.cave",
+			"tick_delay": 6000,
+			"block_search_extent": 8,
+			"offset": 2
+		}
+	},
+	"spawners": {
+		"creature": [
+			{
+				"type": "minecraft:sheep",
+				"weight": 12,
+				"minCount": 4,
+				"maxCount": 4
+			}
+		]
+	},
+	"spawn_costs": {},
+	"carvers": {
+		"air": [
+			"minecraft:cave",
+			"minecraft:cave_extra_underground",
+			"minecraft:canyon"
+		]
+	},
+	"features": [
+		[],
+		[],
+		[
+			"minecraft:amethyst_geode"
+		],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[]
+	]
+}
+```
+
+Now we're getting somewhere. This biome is similar to the vanilla Plains biome, but the only entity that spawns is the Sheep and Amethyst Geodes are the only feature that generates.

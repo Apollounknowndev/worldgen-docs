@@ -112,7 +112,7 @@ There's a lot to configure in biomes. The settings are as follows:
     * `additions_sound`: (optional) The additional sound settings.
         * `sound`: The ID for the sound to be used.
         * `tick_change`: The chance per tick for the sound to start being played, as a value between 0 and 1.
-    * `ambient_sound`: (optional) The ID for the amount sound to be used.
+    * `ambient_sound`: (optional) The ID for the ambient sound to be used.
     * `fog_color`: The biome's fog color, as a decimal value.
     * `foliage_color`: (optional) The biome's foliage color, as a decimal value. The downfall and temperature values will determine the foliage color if none is provided.
     * `grass_color`: (optional) The biome's grass color, as a decimal value. The downfall and temperature values will determine the grass color if none is provided.

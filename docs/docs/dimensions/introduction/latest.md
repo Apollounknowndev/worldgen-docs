@@ -1,14 +1,20 @@
 ---
-layout: page
-title: Dimensions
-permalink: /docs/dimensions/
+layout: default
+title: Introduction to Dimensions
+permalink: /docs/dimensions/introduction/latest/
 parent: Documentation
 nav_order: 1
 ---
+[1.18.2](/worldgen-docs/docs/dimensions/introduction/1.18.2/){: .btn .btn-purple }
 
-# Dimensions
+# Introduction to Dimensions
 
-Dimension files control the biomes a dimension uses, as well as the generator settings and dimension type file it uses.
+When the game adds a new dimension, it needs to know three things:
+* The biomes the dimension uses
+* The properties of the dimension (build limit, whether or not there's skylight, etc.)
+* The terrain shaping and blocks used in the terrain for the dimension
+
+Dimension files tell the game all of this information.
 
 Unlike other worldgen files, they are **not** stored in the `/worldgen` folder. They are stored in their own `/dimension` folder.
 
@@ -16,43 +22,43 @@ Let's take a look at an example dimension file. This one is identical to the Ove
 
 ```json
 {
-    "type": "minecraft:overworld",
-    "generator": {
-        "type": "minecraft:noise",
-        "settings": "minecraft:overworld",
-        "biome_source": {
-            "type": "minecraft:multi_noise",
-            "biomes": [
-                {
-                    "biome": "minecraft:plains",
-                    "parameters": {
-                        "temperature": [
-                            -1,
-                            1
-                        ],
-                        "humidity": [
-                            -1,
-                            1
-                        ],
-                        "continentalness": [
-                            -1,
-                            1
-                        ],
-                        "erosion": [
-                            -1,
-                            1
-                        ],
-                        "weirdness": [
-                            -1,
-                            1
-                        ],
-                        "depth": 0,
-                        "offset": 0
-                    }
-                }
-            ]
-        }
-    }
+   "type": "minecraft:overworld",
+   "generator": {
+      "type": "minecraft:noise",
+      "settings": "minecraft:overworld",
+      "biome_source": {
+         "type": "minecraft:multi_noise",
+         "biomes": [
+            {
+               "biome": "minecraft:plains",
+               "parameters": {
+                  "temperature": [
+                     -1,
+                     1
+                  ],
+                  "humidity": [
+                     -1,
+                     1
+                  ],
+                  "continentalness": [
+                     -1,
+                     1
+                  ],
+                  "erosion": [
+                     -1,
+                     1
+                  ],
+                  "weirdness": [
+                     -1,
+                     1
+                  ],
+                  "depth": 0,
+                  "offset": 0
+               }
+            }
+         ]
+      }
+   }
 }
 ```
 

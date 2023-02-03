@@ -6,7 +6,7 @@ parent: Dimensions
 grand_parent: Documentation
 nav_order: 1
 ---
-[1.18.2](/worldgen-docs/docs/dimensions/intro/1.18.2/){: .btn .btn-purple }
+[1.18.2](/worldgen-docs/docs/dimensions/introduction/1.18.2/){: .btn .btn-purple }
 
 # Intro to Dimensions
 

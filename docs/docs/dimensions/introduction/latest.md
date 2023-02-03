@@ -2,7 +2,8 @@
 layout: default
 title: Introduction to Dimensions
 permalink: /docs/dimensions/introduction/latest/
-parent: Documentation
+parent: Dimensions
+grand_parent: Documentation
 nav_order: 1
 ---
 [1.18.2](/worldgen-docs/docs/dimensions/introduction/1.18.2/){: .btn .btn-purple }

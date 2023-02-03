@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Introduction to Dimensions
+title: Intro to Dimensions
 permalink: /docs/dimensions/introduction/latest/
 parent: Dimensions
 grand_parent: Documentation
 nav_order: 1
 ---
-[1.18.2](/worldgen-docs/docs/dimensions/introduction/1.18.2/){: .btn .btn-purple }
+[1.18.2](/worldgen-docs/docs/dimensions/intro/1.18.2/){: .btn .btn-purple }
 
-# Introduction to Dimensions
+# Intro to Dimensions
 
 When the game adds a new dimension, it needs to know three things:
 * The biomes the dimension uses

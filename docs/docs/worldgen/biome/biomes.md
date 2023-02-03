@@ -18,86 +18,86 @@ They are stored in the `/worldgen/biome` folder.
 Let's take a look at an example biome configuration:
 ```json
 {
-    "carvers": {},
-    "downfall": 0.4,
-    "effects": {
-        "fog_color": 12638463,
-        "mood_sound": {
-            "block_search_extent": 8,
-            "offset": 2,
-            "sound": "minecraft:ambient.cave",
-            "tick_delay": 6000
-        },
-        "sky_color": 7907327,
-        "water_color": 4159204,
-        "water_fog_color": 329011
-    },
-    "features": [
-        [],
-        [],
-        [
-            "minecraft:amethyst_geode"
-        ],
-        [],
-        [],
-        [],
-        [
-            "minecraft:ore_diamond",
-            "minecraft:ore_diamond_large",
-            "minecraft:ore_diamond_buried"
-        ],
-        [],
-        [],
-        [
-            "minecraft:glow_lichen",
-            "minecraft:trees_plains",
-            "minecraft:flower_plains",
-            "minecraft:patch_grass_plain"
-        ],
-        [
-            "minecraft:freeze_top_layer"
-        ]
-    ],
-    "has_precipitation": true,
-    "spawn_costs": {},
-    "spawners": {
-        "ambient": [
-            {
-                "type": "minecraft:bat",
-                "maxCount": 8,
-                "minCount": 8,
-                "weight": 10
-            }
-        ],
-        "axolotls": [],
-        "creature": [],
-        "misc": [],
-        "monster": [
-            {
-                "type": "minecraft:zombie",
-                "maxCount": 4,
-                "minCount": 4,
-                "weight": 95
-            },
-            {
-                "type": "minecraft:skeleton",
-                "maxCount": 4,
-                "minCount": 4,
-                "weight": 100
-            }
-        ],
-        "underground_water_creature": [
-            {
-                "type": "minecraft:glow_squid",
-                "maxCount": 6,
-                "minCount": 4,
-                "weight": 10
-            }
-        ],
-        "water_ambient": [],
-        "water_creature": []
-    },
-    "temperature": 0.8
+   "carvers": {},
+   "downfall": 0.4,
+   "effects": {
+      "fog_color": 12638463,
+      "mood_sound": {
+         "block_search_extent": 8,
+         "offset": 2,
+         "sound": "minecraft:ambient.cave",
+         "tick_delay": 6000
+      },
+      "sky_color": 7907327,
+      "water_color": 4159204,
+      "water_fog_color": 329011
+   },
+   "features": [
+      [],
+      [],
+      [
+         "minecraft:amethyst_geode"
+      ],
+      [],
+      [],
+      [],
+      [
+         "minecraft:ore_diamond",
+         "minecraft:ore_diamond_large",
+         "minecraft:ore_diamond_buried"
+      ],
+      [],
+      [],
+      [
+         "minecraft:glow_lichen",
+         "minecraft:trees_plains",
+         "minecraft:flower_plains",
+         "minecraft:patch_grass_plain"
+      ],
+      [
+         "minecraft:freeze_top_layer"
+      ]
+   ],
+   "has_precipitation": true,
+   "spawn_costs": {},
+   "spawners": {
+      "ambient": [
+         {
+            "type": "minecraft:bat",
+            "maxCount": 8,
+            "minCount": 8,
+            "weight": 10
+         }
+      ],
+      "axolotls": [],
+      "creature": [],
+      "misc": [],
+      "monster": [
+         {
+            "type": "minecraft:zombie",
+            "maxCount": 4,
+            "minCount": 4,
+            "weight": 95
+         },
+         {
+            "type": "minecraft:skeleton",
+            "maxCount": 4,
+            "minCount": 4,
+            "weight": 100
+         }
+      ],
+      "underground_water_creature": [
+         {
+            "type": "minecraft:glow_squid",
+            "maxCount": 6,
+            "minCount": 4,
+            "weight": 10
+         }
+      ],
+      "water_ambient": [],
+      "water_creature": []
+   },
+   "temperature": 0.8
 }
 ```
 
@@ -140,17 +140,17 @@ There's a lot to configure in biomes. The settings are as follows:
 * `features`: (can be empty) The list of placed features to use. Inside this list can be up to 11 lists of placed features. Without any features this will look like this:
     ```json
     "features": [
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+       [],
+       [],
+       [],
+       [],
+       [],
+       [],
+       [],
+       [],
+       [],
+       [],
+       []
     ]
     ```
 
@@ -177,15 +177,15 @@ There's a lot to configure in biomes. The settings are as follows:
     
     ```json
     "spawn_costs": {
-        "minecraft:enderman": {
-            "energy_budget": 0.15,
-            "charge": 0.7
-        },
-        "minecraft:ghast": {
-            "energy_budget": 0.15,
-            "charge": 0.7
-        }
-  }
+       "minecraft:enderman": {
+          "energy_budget": 0.15,
+          "charge": 0.7
+       },
+       "minecraft:ghast": {
+          "energy_budget": 0.15,
+          "charge": 0.7
+       }
+    }
     ```
 * `spawners`: (can be empty) The mob spawn settings.
     * `<mob category>`: The mob category. Must be `monster`, `creature`, `ambient`, `axolotls`, `underground_water_creature`, `water_creature`, `water_ambient`, or `misc`. A list of elements.
@@ -198,23 +198,23 @@ There's a lot to configure in biomes. The settings are as follows:
 
     ```json
     "spawners": {
-		"creature": [
-			{
-				"type": "minecraft:strider",
-				"weight": 60,
-				"minCount": 1,
-				"maxCount": 2
-			}
-		],
-		"monster": [
-			{
-				"type": "minecraft:zombified_piglin",
-				"weight": 1,
-				"minCount": 2,
-				"maxCount": 4
-			}
-		]
-	}
+       "creature": [
+          {
+             "type": "minecraft:strider",
+             "weight": 60,
+             "minCount": 1,
+             "maxCount": 2
+          }
+       ],
+       "monster": [
+          {
+             "type": "minecraft:zombified_piglin",
+             "weight": 1,
+             "minCount": 2,
+             "maxCount": 4
+          }
+       ]
+    }
     ```
 
 * `temperature`: Controls the grass and foliage color if those colors are unset. Also controls things like the altitude where snow starts, whether rain or so is the precipitation of the biome, and details of some generation features.
@@ -227,19 +227,19 @@ There's a lot to configure in biomes. The settings are as follows:
 This is the absolute bare minimum a biome file needs to be a valid biome:
 ```json
 {
-	"temperature": 0.5,
-	"downfall": 0.5,
-	"has_precipitation": false,
-	"effects": {
-		"sky_color": 8103167,
-		"fog_color": 12638463,
-		"water_color": 4159204,
-		"water_fog_color": 329011
-	},
-	"spawners": {},
-	"spawn_costs": {},
-	"carvers": {},
-	"features": []
+   "temperature": 0.5,
+   "downfall": 0.5,
+   "has_precipitation": false,
+   "effects": {
+      "sky_color": 8103167,
+      "fog_color": 12638463,
+      "water_color": 4159204,
+      "water_fog_color": 329011
+   },
+   "spawners": {},
+   "spawn_costs": {},
+   "carvers": {},
+   "features": []
 }
 ```
 
@@ -247,54 +247,54 @@ This biome would have no features like ores/trees, no old caves/ravines, no rain
 
 ```json
 {
-	"temperature": 0.8,
-	"downfall": 0.4,
-	"has_precipitation": true,
-	"effects": {
-		"sky_color": 7907327,
-		"fog_color": 12638463,
-		"water_color": 4159204,
-		"water_fog_color": 329011,
-		"mood_sound": {
-			"sound": "minecraft:ambient.cave",
-			"tick_delay": 6000,
-			"block_search_extent": 8,
-			"offset": 2
-		}
-	},
-	"spawners": {
-		"creature": [
-			{
-				"type": "minecraft:sheep",
-				"weight": 12,
-				"minCount": 4,
-				"maxCount": 4
-			}
-		]
-	},
-	"spawn_costs": {},
-	"carvers": {
-		"air": [
-			"minecraft:cave",
-			"minecraft:cave_extra_underground",
-			"minecraft:canyon"
-		]
-	},
-	"features": [
-		[],
-		[],
-		[
-			"minecraft:amethyst_geode"
-		],
-		[],
-		[],
-		[],
-		[],
-		[],
-		[],
-		[],
-		[]
-	]
+   "temperature": 0.8,
+   "downfall": 0.4,
+   "has_precipitation": true,
+   "effects": {
+      "sky_color": 7907327,
+      "fog_color": 12638463,
+      "water_color": 4159204,
+      "water_fog_color": 329011,
+      "mood_sound": {
+         "sound": "minecraft:ambient.cave",
+         "tick_delay": 6000,
+         "block_search_extent": 8,
+         "offset": 2
+      }
+   },
+   "spawners": {
+      "creature": [
+         {
+            "type": "minecraft:sheep",
+            "weight": 12,
+            "minCount": 4,
+            "maxCount": 4
+         }
+      ]
+   },
+   "spawn_costs": {},
+   "carvers": {
+      "air": [
+         "minecraft:cave",
+         "minecraft:cave_extra_underground",
+         "minecraft:canyon"
+      ]
+   },
+   "features": [
+      [],
+      [],
+      [
+         "minecraft:amethyst_geode"
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+   ]
 }
 ```
 

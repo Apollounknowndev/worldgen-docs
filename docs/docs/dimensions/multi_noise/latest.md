@@ -23,36 +23,38 @@ The first five inputs are based on perlin noise, and the sixth one is based on t
 A dimension file has a list of biomes and their ideal inputs (known in the files as their "parameters"), which are a list of parameters and min/max values which are preferred. This is rather complex to explain, so here's an example with just two biomes, the Plains and the Forest:
 
 ```json
-{
-    "biome": "minecraft:plains",
-    "parameters": {
-        "temperature": 0,
-        "humidity": [
+[
+   {
+      "biome": "minecraft:plains",
+      "parameters": {
+         "temperature": 0,
+         "humidity": [
             -1,
             0
-        ],
-        "continentalness": 0,
-        "erosion": 0,
-        "weirdness": 0,
-        "depth": 0,
-        "offset": 0
-    }
-},
-{
-    "biome": "minecraft:forest",
-    "parameters": {
-        "temperature": 0,
-        "humidity": [
+         ],
+         "continentalness": 0,
+         "erosion": 0,
+         "weirdness": 0,
+         "depth": 0,
+         "offset": 0
+      }
+   },
+   {
+      "biome": "minecraft:forest",
+      "parameters": {
+         "temperature": 0,
+         "humidity": [
             0,
             1
-        ],
-        "continentalness": 0,
-        "erosion": 0,
-        "weirdness": 0,
-        "depth": 0,
-        "offset": 0
-    }
-}
+         ],
+         "continentalness": 0,
+         "erosion": 0,
+         "weirdness": 0,
+         "depth": 0,
+         "offset": 0
+      }
+   }
+]
 ```
 Here, the Plains biome will generate if `humidity` is between -1 and 0 and the Forst biome will generate if `humidity` is between 0 and 1.
 

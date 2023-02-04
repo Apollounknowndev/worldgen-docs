@@ -10,12 +10,12 @@ nav_order: 1
 
 # Intro to Dimensions
 
-When the game adds a new dimension, it needs to know three things:
+In order for Minecraft to register a dimension, it needs to know three things about it:
 * The biomes the dimension uses
 * The properties of the dimension (build limit, whether or not there's skylight, etc.)
 * The terrain shaping and blocks used in the terrain for the dimension
 
-Dimension files tell the game all of this information.
+Dimension files supply the game with all of this information.
 
 Unlike other worldgen files, they are **not** stored in the `/worldgen` folder. They are stored in their own `/dimension` folder.
 

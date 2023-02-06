@@ -109,9 +109,8 @@ There's a lot to configure in biomes. The settings are as follows:
 * `creature_spawn_probability`: (optional) Controls how frequently creatures spawn, as a value between 0 and 1.
 * `downfall`: 
 
-[Float]
+Float
 {: .label .label-green }
-
 Controls the grass and foliage color if those colors are unset.
 * `effects`: The effects in the biome.
     * `additions_sound`: (optional) The additional sound settings.

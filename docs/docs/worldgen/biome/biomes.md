@@ -17,7 +17,7 @@ r {color:#FF6F6F}
 o {color:#FEC856}
 y {color:#FBFF55}
 g {color:#00E61D}
-b {color:#00ACE6}
+b {color:#5573FF}
 p {color:#CE52FE}
 </style>
 
@@ -123,7 +123,7 @@ There's a lot to configure in biomes. The settings are as follows:
     * `air`: (optional) A list of carvers that carve through terrain in the `air` cave generation step. 
     * `liquid`: (optional) A list of carvers that carve through terrain in the `liquid` cave generation step. Unused in vanilla as of 1.18.
 * `creature_spawn_probability`: (optional) Controls how frequently creatures spawn, as a value between 0 and 1.
-* <g>[F]</sg> `downfall`: Controls the grass and foliage color if those colors are unset.
+* <g>[F]</g> `downfall`: Controls the grass and foliage color if those colors are unset.
 * `effects`: The effects in the biome.
     * `additions_sound`: (optional) The additional sound settings.
         * `sound`: The ID for the sound to be used.

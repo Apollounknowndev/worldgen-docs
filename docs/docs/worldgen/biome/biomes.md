@@ -120,9 +120,9 @@ There's a lot to configure in biomes. The settings are as follows:
         * `sound`: The ID for the sound to be used.
         * `tick_change`: The chance per tick for the sound to start being played, as a value between 0 and 1.
     * `ambient_sound`: (optional) The ID for the ambient sound to be used.
-    * <span style="color:#6C6CCC">(I)</span> `fog_color`: The biome's fog color, as a decimal value.
-    * (Optional) <span style="color:#6C6CCC">(I)</span> `foliage_color`:The biome's foliage color, as a decimal value. The downfall and temperature values will determine the foliage color if none is provided.
-    * (Optional) <span style="color:#6C6CCC">(I)</span> `grass_color`: The biome's grass color, as a decimal value. The downfall and temperature values will determine the grass color if none is provided.
+    * <span style="label:label-blue">(I)</span> `fog_color`: The biome's fog color, as a decimal value.
+    * <span style="label:blue">(I)</span> `foliage_color`: (optional) The biome's foliage color, as a decimal value. The downfall and temperature values will determine the foliage color if none is provided.
+    * <span style="color:#6C6CCC">(I)</span> `grass_color`: (optional) The biome's grass color, as a decimal value. The downfall and temperature values will determine the grass color if none is provided.
     * `grass_color_modifier`: (optional) The grass color modifier to use.
         * If set to `none`, no color modifier will be applied. This is the default.
         * If set to `dark_forest`, the grass will have the dark forest color.

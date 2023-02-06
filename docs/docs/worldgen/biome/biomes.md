@@ -110,8 +110,7 @@ There's a lot to configure in biomes. The settings are as follows:
 * `downfall`: 
 
 Float
-{: .label .label-green }
-Controls the grass and foliage color if those colors are unset.
+{: .label .label-green } Controls the grass and foliage color if those colors are unset.
 * `effects`: The effects in the biome.
     * `additions_sound`: (optional) The additional sound settings.
         * `sound`: The ID for the sound to be used.

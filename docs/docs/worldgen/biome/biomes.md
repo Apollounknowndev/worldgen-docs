@@ -5,6 +5,7 @@ permalink: /docs/worldgen/biomes/
 parent: Worldgen
 grand_parent: Documentation
 ---
+*[F]: Float
 
 # Biomes
 

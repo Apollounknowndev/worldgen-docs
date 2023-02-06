@@ -6,12 +6,21 @@ parent: Worldgen
 grand_parent: Documentation
 ---
 
-*[(L)]: List
-*[(S)]: String
-*[(D)]: Double
-*[(F)]: Float
-*[(I)]: Integer
-*[(B)]: Boolean
+*[L]: List
+*[S]: String
+*[D]: Double
+*[F]: Float
+*[I]: Integer
+*[B]: Boolean
+<style>
+r {color:#FF6F6F}
+o {color:#FEC856}
+y {color:#FBFF55}
+g {color:#00E61D}
+b {color:#00ACE6}
+p {color:#CE52FE}
+</style>
+
 
 # Biomes
 
@@ -114,15 +123,15 @@ There's a lot to configure in biomes. The settings are as follows:
     * `air`: (optional) A list of carvers that carve through terrain in the `air` cave generation step. 
     * `liquid`: (optional) A list of carvers that carve through terrain in the `liquid` cave generation step. Unused in vanilla as of 1.18.
 * `creature_spawn_probability`: (optional) Controls how frequently creatures spawn, as a value between 0 and 1.
-* <span style="color:#00FF00">(F)</span> `downfall`: Controls the grass and foliage color if those colors are unset.
+* <g>[F]</sg> `downfall`: Controls the grass and foliage color if those colors are unset.
 * `effects`: The effects in the biome.
     * `additions_sound`: (optional) The additional sound settings.
         * `sound`: The ID for the sound to be used.
         * `tick_change`: The chance per tick for the sound to start being played, as a value between 0 and 1.
     * `ambient_sound`: (optional) The ID for the ambient sound to be used.
-    * <span style="label:label-blue">(I)</span> `fog_color`: The biome's fog color, as a decimal value.
-    * <span style="label:blue">(I)</span> `foliage_color`: (optional) The biome's foliage color, as a decimal value. The downfall and temperature values will determine the foliage color if none is provided.
-    * <span style="color:#6C6CCC">(I)</span> `grass_color`: (optional) The biome's grass color, as a decimal value. The downfall and temperature values will determine the grass color if none is provided.
+    * <b>[I]</b> `fog_color`: The biome's fog color, as a decimal value.
+    * <b>[I]</b> `foliage_color`: (optional) The biome's foliage color, as a decimal value. The downfall and temperature values will determine the foliage color if none is provided.
+    * <b>[I]</b> `grass_color`: (optional) The biome's grass color, as a decimal value. The downfall and temperature values will determine the grass color if none is provided.
     * `grass_color_modifier`: (optional) The grass color modifier to use.
         * If set to `none`, no color modifier will be applied. This is the default.
         * If set to `dark_forest`, the grass will have the dark forest color.
@@ -141,9 +150,9 @@ There's a lot to configure in biomes. The settings are as follows:
         * `probability`: How often the particle should spawn, as a value between 0 and 1. 
         * `options`: The particle options. 
             * `type`: The particle type. For more information on particle fields, see the [wiki article](https://minecraft.fandom.com/wiki/Commands/particle) on particles for more information. 
-    * <span style="color:#6C6CCC">(I)</span> `sky_color`: The biome's sky color, as a decimal value.
-    * <span style="color:#6C6CCC">(I)</span> `water_color`: The biome's water color, as a decimal value.
-    * <span style="color:#6C6CCC">(I)</span> `water_fog_color`: The biome's water fog color, as a decimal value.
+    * <b>[I]</b> `sky_color`: The biome's sky color, as a decimal value.
+    * <b>[I]</b> `water_color`: The biome's water color, as a decimal value.
+    * <b>[I]</b> `water_fog_color`: The biome's water fog color, as a decimal value.
 * `features`: (can be empty) The list of placed features to use. Inside this list can be up to 11 lists of placed features. Without any features this will look like this:
     ```json
     "features": [

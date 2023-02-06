@@ -6,6 +6,6 @@ permalink: /guides/adding-structures/1.18.2/
 parent: Guides
 nav_exclude: true
 ---
-[Latest Version](/worldgen-docs/guides/adding-structures/){: .btn .btn-purple }
+[Latest](/worldgen-docs/guides/adding-structures/latest/){: .btn .btn-purple }
 
 MM yes we add structures in 1.18.2

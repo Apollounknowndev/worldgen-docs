@@ -18,7 +18,7 @@ o {color:#FEC856}
 y {color:#FBFF55}
 g {color:#00E61D}
 b {color:#5573FF}
-p {color:#CE52FE}
+v {color:#CE52FE}
 </style>
 
 

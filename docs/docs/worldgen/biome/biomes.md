@@ -130,9 +130,9 @@ There's a lot to configure in biomes. The settings are as follows:
         * `sound`: The ID for the sound to be used.
         * `tick_change`: The chance per tick for the sound to start being played, as a value between 0 and 1.
     * `ambient_sound`: (optional) The ID for the ambient sound to be used.
-    * <bl>[I]</bl> `fog_color`: The biome's fog color, as a decimal value.
-    * <bl>[I]</bl> `foliage_color`: (optional) The biome's foliage color, as a decimal value. The downfall and temperature values will determine the foliage color if none is provided.
-    * <bl>[I]</bl> `grass_color`: (optional) The biome's grass color, as a decimal value. The downfall and temperature values will determine the grass color if none is provided.
+    * ‌<bl>[I]</bl> `fog_color`: The biome's fog color, as a decimal value.
+    * ‌<bl>[I]</bl> `foliage_color`: (optional) The biome's foliage color, as a decimal value. The downfall and temperature values will determine the foliage color if none is provided.
+    * ‌<bl>[I]</bl> `grass_color`: (optional) The biome's grass color, as a decimal value. The downfall and temperature values will determine the grass color if none is provided.
     * `grass_color_modifier`: (optional) The grass color modifier to use.
         * If set to `none`, no color modifier will be applied. This is the default.
         * If set to `dark_forest`, the grass will have the dark forest color.
@@ -151,9 +151,9 @@ There's a lot to configure in biomes. The settings are as follows:
         * `probability`: How often the particle should spawn, as a value between 0 and 1. 
         * `options`: The particle options. 
             * `type`: The particle type. For more information on particle fields, see the [wiki article](https://minecraft.fandom.com/wiki/Commands/particle) on particles for more information. 
-    * <bl>[I]</bl> `sky_color`: The biome's sky color, as a decimal value.
-    * <bl>[I]</bl> `water_color`: The biome's water color, as a decimal value.
-    * <bl>[I]</bl> `water_fog_color`: The biome's water fog color, as a decimal value.
+    * ‌<bl>[I]</bl> `sky_color`: The biome's sky color, as a decimal value.
+    * ‌<bl>[I]</bl> `water_color`: The biome's water color, as a decimal value.
+    * ‌<bl>[I]</bl> `water_fog_color`: The biome's water fog color, as a decimal value.
 * `features`: (can be empty) The list of placed features to use. Inside this list can be up to 11 lists of placed features. Without any features this will look like this:
     ```json
     "features": [

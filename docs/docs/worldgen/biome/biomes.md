@@ -16,6 +16,13 @@ pu {color:#CE52FE;font-weight:bold}
 </style>
 
 
+*[(L)]: List
+*[(B)]: Boolean
+*[(F)]: Float
+*[(D)]: Double
+*[(I)]: Integer
+*[(S)]: String
+
 # Biomes
 
 Biome files contain information about a biome such as the sky/water colors, mob spawning, and features used in generation.

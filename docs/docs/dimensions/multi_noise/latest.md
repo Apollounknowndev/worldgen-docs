@@ -20,7 +20,7 @@ The multi-noise system is used to place biomes at certain places of the world. T
 
 The first five inputs are based on perlin noise, and the sixth one is based on the depth below the surface.
 
-A dimension file has a list of biomes and their ideal inputs (known in the files as their "parameters"), which are a list of parameters and min/max values which are preferred. This is rather complex to explain, so here's an example with just two biomes, the Plains and the Forest:
+A dimension file has a list of biomes and their ideal inputs (known in the files as their "parameters"), which are a list of parameters and min/max values which are preferred. This is rather complex to explain, so we'll start with one input (one "dimension" of noise) and work our way up to the full six inputs (six "dimensions" of noise). here's an example with just two biomes, the Plains and the Forest:
 
 ```json
 [
@@ -56,8 +56,75 @@ A dimension file has a list of biomes and their ideal inputs (known in the files
    }
 ]
 ```
-Here, the Plains biome will generate if `humidity` is between -1 and 0 and the Forst biome will generate if `humidity` is between 0 and 1.
+Here, the Plains biome will generate if `humidity` is between -1 and 0 and the Forst biome will generate if `humidity` is between 0 and 1. Since all other parameters are set to 0, they do not matter.
 
 The `humidity` value normally fluctuates between -1 and 1, but what if it goes outside the range? If no biomes in the biome source match the parameters, the game will choose the closest parameters. For example, if `humidity` was -1.1, the Plains biome would be chosen as it has parameters closer to the -1.1 humidity than the Forest biome.
+
+Here's a more complex example. This time we'll use 2 inputs and 9 biomes in a grid. Since a list of 9 biomes would be very long, we'll visualize it in a grid instead.
+
+![](/worldgen-docs/docs/docs/dimensions/multi_noise/images/2d/grid.png)
+
+As an example, let's assume that at a certain part of a world has a `humidity` value of 0.3 and a `temperature` value of 0.6. 
+
+![](/worldgen-docs/docs/docs/dimensions/multi_noise/images/2d/grid_with_point.png)
+
+* Since the `humidity` is 0.3, it fits into the middle column of this biome grid. 
+* Since the `temperature` is 0.6, it fits into the bottom row of this biome grid. 
+
+This means that where the `humidity` is 0.3 and the `temperature` is 0.6, the gray biome will generate.
+
+For vanilla's Nether dimension, two dimensions of noise is enough; with only five biomes, you don't need to use all six parameters. However, the vanilla Overworld, with it's 50+ biomes, *does* need to use all six parameters. What it does to place all these biomes is take a grid like the one shown above and takes it to the extreme by making it six dimensional (technically only 5/6 parameters use a grid, but that will be explained later). This is for practical purposes impossible to visualize all at once, so we'll use three different "layers" of grids to visualize it.
+
+For the following example, [Snowcapped](https://snowcapped.jacobsjo.eu/) will be used to show the biome grids. Snowcapped is an incredibly useful tool for making large and complex biome layouts.
+
+As an example, take a look at this river:
+
+![A river on a coast passing through a Taiga, with a plateau in the background](/worldgen-docs/docs/docs/dimensions/multi_noise/images/6d/river.png)
+
+Using the F3 screen, the noise parameters can be seen for each block with precision to three decimal places. At the center of the entrance of the river on the river floor, the parameters are as follows:
+
+* `continentalness`: -0.065
+* `erosion`: -0.031
+* `temperature`: -0.283
+* `humidity`: 0.155
+* `weirdness`: -0.018
+* `depth`: -0.013
+
+![A grid of more grids, with `weirdness` as the x axis and `depth` as the y axis](/worldgen-docs/docs/docs/dimensions/multi_noise/images/6d/1.png)
+
+The "first layer" grid can be used to visualize weirdness and depth values. Instead of each cell on the grid correlating to a biome, it correlates to another grid.
+With a `weirdness` of -0.018 and a `depth` of -0.013, the middle top cell is the one used.
+
+![Same as the above image, but with the middle top cell in a red box](/worldgen-docs/docs/docs/dimensions/multi_noise/images/6d/1_with_box.png)
+
+Let's look at the cell that was used.
+
+![A grid of more grids, with `erosion` as the x axis and `continentalness` as the y axis](/worldgen-docs/docs/docs/dimensions/multi_noise/images/6d/2.png)
+
+The "second layer" grid can be used to visualize erosion and continentalness values. Each cell correlates to another grid.
+With an `erosion` of -0.031 and a `continentalness` of -0.006, the cell below the exact middle cell is the one used.
+
+![Same as the above image, but with the cell below the exact middle cell in a red box](/worldgen-docs/docs/docs/dimensions/multi_noise/images/6d/2_with_box.png)
+
+Let's look at the cell that was used.
+
+![A grid of biomes, with `humidity` as the x axis and `temperature` as the y axis](/worldgen-docs/docs/docs/dimensions/multi_noise/images/6d/3.png)
+
+The "third layer" grid can be used to visualize humidity and temperature values. Each cell correlates to a biome.
+With a `temperature` value of -0.283 and `humidity` value of 0.155, the cell above the right of the exact middle is the one used. This cell correlates to the River biome.
+
+![A grid of biomes, with `humidity` as the x axis and `temperature` as the y axis](/worldgen-docs/docs/docs/dimensions/multi_noise/images/6d/3_with_box.png)
+
+What did this all mean? This means that with these example parameters as an input:
+
+* `continentalness`: -0.065
+* `erosion`: -0.031
+* `temperature`: -0.283
+* `humidity`: 0.155
+* `weirdness`: -0.018
+* `depth`: -0.013
+
+The game will output the River biome.
+
 
 ### 🚧 **Under construction** 🚧

@@ -18,7 +18,11 @@ The multi-noise system is used to place biomes at certain places of the world. T
 * `weirdness`
 * `depth`
 
-The first five inputs are based on perlin noise, and the sixth one is based on the depth below the surface.
+The first five inputs are based on perlin noise, and the sixth one is based on the depth relative to the surface.
+
+While these names in vanilla make some logical sense to how they place biomes (i.e. desert biomes generate where `temperature` is high and ocean biomes generate where `continentalness` is low), the names are arbitray; Nothing is stopping you from having a snowy biome that only generates when the input `temperature` is very high, for example.
+
+Each block in the world has the inputs stored. When the game goes to place biomes, the block will give the game its input values and the game will output the biome to be placed at that block.
 
 A dimension file has a list of biomes and their ideal inputs (known in the files as their "parameters"), which are a list of parameters and min/max values which are preferred. This is rather complex to explain, so we'll start with one input (one "dimension" of noise) and work our way up to the full six inputs (six "dimensions" of noise). here's an example with just two biomes, the Plains and the Forest:
 
@@ -64,14 +68,16 @@ Here's a more complex example. This time we'll use 2 inputs and 9 biomes in a gr
 
 ![](/worldgen-docs/docs/docs/dimensions/multi_noise/images/2d/grid.png)
 
-As an example, let's assume that at a certain part of a world has a `humidity` value of 0.3 and a `temperature` value of 0.6. 
+For this example, the inputs will be the following: 
+* `humidity` value of 0.3
+* `temperature` value of 0.6 
 
 ![](/worldgen-docs/docs/docs/dimensions/multi_noise/images/2d/grid_with_point.png)
 
-* Since the `humidity` is 0.3, it fits into the middle column of this biome grid. 
-* Since the `temperature` is 0.6, it fits into the bottom row of this biome grid. 
+* Since the `humidity` value is 0.3, the input fits into the middle column of this biome grid. 
+* Since the `temperature` value is 0.6, the input fits into the bottom row of this biome grid. 
 
-This means that where the `humidity` is 0.3 and the `temperature` is 0.6, the gray biome will generate.
+This means that when the `humidity` input is 0.3 and the `temperature` input is 0.6, the gray biome will generate.
 
 For vanilla's Nether dimension, two dimensions of noise is enough; with only five biomes, you don't need to use all six parameters. However, the vanilla Overworld, with it's 50+ biomes, *does* need to use all six parameters. What it does to place all these biomes is take a grid like the one shown above and takes it to the extreme by making it six dimensional (technically only 5/6 parameters use a grid, but that will be explained later). This is for practical purposes impossible to visualize all at once, so we'll use three different "layers" of grids to visualize it.
 
@@ -89,6 +95,8 @@ Using the F3 screen, the noise parameters can be seen for each block with precis
 * `humidity`: 0.155
 * `weirdness`: -0.018
 * `depth`: -0.013
+
+We know what the output is already going to be: It's going to be the River biome. But what if you didn't have the image? You can use the biome grids to figure out what biome will generate at a certain block given its noise parameters, which is what we will be doing.
 
 ![A grid of more grids, with `weirdness` as the x axis and `depth` as the y axis](/worldgen-docs/docs/docs/dimensions/multi_noise/images/6d/1.png)
 

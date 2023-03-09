@@ -23,7 +23,7 @@ Configured feature files contain configuration information about a feature.
 
 A feature is a "decoration" that gets placed after the world's terrain shaping has been done. Small features like trees, rocks, plants, and ores are all features. Some small structures like dungeons, fossils and desert wells are also features. Features cannot be located with `/locate`; this is why you can't use `/locate` to find dungeons.
 
-Configured features simply define the *configuration* of that feature. Placed feature determines how that feature is *placed* in the world. Therefore, configured features do not determine anything about how a feature generates, but rather how it works.
+Configured features simply define the *configuration* of that feature. Placed features determines how that feature is *placed* in the world. For example, a placed feature may tell the game to place 10 trees per chunk in a forest biome, and the configured feature for that tree tells the game that the tree should generate 4-6 blocks tall and with Oak Logs as the trunk.
 
 Configured features are stored in the `/worldgen/configured_feature` folder.
 

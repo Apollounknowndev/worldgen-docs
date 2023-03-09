@@ -23,9 +23,9 @@ Configured feature files contain configuration information about a feature.
 
 A feature is a "decoration" that gets placed after the world's terrain shaping has been done. Small features like trees, rocks, plants, and ores are all features. Some small structures like dungeons, fossils and desert wells are also features. Features cannot be located with `/locate`; this is why you can't use `/locate` to find dungeons.
 
-Keep in mind that configured features don't actually decide anything about where the feature is placed; placed features handle that. Placed features decide where configured features are placed.
+Configured features simply define the *configuration* of that feature. Placed feature determines how that feature is *placed* in the world. Therefore, configured features do not determine anything about how a feature generates, but rather how it works.
 
-They are stored in the `/worldgen/configured_feature` folder.
+Configured features are stored in the `/worldgen/configured_feature` folder.
 
 As of 1.19, there are 61 configured features types, each with their own configuration. Because of this large amount, each configured feature type has its own page.
 
@@ -44,4 +44,4 @@ There are two fields:
 * ‌<pu>[S]</pu> `type`: The ID of the configured feature type. This references a hardcoded configured feature type like `minecraft:tree`, `minecraft:ore`, etc.
 * `config`: The configuration of the feature. The properties inside this object depend on the configured feature type being used. In this example, since we're using the `minecraft:no_op` configured feature type, there are no other fields to configure.
 
-The amount of things you can configure in a configured feature significantly differs based on the feature; some feature types like trees and geodes have well over a dozen values for you to tweak and play around with. Other feature types like dungeons and ice spikes have no values for you to configure. If you want to know what there is to configure for a configured feature type, check the page for it.
+The level of customization available in a configured feature can vary significantly depending on the feature type. Some configured feature types like trees and geodes have more than a dozen parameters that can be adjusted and experimented with. However, other features like dungeons and ice spikes do not have any parameters to configure. If you're unsure about what configuration options are available for a particular feature type, you can check the page for the specific configured feature type to learn more.

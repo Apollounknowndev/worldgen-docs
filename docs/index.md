@@ -19,3 +19,4 @@ The information here is currently for **1.19.4**. Versions 1.18.1, 1.18.2, and 1
 Future plans include:
 * Documentation on all aspects of worldgen
 * Guides on how to add things like biomes, ores, trees, structures, etc.
+* Migration of this website to a new URL (possibly `worldgen.dev`?)

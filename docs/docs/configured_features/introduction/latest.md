@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Configured Features
-permalink: /docs/worldgen/configured-features/
-parent: Worldgen
+title: Introduction
+permalink: /docs/worldgen/configured-features/introduction/latest
+parent: Configured Features
 grand_parent: Documentation
 ---
 
@@ -15,7 +15,7 @@ bl {color:#5573FF;font-weight:bold}
 pu {color:#CE52FE;font-weight:bold}
 </style>
 
-# Configured Features
+# Intro to Configured Features
 
 Configured feature files contain configuration information about a feature. 
 

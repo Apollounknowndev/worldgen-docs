@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Dimension Types
-permalink: /docs/dimension-types/
-parent: Documentation
+permalink: /docs/dimension-types/latest/
+parent: Dimensions
+grand_parent: Documentation
 nav_order: 2
 ---
 

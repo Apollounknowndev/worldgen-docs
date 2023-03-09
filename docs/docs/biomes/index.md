@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Worldgen
+title: Biomes
 has_children: true
-nav_order: 3
-permalink: /docs/worldgen/
+nav_order: 2
+permalink: /docs/biomes/
 parent: Documentation
 ---

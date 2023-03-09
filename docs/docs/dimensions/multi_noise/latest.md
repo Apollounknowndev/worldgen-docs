@@ -4,7 +4,7 @@ title: Multi-Noise Biome Source
 permalink: /docs/dimensions/multi-noise/latest/
 parent: Dimensions
 grand_parent: Documentation
-nav_order: 2
+nav_order: 3
 ---
 
 # Multi-Noise Biome Source

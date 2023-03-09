@@ -34,8 +34,8 @@ As of 1.19, there are 61 configured features types, each with their own configur
 Let's take a look at an example configured feature configuration:
 ```json
 {
-  "type": "minecraft:no_op",
-  "config": {}
+   "type": "minecraft:no_op",
+   "config": {}
 }
 ```
 

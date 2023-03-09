@@ -66,13 +66,13 @@ The `humidity` value normally fluctuates between -1 and 1, but what if it goes o
 
 Here's a more complex example. This time we'll use 2 inputs and 9 biomes in a grid. Since a list of 9 biomes would be very long, we'll visualize it in a grid instead.
 
-![](/worldgen-docs/docs/docs/dimensions/multi_noise/images/2d/grid.png)
+![](/docs/docs/dimensions/multi_noise/images/2d/grid.png)
 
 For this example, the inputs will be the following: 
 * `humidity` value of 0.3
 * `temperature` value of 0.6 
 
-![](/worldgen-docs/docs/docs/dimensions/multi_noise/images/2d/grid_with_point.png)
+![](/docs/docs/dimensions/multi_noise/images/2d/grid_with_point.png)
 
 * Since the `humidity` value is 0.3, the input fits into the middle column of this biome grid. 
 * Since the `temperature` value is 0.6, the input fits into the bottom row of this biome grid. 
@@ -85,7 +85,7 @@ For the following example, [Snowcapped](https://snowcapped.jacobsjo.eu/) will be
 
 As an example, take a look at this river:
 
-![A river on a coast passing through a Taiga, with a plateau in the background](/worldgen-docs/docs/docs/dimensions/multi_noise/images/6d/river.png)
+![A river on a coast passing through a Taiga, with a plateau in the background](/docs/docs/dimensions/multi_noise/images/6d/river.png)
 
 Using the F3 screen, the noise parameters can be seen for each block with precision to three decimal places. At the center of the entrance of the river on the river floor, the parameters are as follows:
 
@@ -98,30 +98,30 @@ Using the F3 screen, the noise parameters can be seen for each block with precis
 
 We know what the output is already going to be: It's going to be the River biome. But what if you didn't have the image? You can use the biome grids to figure out what biome will generate at a certain block given its noise parameters, which is what we will be doing.
 
-![A grid of more grids, with `weirdness` as the x axis and `depth` as the y axis](/worldgen-docs/docs/docs/dimensions/multi_noise/images/6d/1.png)
+![A grid of more grids, with `weirdness` as the x axis and `depth` as the y axis](/docs/docs/dimensions/multi_noise/images/6d/1.png)
 
 The "first layer" grid can be used to visualize weirdness and depth values. Instead of each cell on the grid correlating to a biome, it correlates to another grid.
 With a `weirdness` of -0.018 and a `depth` of -0.013, the middle top cell is the one used.
 
-![Same as the above image, but with the middle top cell in a red box](/worldgen-docs/docs/docs/dimensions/multi_noise/images/6d/1_with_box.png)
+![Same as the above image, but with the middle top cell in a red box](/docs/docs/dimensions/multi_noise/images/6d/1_with_box.png)
 
 Let's look at the cell that was used.
 
-![A grid of more grids, with `erosion` as the x axis and `continentalness` as the y axis](/worldgen-docs/docs/docs/dimensions/multi_noise/images/6d/2.png)
+![A grid of more grids, with `erosion` as the x axis and `continentalness` as the y axis](/docs/docs/dimensions/multi_noise/images/6d/2.png)
 
 The "second layer" grid can be used to visualize erosion and continentalness values. Each cell correlates to another grid.
 With an `erosion` of -0.031 and a `continentalness` of -0.006, the cell below the exact middle cell is the one used.
 
-![Same as the above image, but with the cell below the exact middle cell in a red box](/worldgen-docs/docs/docs/dimensions/multi_noise/images/6d/2_with_box.png)
+![Same as the above image, but with the cell below the exact middle cell in a red box](/docs/docs/dimensions/multi_noise/images/6d/2_with_box.png)
 
 Let's look at the cell that was used.
 
-![A grid of biomes, with `humidity` as the x axis and `temperature` as the y axis](/worldgen-docs/docs/docs/dimensions/multi_noise/images/6d/3.png)
+![A grid of biomes, with `humidity` as the x axis and `temperature` as the y axis](/docs/docs/dimensions/multi_noise/images/6d/3.png)
 
 The "third layer" grid can be used to visualize humidity and temperature values. Each cell correlates to a biome.
 With a `temperature` value of -0.283 and `humidity` value of 0.155, the cell above the right of the exact middle is the one used. This cell correlates to the River biome.
 
-![A grid of biomes, with `humidity` as the x axis and `temperature` as the y axis](/worldgen-docs/docs/docs/dimensions/multi_noise/images/6d/3_with_box.png)
+![A grid of biomes, with `humidity` as the x axis and `temperature` as the y axis](/docs/docs/dimensions/multi_noise/images/6d/3_with_box.png)
 
 What did this all mean? This means that with these example parameters as an input:
 

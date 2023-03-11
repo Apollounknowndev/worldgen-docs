@@ -55,7 +55,7 @@ The `minecraft:block_column` feature type is used to place a column of blocks in
 
 You may notice in some cases that the block column will stop one block before it reaches the point where the block predicate would fail. For example, here's what happens when a block column places downwards and the block predicate checks for air:
 
-![(Image of the block column stopping a block before hitting the ground)](/docs/docs/configured-features/feature-types/images/block-column/1.png/)
+![(Image of the block column stopping a block before hitting the ground)](/docs/docs/configured-features/feature-types/images/block-column/1.png)
 
 This happens because the game moves the block predicate check one block in the specified `direction` before testing the first block. For downwards facing block columns, this means the block predicate filter is always ran one block below where it should be run. This can be fixed by adding an offset to the block predicate filter like this:
 
@@ -73,4 +73,4 @@ This happens because the game moves the block predicate check one block in the s
 
 As you can see, that fixes the issue.
 
-![(Image of the block column touching the ground)](/docs/docs/configured-features/feature-types/images/block-column/2.png/)
+![(Image of the block column touching the ground)](/docs/docs/configured-features/feature-types/images/block-column/2.png)

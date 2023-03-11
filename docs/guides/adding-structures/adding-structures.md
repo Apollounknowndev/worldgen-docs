@@ -4,6 +4,7 @@ title: Adding Structures
 nav_order: 1
 permalink: /guides/adding-structures/latest/
 parent: Guides
+nav_exclude: true
 ---
 [1.18.2](/guides/adding-structures/1.18.2/){: .btn .btn-purple }
 

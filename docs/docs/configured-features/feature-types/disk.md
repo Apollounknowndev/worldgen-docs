@@ -1,0 +1,51 @@
+---
+layout: page
+title: Disk
+permalink: /docs/configured-features/feature-types/disk/
+parent: Configured Features
+grand_parent: Documentation
+nav_order: 15
+---
+
+## Disk
+
+<style>
+re {color:#FF6F6F;font-weight:bold}
+bl {color:#5573FF;font-weight:bold}
+</style>
+
+
+The `minecraft:disk` feature type is used to place disks of blocks. They're used in several places in vanilla; they're used for ice patches in Ice Spikes biomes, gravel/sand/clay patches in most biomes underwater, and grass block patches in Mangrove Swamp biomes.
+
+### JSON format
+
+```json
+{
+   "type": "minecraft:disk",
+   "config": {
+      "state_provider": {
+         "fallback": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+               "Name": "minecraft:clay"
+            }
+         },
+         "rules": []
+      },
+      "target": {
+         "type": "minecraft:true"
+      },
+      "radius": 3,
+      "half_height": 1
+   }
+}
+```
+
+* `state_provider`: The block the disk will place.
+   * `fallback`: The block provider that will be used if none of the rules pass.
+   * ‌<re>[L]</re> `rules`: (can be empty) The list of rules to check before using the state provided in `fallback`.
+      * `if_true`: The [block predicate](/docs/misc/block-predicates/) that must be passed for the `then` block state to be used.
+      * `then`: The block state that should be used if the block predicate from `if_true` passes.
+* `target`: The [block predicate](/docs/misc/block-predicates/) that must be passed at the starting block position for the disk to be placed at all.
+* ‌<bl>[I]</bl> `radius`: The radius of disk, as an integer provider between 0 and 8 (inclusive).
+* ‌<bl>[I]</bl> `half_height`: Half of the disk's height, as an integer between 0 and 4 (inclusive).

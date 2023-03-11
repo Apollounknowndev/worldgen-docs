@@ -45,7 +45,7 @@ The `minecraft:block_column` feature type is used to place a column of blocks in
 ```
 
 * ‌<pu>[S]</pu> `direction`: The direction the block column will place blocks. Either `up`, `down`, `north`, `east`, `south`, or `west`.
-* `allowed_placement`: The [block predicate](/docs/misc/block-predicates/) that must be placed for the block column to continue placing blocks. It is run each time a block is attempted to be placed.
+* `allowed_placement`: The [block predicate](/docs/misc/block-predicates/) that must be passed for the block column to continue placing blocks. It is run each time a block is attempted to be placed.
 * ‌<or>[B]</or> `prioritize_tip`: Determines how the game will cut off blocks if the full block column cannot be generated. If set to `true`, blocks will start being cut off from the base so that the tip of the column will still generate.
 * ‌<re>[L]</re> `layers`: (can be empty) The list of blocks to be used in the column. The block column starts with the first entries in the list and works down through all the entries in the list.
    * ‌<bl>[I]</bl> `height`: The number of blocks to be placed for the layer.

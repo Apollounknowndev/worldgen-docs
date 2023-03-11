@@ -71,6 +71,8 @@ This happens because the game moves the block predicate check one block in the s
 }
 ```
 
-As you can see, that fixes the issue.
+Adding that offset fixes the issue.
 
 ![(Image of the block column touching the ground)](/docs/docs/configured-features/feature-types/images/block-column/2.png)
+
+The offset should be opposite of the `direction` for any given direction. If your block column goes up, the offset should be one block down. If your block column goes west, the offset should be one block east. This is the same across all directions.

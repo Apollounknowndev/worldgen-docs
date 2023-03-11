@@ -1,0 +1,29 @@
+---
+layout: page
+title: Bamboo
+permalink: /docs/configured-features/feature-types/bamboo/
+parent: Configured Features
+grand_parent: Documentation
+nav_order: 2
+---
+
+## Bamboo
+
+<style>
+ye {color:#FBFF55;font-weight:bold}
+</style>
+
+The `minecraft:bamboo` feature type is used to place a pillar of bamboo that is 5-16 blocks tall, and occasionally a disk of podzol under it. In vanilla, this feature type is used to generate bamboo in the Jungle biomes.
+
+### JSON format
+
+```json
+{
+   "type": "minecraft:bamboo",
+   "config": {
+      "probability": 0.5
+   }
+}
+```
+
+* ‌<ye>[F]</ye> `probability`: The chance that a podzol disk will generate under the bamboo, as a value between 0.0 and 1.0 (inclusive).

@@ -9,6 +9,10 @@ nav_order: 3
 
 # Multi-Noise Biome Source
 
+{: .warning }
+This page is not complete yet. Some information may be worded poorly or completely omitted.
+
+
 The multi-noise system is used to place biomes at certain places of the world. The biome being placed is based on six inputs:
 
 * `continentalness`

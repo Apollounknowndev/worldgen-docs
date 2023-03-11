@@ -4,14 +4,9 @@ title: Introduction
 permalink: /docs/worldgen/configured-features/introduction/latest
 parent: Configured Features
 grand_parent: Documentation
+nav_order: 1
 ---
-
 <style>
-re {color:#FF6F6F;font-weight:bold}
-or {color:#FEC856;font-weight:bold}
-ye {color:#FBFF55;font-weight:bold}
-gr {color:#00E61D;font-weight:bold}
-bl {color:#5573FF;font-weight:bold}
 pu {color:#CE52FE;font-weight:bold}
 </style>
 

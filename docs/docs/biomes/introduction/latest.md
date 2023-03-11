@@ -7,8 +7,8 @@ grand_parent: Documentation
 nav_order: 1
 ---
 [1.19.4 (Latest)](/docs/biomes/introduction/latest/){: .btn .btn-purple }
-[1.19.3](/docs/biomes/introduction/1.19.3/){: .btn .btn-blue }
-[1.18.2](/docs/biomes/introduction/1.18.2/){: .btn .btn-blue }
+[1.19.3](/docs/biomes/introduction/1-19-3/){: .btn .btn-blue }
+[1.18.2](/docs/biomes/introduction/1-18-2/){: .btn .btn-blue }
 
 <style>
 re {color:#FF6F6F;font-weight:bold}

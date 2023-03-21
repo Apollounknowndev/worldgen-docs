@@ -20,7 +20,7 @@ In order for Minecraft to register a dimension, it needs to know three things ab
 
 Dimension files supply the game with all of this information.
 
-Unlike other worldgen files, they are **not** stored in the `/worldgen` folder. They are stored in their own `/dimension` folder.
+Unlike other worldgen files, they are **not** stored in the `/worldgen` folder. They are stored in their own `/dimension` folder. The file is named based on the dimension it represents. For instance, the overworld's dimension file will be named `overworld.json`.
 
 Let's take a look at an example dimension file. This one is identical to the Overworld, except the only biome is the Plains:
 

@@ -1,14 +1,15 @@
 ---
 layout: default
-title: Introduction [1.18.2]
-permalink: /docs/dimensions/introduction/1.18.2/
+title: Introduction
+permalink: /docs/dimensions/introduction/
 parent: Dimensions
 grand_parent: Documentation
-nav_order: 2
-nav_exclude: true
+nav_order: 1
 ---
-[1.19 (Latest)](/docs/dimensions/introduction/latest/){: .btn .btn-blue }
-[1.18.2](/docs/dimensions/introduction/1.18.2/){: .btn .btn-purple }
+<head>
+    {% include version-select.html %}
+    {% include field-type-colors.html %}
+</head>
 
 # Intro to Dimensions
 
@@ -23,13 +24,11 @@ Unlike other worldgen files, they are **not** stored in the `/worldgen` folder. 
 
 Let's take a look at an example dimension file. This one is identical to the Overworld, except the only biome is the Plains:
 
-```json
+<pre>
 {
    "type": "minecraft:overworld",
    "generator": {
-      "type": "minecraft:noise",
-      "seed": 0,
-      "settings": "minecraft:overworld",
+      "type": "minecraft:noise",<ver-h data-version="<=1.18.2">      "seed": 0,</ver-h><ver-s data-version=">=1.19"></ver-s>      "settings": "minecraft:overworld",
       "biome_source": {
          "type": "minecraft:multi_noise",
          "biomes": [
@@ -64,7 +63,7 @@ Let's take a look at an example dimension file. This one is identical to the Ove
       }
    }
 }
-```
+</pre>
 
 The settings are as follows:
 
@@ -82,7 +81,7 @@ The settings are as follows:
 					* `height`: The number of blocks thick the layer is.
 				* `structure_overrides`: A list of structures that the dimension generates. *(May or may not be required, more research needed.)*
 		* If set to `minecraft:noise`, the further fields are as follows:
-            * `seed`: The seed for the dimension to use. This overrides the world seed and is a required field.
+            * <ver-h data-version="<=1.18.2"><code>seed</code>: The seed for the dimension to use. This overrides the world seed and is a required field.</ver-h>
 			* `settings`: The noise settings file this dimension uses.
 			* `biome_source`: The biome source this dimension uses.
 				* `type`: The biome source type.

@@ -41,3 +41,5 @@ callouts:
   new: # For minor updates maybe?
     title: New
     color: green
+
+include: ['_includes']

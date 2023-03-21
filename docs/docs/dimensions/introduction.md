@@ -67,7 +67,7 @@ Let's take a look at an example dimension file. This one is identical to the Ove
 
 The settings are as follows:
 
-* `type`: The dimension type file this dimension uses. Learn how dimension files work [here](https://apollodatapacks.github.io/docs/dimension-types/).
+* `type`: The dimension type file this dimension uses. Learn how dimension files work [here](https://www.worldgen.dev/docs/dimension-types/).
 * `generator`: Controls the terrain generation and biome source for the dimension.
 	* `type`: The generator type.
 		* If set to `minecraft:debug`, there are no further fields. This is only used for the `debug` world type, and doesn't have any practical use.
@@ -93,4 +93,4 @@ The settings are as follows:
 						* `biomes`: A list of biomes that is used in the checkerboard.
 					* If set to `minecraft:multi_noise`, the settings are as follows:
 						* `preset`: The preset for the biome layout. Can be either `minecraft:overworld` or `minecraft:nether`. **Mutually exclusive with the `biomes` field!**
-						* `biomes`: A list of biomes with their respective parameters. Biome parameters are a complex subject and will soon have their own page. **Mutually exclusive with the `preset` field!**
+						* `biomes`: A list of biomes with their respective parameters. Biome parameters are a complex subject, so they have their own page [here](https://www.worldgen.dev/docs/dimensions/multi-noise/latest/). **Mutually exclusive with the `preset` field!**

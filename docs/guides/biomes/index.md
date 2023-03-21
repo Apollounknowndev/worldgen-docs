@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Adding Biomes
+title: Biomes
 has_children: true
 nav_order: 3
-permalink: /guides/adding-biomes/
+permalink: /guides/biomes/
 parent: Guides
 ---

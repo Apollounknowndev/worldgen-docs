@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Adding Cave Biomes
-permalink: /guides/adding-biomes/cave-biomes/latest/
-parent: Adding Biomes
+permalink: /guides/biomes/cave-biomes/latest/
+parent: Biomes
 grand_parent: Guides
 nav_order: 1
 ---

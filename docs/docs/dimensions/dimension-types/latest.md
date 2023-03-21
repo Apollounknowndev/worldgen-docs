@@ -11,7 +11,7 @@ nav_order: 2
 
 Dimension type files control the properties of a dimension. These properties include things like whether beds work or not, whether sky light should be calculated, etc.
 
-Unlike other worldgen files, they are **not** stored in the `/worldgen` folder. They are stored in their own `/dimension_type` folder.
+Unlike other worldgen files, they are **not** stored in the `/worldgen` folder. They are stored in their own `/dimension_type` folder. The file is named based on the dimension it represents. For instance, the overworld's dimension type file will be named `overworld.json` (just like the dimension file).
 
 Let's take a look at an example dimension type file, this one being for the Overworld:
 

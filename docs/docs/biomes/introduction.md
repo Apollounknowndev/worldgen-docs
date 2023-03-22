@@ -1,25 +1,17 @@
 ---
 layout: page
-title: Introduction [1.18.2]
-permalink: /docs/biomes/introduction/1-18-2/
+title: Introduction
+permalink: /docs/biomes/introduction/
 parent: Biomes
 grand_parent: Documentation
-nav_order: 3
-nav_exclude: true
+nav_order: 1
 ---
-[1.19.4 (Latest)](/docs/biomes/introduction/latest/){: .btn .btn-blue }
-[1.19.3](/docs/biomes/introduction/1-19-3/){: .btn .btn-blue }
-[1.18.2](/docs/biomes/introduction/1-18-2/){: .btn .btn-purple }
-<style>
-re {color:#FF6F6F;font-weight:bold}
-or {color:#FEC856;font-weight:bold}
-ye {color:#FBFF55;font-weight:bold}
-gr {color:#00E61D;font-weight:bold}
-bl {color:#5573FF;font-weight:bold}
-pu {color:#CE52FE;font-weight:bold}
-</style>
+<head>
+    {% include version-select.html %}
+    {% include field-type-colors.html %}
+</head>
 
-# Biomes
+# Intro to Biomes
 
 Biome files contain information about a biome such as the sky/water colors, mob spawning, and features used in generation.
 
@@ -29,10 +21,8 @@ They are stored in the `/worldgen/biome` folder.
 ## JSON format
 
 Let's take a look at an example biome configuration:
-```json
-{
-   "category": "plains",
-   "carvers": {},
+<pre>
+{<ver-h data-version="<=1.18.2">   "category": "plains",</ver-h><ver-s data-version=">=1.19"></ver-s>   "carvers": {},
    "downfall": 0.4,
    "effects": {
       "fog_color": 12638463,
@@ -71,9 +61,7 @@ Let's take a look at an example biome configuration:
       [
          "minecraft:freeze_top_layer"
       ]
-   ],
-   "precipitation": "rain",
-   "spawn_costs": {},
+   ],<ver-s data-version="1.19.4">   "has_precipitation": true,</ver-s><ver-h></ver-h><ver-h data-version="<=1.19.3">   "precipitation": "rain",</ver-h><ver-s></ver-s>   "spawn_costs": {},
    "spawners": {
       "ambient": [
          {
@@ -113,11 +101,11 @@ Let's take a look at an example biome configuration:
    },
    "temperature": 0.8
 }
-```
+</pre>
 
 There's a lot to configure in biomes. The settings are as follows:
 
-* ‌<pu>[S]</pu> `category`: (optional) The category the biome is a part of. Can be either `beach`, `desert`, `extreme_hills`, `forest`, `icy`, `jungle`, `mesa`, `mountain`, `mushroom`, `nether`, `none`, `ocean`, `plains`, `river`, `savanna`, `swamp`, `taiga`, `the_end`, or `underground`.
+* <ver-h data-version="<=1.18.2"><pu>[S] </pu><code>category</code>: (optional) The category the biome is a part of. Can be either <code>beach</code>, <code>desert</code>, <code>extreme_hills</code>, <code>forest</code>, <code>icy</code>, <code>jungle</code>, <code>mesa</code>, <code>mountain</code>, <code>mushroom</code>, <code>nether</code>, <code>none</code>, <code>ocean</code>, <code>plains</code>, <code>river</code>, <code>savanna</code>, <code>swamp</code>, <code>taiga</code>, <code>the_end</code>, or <code>underground</code>.</ver-h>
 * `carvers`: The configured carvers the biome should use.
     * ‌<re>[L]</re> `air`: (optional) A list of carvers that carve through terrain in the `air` cave generation step. 
     * ‌<re>[L]</re> `liquid`: (optional) A list of carvers that carve through terrain in the `liquid` cave generation step. Unused in vanilla as of 1.18.
@@ -153,7 +141,7 @@ There's a lot to configure in biomes. The settings are as follows:
     * ‌<bl>[I]</bl> `water_color`: The biome's water color, as a decimal value.
     * ‌<bl>[I]</bl> `water_fog_color`: The biome's water fog color, as a decimal value.
 * ‌<re>[L]</re> `features`: (can be empty) The list of placed features to use. Inside this list can be up to 11 lists of placed features. Without any features this will look like this:
-    ```json
+    <pre>
     "features": [
        [],
        [],
@@ -167,7 +155,7 @@ There's a lot to configure in biomes. The settings are as follows:
        [],
        []
     ]
-    ```
+    </pre>
 
     Each list corresponds to a generation step. At least in vanilla, certain steps are used to place certain features. The steps are as follows:
     * `RAW_GENERATION`: Only used for the small end islands in the End dimension in vanilla.
@@ -181,11 +169,11 @@ There's a lot to configure in biomes. The settings are as follows:
     * `FLUID_SPRINGS`: Used for the single blocks of lava and water.
     * `VEGETAL_DECORATION`: Used for vegetation like trees, grass, mushrooms, etc.
     * `TOP_LAYER_MODIFICATION`: Used for placing snow and ice in cold areas.
-
-* ‌<pu>[S]</pu> `precipitation`: The precipitation type to use.
-    * If set to `none`, no precipitation will occur.
-    * If set to `rain`, rain will occur. Some buggy behavior will happen if the biome's `temperature` is below 0.15 and `rain` is the precipitation type.
-    * If set to `snow`, snow will occur. Some buggy behavior will happen if the biome's `temperature` is above 0.15 and `snow` is the precipitation type.
+* <ver-s data-version="1.19.4"><or>[B] </or><code>has_precipitation</code>: Determines whether or not preciptation happens. If the biome's <code>temperature</code> is below 0.15, the precipitation will be snow. Otherwise, it will be rain.</ver-s>
+* <ver-h data-version="<=1.19.3"><pu>[S] </pu><code>precipitation</code>: The precipitation type to use.</ver-h>
+    * <ver-h data-version="<=1.19.3">If set to `none`, no precipitation will occur.</ver-h>
+    * <ver-h data-version="<=1.19.3">If set to `rain`, rain will occur. Some buggy behavior will happen if the biome's `temperature` is below 0.15 and `rain` is the precipitation type.</ver-h>
+    * <ver-h data-version="<=1.19.3">If set to `snow`, snow will occur. Some buggy behavior will happen if the biome's `temperature` is above 0.15 and `snow` is the precipitation type.</ver-h>
 * `spawn_costs`: (can be empty) The list of mobs that use the spawn cost mechanism. The spawn cost mechanism is effectively social distancing for mob spawning, where mobs cannot spawn too close to each other. Learn more about this mechanic [here](https://minecraft.fandom.com/wiki/Spawn#Spawn_costs).
     * `<entity id>`: The entity ID of the mob.
         * ‌<gr>[D]</gr> `energy_budget`: The maximum potential for a possible mob spawn.
@@ -193,7 +181,7 @@ There's a lot to configure in biomes. The settings are as follows:
     
     Example of how this looks:
     
-    ```json
+    <pre>
     "spawn_costs": {
        "minecraft:enderman": {
           "energy_budget": 0.15,
@@ -204,7 +192,7 @@ There's a lot to configure in biomes. The settings are as follows:
           "charge": 0.7
        }
     }
-    ```
+    </pre>
 * `spawners`: (can be empty) The mob spawn settings.
     * ‌<re>[L]</re> `<mob category>`: The mob category. Must be `monster`, `creature`, `ambient`, `axolotls`, `underground_water_creature`, `water_creature`, `water_ambient`, or `misc`. A list of elements.
         * ‌<pu>[S]</pu> `type`: The entity ID of the mob.
@@ -214,7 +202,7 @@ There's a lot to configure in biomes. The settings are as follows:
 
     Example of how this looks:
 
-    ```json
+    <pre>
     "spawners": {
        "creature": [
           {
@@ -233,7 +221,7 @@ There's a lot to configure in biomes. The settings are as follows:
           }
        ]
     }
-    ```
+    </pre>
 
 * ‌<ye>[F]</ye> `temperature`: Controls the grass and foliage color if those colors are unset. Also controls things like the altitude where snow starts, whether rain or so is the precipitation of the biome, and details of some generation features.
 * ‌<pu>[S]</pu> `temperature_modifier`: (optional) The temperature modifier to use.
@@ -243,7 +231,7 @@ There's a lot to configure in biomes. The settings are as follows:
 ## Examples
 
 This is the absolute bare minimum a biome file needs to be a valid biome:
-```json
+<pre>
 {
    "temperature": 0.5,
    "downfall": 0.5,
@@ -259,11 +247,11 @@ This is the absolute bare minimum a biome file needs to be a valid biome:
    "carvers": {},
    "features": []
 }
-```
+</pre>
 
 This biome would have no features like ores/trees, no old caves/ravines, no rain, and no mob spawns. The Void biome in vanilla is exactly the same to this, although it includes ambient cave sounds.
 
-```json
+<pre>
 {
    "temperature": 0.8,
    "downfall": 0.4,
@@ -314,6 +302,6 @@ This biome would have no features like ores/trees, no old caves/ravines, no rain
       []
    ]
 }
-```
+</pre>
 
 Now we're getting somewhere. This biome is similar to the vanilla Plains biome, but the only entity that spawns is the Sheep and Amethyst Geodes are the only feature that generates.

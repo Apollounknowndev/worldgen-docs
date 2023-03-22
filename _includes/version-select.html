@@ -1,14 +1,14 @@
 <style>
     #select {
         background-color: #27262b;
-        color: #2774fa;
+        color: #8fb7fb;
         border: 3px solid #44434d;
         padding: 3px;
         border-radius: 8px;
     }
 
     #select option {
-        color: #2774fa;
+        color: #8fb7fb;
     }
 
     pre {
@@ -80,6 +80,9 @@
                     break;
                 case '<=1.18.2':
                     if (this.value <= 1182) { element.style.display = 'block' }
+                    break;
+                case '<=1.19.3':
+                    if (this.value <= 1193) { element.style.display = 'block' }
                     break;
             }
         }

@@ -15,7 +15,7 @@ nav_order: 7
 
 The `minecraft:blue_ice` feature type is used to place a small iceberg of blue ice. In vanilla, it is used in the Frozen Ocean biome.
 
-{: .extra-info }
+{: .condition }
 The feature will fail to place if it attempts to be placed above sea level, the block or the block above it is not water, or none of the four cardinal directions relative to the starting block are packed ice.
 
 ### JSON format

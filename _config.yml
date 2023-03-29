@@ -30,8 +30,11 @@ callouts:
   warning:
     title: Warning
     color: red
-  extra-info:
-    title: Additional Info
+  condition:
+    title: Placement Condition
+    color: pale-blue
+  position:
+    title: Placement Position
     color: blue
   note:
     title: Note

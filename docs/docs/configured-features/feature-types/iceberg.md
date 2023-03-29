@@ -15,7 +15,7 @@ nav_order: 31
 
 The `minecraft:iceberg` feature type is used to place an iceberg of a certain block. In vanilla, this is used in the Frozen Ocean and Deep Frozen Ocean biomes.
 
-{: .extra-info }
+{: .position }
 The feature will always place at the dimension's sea level.
 
 

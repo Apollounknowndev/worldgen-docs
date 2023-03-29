@@ -32,5 +32,5 @@ The `minecraft:fill_layer` feature type is used to place a layer of blocks. In v
 }
 </pre>
 
-* `state`: The block provider that will be used for the layer.
+* `state`: The block state that will be used for the layer.
 * ‌<bl>[I]</bl> `height`: The height that the layer of blocks will be placed at, as an offset from the bottom y-coordinate of the world.

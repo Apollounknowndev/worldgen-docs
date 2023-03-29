@@ -15,6 +15,10 @@ nav_order: 35
 
 The `minecraft:monster_room` feature type is used to place a dungeon. In vanilla, it is placed in the Overworld.
 
+
+{: .extra-info }
+This feature will only place if there are 1-5 blocks of openings in the walls of where the monster room will be placed.
+
 ### JSON format
 
 <pre>
@@ -25,7 +29,3 @@ The `minecraft:monster_room` feature type is used to place a dungeon. In vanilla
 </pre>
 
 This feature has no fields to configure.
-
-### Additional info
-
-* When attempting to place a monster room, the game will check for opening in the walls. If 1-5 blocks of openings are found, the monster room will place. Otherwise, the generation will fail.

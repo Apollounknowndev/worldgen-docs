@@ -9,12 +9,9 @@ nav_order: 5
 
 ## Block Column
 
-<style>
-re {color:#FF6F6F;font-weight:bold}
-or {color:#FEC856;font-weight:bold}
-bl {color:#5573FF;font-weight:bold}
-pu {color:#CE52FE;font-weight:bold}
-</style>
+<head>
+    {% include field-type-colors.html %}
+</head>
 
 The `minecraft:block_column` feature type is used to place a column of blocks in any direction. The blocks used in the columns are placed in "layers". This can be used to have a lantern hanging from a column of chains, for example. In vanilla, this feature type is used for the glow berry vines in Lush Caves.
 

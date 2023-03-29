@@ -9,6 +9,10 @@ nav_order: 6
 
 ## Block Pile
 
+<head>
+    {% include field-type-colors.html %}
+</head>
+
 The `minecraft:block_pile` feature type is used to place a pile of blocks. In vanilla, this feature type is used to place piles of Hay in Villages.
 
 ### JSON format

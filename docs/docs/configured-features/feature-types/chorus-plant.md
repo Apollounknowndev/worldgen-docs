@@ -9,6 +9,10 @@ nav_order: 9
 
 ## Chorus Plant
 
+<head>
+    {% include field-type-colors.html %}
+</head>
+
 The `minecraft:chorus_plant` feature type is used to place chorus plants. In vanilla, they are placed in the End Highlands biomes.
 
 ### JSON format

@@ -9,11 +9,9 @@ nav_order: 15
 
 ## Disk
 
-<style>
-re {color:#FF6F6F;font-weight:bold}
-bl {color:#5573FF;font-weight:bold}
-</style>
-
+<head>
+    {% include field-type-colors.html %}
+</head>
 
 The `minecraft:disk` feature type is used to place disks of blocks. They're used in several places in vanilla; they're used for ice patches in Ice Spikes biomes, gravel/sand/clay patches in most biomes underwater, and grass block patches in Mangrove Swamp biomes.
 

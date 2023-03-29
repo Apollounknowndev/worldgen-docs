@@ -9,6 +9,10 @@ nav_order: 7
 
 ## Blue Ice
 
+<head>
+    {% include field-type-colors.html %}
+</head>
+
 The `minecraft:blue_ice` feature type is used to place a small iceberg of blue ice. In vanilla, it is used in the Frozen Ocean biome.
 
 ### JSON format

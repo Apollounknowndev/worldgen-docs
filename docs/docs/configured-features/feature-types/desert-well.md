@@ -9,6 +9,10 @@ nav_order: 14
 
 ## Desert Well
 
+<head>
+    {% include field-type-colors.html %}
+</head>
+
 The `minecraft:desert_well` feature type is used to place desert wells. In vanilla, it is placed in the Desert biome.
 
 ### JSON format

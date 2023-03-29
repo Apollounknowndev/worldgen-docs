@@ -9,6 +9,10 @@ nav_order: 8
 
 ## Bonus Chest
 
+<head>
+    {% include field-type-colors.html %}
+</head>
+
 The `minecraft:bonus_chest` feature type is used to place the game's often forgotten bonus chest.
 
 ### JSON format

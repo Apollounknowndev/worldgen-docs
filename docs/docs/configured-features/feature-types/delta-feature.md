@@ -9,9 +9,9 @@ nav_order: 13
 
 ## Delta Feature
 
-<style>
-bl {color:#5573FF;font-weight:bold}
-</style>
+<head>
+    {% include field-type-colors.html %}
+</head>
 
 The `minecraft:delta_feature` feature type is used to place a delta. In vanilla, this is used to place Magma Blocks and Lava in the Basalt Deltas biome.
 

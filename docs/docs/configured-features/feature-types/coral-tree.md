@@ -9,6 +9,10 @@ nav_order: 12
 
 ## Coral Tree
 
+<head>
+    {% include field-type-colors.html %}
+</head>
+
 The `minecraft:coral_tree` feature type is used to place one type of coral. In vanilla, it is placed in the Warm Ocean biome.
 
 ### JSON format

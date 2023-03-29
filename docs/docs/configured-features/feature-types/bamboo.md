@@ -9,9 +9,9 @@ nav_order: 2
 
 ## Bamboo
 
-<style>
-ye {color:#FBFF55;font-weight:bold}
-</style>
+<head>
+    {% include field-type-colors.html %}
+</head>
 
 The `minecraft:bamboo` feature type is used to place a pillar of bamboo that is 5-16 blocks tall, and occasionally a disk of podzol under it. In vanilla, this feature type is used to generate bamboo in the Jungle biomes.
 

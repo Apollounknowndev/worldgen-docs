@@ -9,6 +9,10 @@ nav_order: 4
 
 ## Basalt Pillar
 
+<head>
+    {% include field-type-colors.html %}
+</head>
+
 The `minecraft:basalt_pillar` feature type is used to place long pillars of basalt. In vanilla, this feature type is used to generate the basalt in the Soul Sand Valley biome.
 
 ### JSON format

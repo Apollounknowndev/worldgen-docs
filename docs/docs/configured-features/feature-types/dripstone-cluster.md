@@ -9,10 +9,9 @@ nav_order: 16
 
 ## Dripstone Cluster
 
-<style>
-ye {color:#FBFF55;font-weight:bold}
-bl {color:#5573FF;font-weight:bold}
-</style>
+<head>
+    {% include field-type-colors.html %}
+</head>
 
 {: .note }
 The game's code needs to be checked to get the complete information to finish this page.

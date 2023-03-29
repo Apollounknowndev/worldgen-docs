@@ -9,10 +9,9 @@ nav_order: 3
 
 ## Basalt Columns
 
-<style>
-bl {color:#5573FF;font-weight:bold}
-</style>
-
+<head>
+    {% include field-type-colors.html %}
+</head>
 The `minecraft:basalt_columns` feature type is used to place clusters of basalt columns. In vanilla, this feature type is used to generate a lot of the basalt in the Basalt Delta biome.
 
 ### JSON format

@@ -40,21 +40,21 @@ This effectively tells the game to place the Lush Caves underground wherever the
 
 For this example, let's give the Spider Caves the opposite parameters; it will only generate where `humidity` is *low*. This is relatively simple to do. Change the humidity parameter from this:
 
-```json
+<pre>
 "humidity": [
    0.7,
    1
 ]
-```
+</pre>
 
 To this:
 
-```json
+<pre>
 "humidity": [
    -1,
    -0.7
 ]
-```
+</pre>
 
 Leave everything else the same. If you've done everything right, congratulations! You've added a cave biome to overworld generation. Open up Minecraft, create a new world with the datapack and run `/locate biome example:spider_caves`. You should be able to find the new Spider Caves biome!
 

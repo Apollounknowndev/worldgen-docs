@@ -17,13 +17,13 @@ The `minecraft:bamboo` feature type is used to place a pillar of bamboo that is 
 
 ### JSON format
 
-```json
+<pre>
 {
    "type": "minecraft:bamboo",
    "config": {
       "probability": 0.5
    }
 }
-```
+</pre>
 
 * ‌<ye>[F]</ye> `probability`: The chance that a podzol disk will generate under the bamboo, as a value between 0.0 and 1.0 (inclusive).

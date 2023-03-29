@@ -20,7 +20,7 @@ The `minecraft:block_column` feature type is used to place a column of blocks in
 
 ### JSON format
 
-```json
+<pre>
 {
    "type": "minecraft:block_column",
    "config": {
@@ -42,7 +42,7 @@ The `minecraft:block_column` feature type is used to place a column of blocks in
       ]
    }
 }
-```
+</pre>
 
 * ‌<pu>[S]</pu> `direction`: The direction the block column will place blocks. Either `up`, `down`, `north`, `east`, `south`, or `west`.
 * `allowed_placement`: The [block predicate](/docs/misc/block-predicates/) that must be passed for the block column to continue placing blocks. It is run each time a block is attempted to be placed.
@@ -59,7 +59,7 @@ You may notice in some cases that the block column will stop one block before it
 
 This happens because the game moves the block predicate check one block in the specified `direction` before testing the first block. For downwards facing block columns, this means the block predicate filter is always ran one block below where it should be run. This can be fixed by adding an offset to the block predicate filter like this:
 
-```json
+<pre>
 {
    "type": "minecraft:matching_blocks",
    "offset": [
@@ -69,7 +69,7 @@ This happens because the game moves the block predicate check one block in the s
    ],
    "blocks": "minecraft:air"
 }
-```
+</pre>
 
 Adding that offset fixes the issue.
 

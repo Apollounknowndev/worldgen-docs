@@ -13,12 +13,12 @@ The `minecraft:blue_ice` feature type is used to place a small iceberg of blue i
 
 ### JSON format
 
-```json
+<pre>
 {
    "type": "minecraft:blue_ice",
    "config": {}
 }
-```
+</pre>
 
 This feature has no fields to configure.
 

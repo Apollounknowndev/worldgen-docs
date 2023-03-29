@@ -21,7 +21,7 @@ The `minecraft:dripstone_cluster` feature type is used to place clusters of drip
 
 ### JSON format
 
-```json
+<pre>
 {
    "type": "minecraft:dripstone_cluster",
    "config": {
@@ -38,7 +38,7 @@ The `minecraft:dripstone_cluster` feature type is used to place clusters of drip
       "max_distance_from_center_affecting_height_bias": 8
    }
 }
-```
+</pre>
 
 * ‌<bl>[I]</bl> `floor_to_ceiling_search_range`: The distance that will be searched for a floor or ceiling, as an integer between 1 and 512 (inclusive).
 * ‌<bl>[I]</bl> `height`: The height of the dripstone cluster, as an integer provider between 1 and 128 (inclusive).

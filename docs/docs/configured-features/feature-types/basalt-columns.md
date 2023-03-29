@@ -17,7 +17,7 @@ The `minecraft:basalt_columns` feature type is used to place clusters of basalt 
 
 ### JSON format
 
-```json
+<pre>
 {
    "type": "minecraft:basalt_columns",
    "config": {
@@ -25,7 +25,7 @@ The `minecraft:basalt_columns` feature type is used to place clusters of basalt 
       "height": 2
    }
 }
-```
+</pre>
 
 * ‌<bl>[I]</bl> `reach`: The radius of a cluster of basalt, as an integer provider between 0 and 3 (inclusive).
 * ‌<bl>[I]</bl> `height`: The maximum height of a cluster of basalt, as an integer provider between 1 and 10 (inclusive).

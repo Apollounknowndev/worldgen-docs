@@ -1,0 +1,27 @@
+---
+layout: page
+title: Glowstone Blob
+permalink: /docs/configured-features/feature-types/glowstone-blob/
+parent: Configured Features
+grand_parent: Documentation
+nav_order: 26
+---
+
+## Glowstone Blob
+
+<head>
+    {% include field-type-colors.html %}
+</head>
+
+The `minecraft:glowstone_blob` feature type is used to place a blob of glowstone. In vanilla, this is used in all Nether biomes.
+
+### JSON format
+
+<pre>
+{
+   "type": "minecraft:glowstone_blob",
+   "config": {}
+}
+</pre>
+
+This feature has no fields to configure.

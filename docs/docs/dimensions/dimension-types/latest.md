@@ -15,7 +15,7 @@ Unlike other worldgen files, they are **not** stored in the `/worldgen` folder. 
 
 Let's take a look at an example dimension type file, this one being for the Overworld:
 
-```json
+<pre>
 {
     "ambient_light": 0,
     "bed_works": true,
@@ -41,7 +41,7 @@ Let's take a look at an example dimension type file, this one being for the Over
     "respawn_anchor_works": false,
     "ultrawarm": false
 }
-```
+</pre>
 
 Let's break this down line by line:
 

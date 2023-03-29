@@ -27,12 +27,12 @@ As of 1.19, there are 61 configured features types, each with their own configur
 ## JSON format
 
 Let's take a look at an example configured feature configuration:
-```json
+<pre>
 {
    "type": "minecraft:no_op",
    "config": {}
 }
-```
+</pre>
 
 There are two fields:
 

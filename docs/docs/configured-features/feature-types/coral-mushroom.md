@@ -13,11 +13,11 @@ The `minecraft:coral_mushroom` feature type is used to place one type of coral. 
 
 ### JSON format
 
-```json
+<pre>
 {
    "type": "minecraft:coral_mushroom",
    "config": {}
 }
-```
+</pre>
 
 This feature has no fields to configure.

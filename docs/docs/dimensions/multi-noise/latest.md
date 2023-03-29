@@ -30,7 +30,7 @@ Each block in the world has the inputs stored. When the game goes to place biome
 
 A dimension file has a list of biomes and their ideal inputs (known in the files as their "parameters"), which are a list of parameters and min/max values which are preferred. This is rather complex to explain, so we'll start with one input (one "dimension" of noise) and work our way up to the full six inputs (six "dimensions" of noise). here's an example with just two biomes, the Plains and the Forest:
 
-```json
+<pre>
 [
    {
       "biome": "minecraft:plains",
@@ -63,7 +63,7 @@ A dimension file has a list of biomes and their ideal inputs (known in the files
       }
    }
 ]
-```
+</pre>
 Here, the Plains biome will generate if `humidity` is between -1 and 0 and the Forst biome will generate if `humidity` is between 0 and 1. Since all other parameters are set to 0, they do not matter.
 
 The `humidity` value normally fluctuates between -1 and 1, but what if it goes outside the range? If no biomes in the biome source match the parameters, the game will choose the closest parameters. For example, if `humidity` was -1.1, the Plains biome would be chosen as it has parameters closer to the -1.1 humidity than the Forest biome.

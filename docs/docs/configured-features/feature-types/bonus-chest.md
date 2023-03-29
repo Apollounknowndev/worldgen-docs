@@ -13,11 +13,11 @@ The `minecraft:bonus_chest` feature type is used to place the game's often forgo
 
 ### JSON format
 
-```json
+<pre>
 {
    "type": "minecraft:bonus_chest",
    "config": {}
 }
-```
+</pre>
 
 This feature has no fields to configure.

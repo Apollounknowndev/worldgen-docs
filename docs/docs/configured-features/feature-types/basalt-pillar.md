@@ -13,11 +13,11 @@ The `minecraft:basalt_pillar` feature type is used to place long pillars of basa
 
 ### JSON format
 
-```json
+<pre>
 {
    "type": "minecraft:basalt_pillar",
    "config": {}
 }
-```
+</pre>
 
 This feature has no fields to configure.

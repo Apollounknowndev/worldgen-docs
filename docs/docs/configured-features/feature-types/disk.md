@@ -19,7 +19,7 @@ The `minecraft:disk` feature type is used to place disks of blocks. They're used
 
 ### JSON format
 
-```json
+<pre>
 {
    "type": "minecraft:disk",
    "config": {
@@ -39,7 +39,7 @@ The `minecraft:disk` feature type is used to place disks of blocks. They're used
       "half_height": 1
    }
 }
-```
+</pre>
 
 * `state_provider`: The block the disk will place.
    * `fallback`: The block provider that will be used if none of the rules pass.

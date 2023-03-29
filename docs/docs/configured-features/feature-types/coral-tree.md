@@ -13,11 +13,11 @@ The `minecraft:coral_tree` feature type is used to place one type of coral. In v
 
 ### JSON format
 
-```json
+<pre>
 {
    "type": "minecraft:coral_tree",
    "config": {}
 }
-```
+</pre>
 
 This feature has no fields to configure.

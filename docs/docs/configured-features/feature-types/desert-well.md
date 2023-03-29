@@ -13,11 +13,11 @@ The `minecraft:desert_well` feature type is used to place desert wells. In vanil
 
 ### JSON format
 
-```json
+<pre>
 {
    "type": "minecraft:desert_well",
    "config": {}
 }
-```
+</pre>
 
 This feature has no fields to configure.

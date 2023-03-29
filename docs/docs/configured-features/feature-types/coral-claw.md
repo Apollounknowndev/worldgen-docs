@@ -13,11 +13,11 @@ The `minecraft:coral_claw` feature type is used to place one type of coral. In v
 
 ### JSON format
 
-```json
+<pre>
 {
    "type": "minecraft:coral_claw",
    "config": {}
 }
-```
+</pre>
 
 This feature has no fields to configure.

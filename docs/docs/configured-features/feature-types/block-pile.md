@@ -13,7 +13,7 @@ The `minecraft:block_pile` feature type is used to place a pile of blocks. In va
 
 ### JSON format
 
-```json
+<pre>
 {
    "type": "minecraft:block_pile",
    "config": {
@@ -25,6 +25,6 @@ The `minecraft:block_pile` feature type is used to place a pile of blocks. In va
       }
    }
 }
-```
+</pre>
 
 * `state_provider`: The block provider that will be used for the block pile.

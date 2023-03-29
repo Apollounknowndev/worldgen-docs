@@ -17,7 +17,7 @@ The `minecraft:delta_feature` feature type is used to place a delta. In vanilla,
 
 ### JSON format
 
-```json
+<pre>
 {
    "type": "minecraft:delta_feature",
    "config": {
@@ -34,7 +34,7 @@ The `minecraft:delta_feature` feature type is used to place a delta. In vanilla,
       "rim_size": 1
    }
 }
-```
+</pre>
 
 * `contents`: The block provider that will be used for the delta.
 * `rim`: The block provider that will be used for the rim around the delta.

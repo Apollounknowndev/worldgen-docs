@@ -13,11 +13,11 @@ The `minecraft:chorus_plant` feature type is used to place chorus plants. In van
 
 ### JSON format
 
-```json
+<pre>
 {
    "type": "minecraft:chorus_plant",
    "config": {}
 }
-```
+</pre>
 
 This feature has no fields to configure.

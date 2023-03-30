@@ -14,6 +14,12 @@ nav_order: 3
 </head>
 The `minecraft:basalt_columns` feature type is used to place clusters of basalt columns. In vanilla, this feature type is used to generate a lot of the basalt in the Basalt Delta biome.
 
+{: .condition }
+> This feature is only placed if its placement position is in air or in the lava ocean (block is lava and y-position is less or equal the sea level).
+>
+> Additionally, the feature is not placed if the block below the placement position is Air, Lava, Bedrock, Magma Block, Soul Sand, Nether Bricks, Nether Brick Fence, Nether Brick Stairs, Nether Wart, Chest, or Spawner.
+
+
 ### JSON format
 
 <pre>

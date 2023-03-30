@@ -15,6 +15,9 @@ nav_order: 9
 
 The `minecraft:chorus_plant` feature type is used to place chorus plants. In vanilla, they are placed in the End Highlands biomes.
 
+{: .condition }
+> This feature is only generated if the placement position is Air and the block below is End Stone.
+
 ### JSON format
 
 <pre>

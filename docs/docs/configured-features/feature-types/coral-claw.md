@@ -15,6 +15,9 @@ nav_order: 10
 
 The `minecraft:coral_claw` feature type is used to place one type of coral. In vanilla, it is placed in the Warm Ocean biome.
 
+{: .condition }
+> This feature is only placed if the block at its starting position is Water or in the `minecraft:corals` block tag and the block above is Water.
+
 ### JSON format
 
 <pre>

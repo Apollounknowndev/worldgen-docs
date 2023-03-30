@@ -15,6 +15,9 @@ nav_order: 37
 
 The `minecraft:nether_forest_vegetation` feature type is used to place a patch of plants in the Nether. In vanilla, it's used in the Nether. Shocking, right?
 
+{: .condition }
+> This feature is only placed if the block below the placement position is in the `minecraft:nylium` block tag.
+
 ### Json format
 
 <pre>

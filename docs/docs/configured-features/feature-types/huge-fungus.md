@@ -15,6 +15,9 @@ nav_order: 28
 
 The `minecraft:huge_fungus` feature type is used to place a huge fungus. In vanilla, this is used for huge Crimson and Warped fungi.
 
+{: .condition }
+> The placement of this feature depends on the `valid_base_block` and `planted` configurations (see below).
+
 ### Json format
 
 <pre>

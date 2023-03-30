@@ -15,6 +15,9 @@ nav_order: 36
 
 The `minecraft:multiface_growth` feature type is used to place a small patch of either glow lichen or sculk. In vanilla, this is used in all Overworld biomes for Glow Lichen and the Deep Dark for Sculk.
 
+{: .condition }
+> This feature is only placed if the block at the placement position is Air or Water.
+
 ### Json format
 
 <pre>

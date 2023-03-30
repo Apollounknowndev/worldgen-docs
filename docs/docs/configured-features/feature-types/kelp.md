@@ -15,6 +15,9 @@ nav_order: 32
 
 The `minecraft:kelp` feature type is used to place a kelp plant. In vanilla, this is used in all Ocean biomes except Warm and Frozen Oceans.
 
+{: .position }
+> The placement position of this feature is moved to the height of the `OCEAN_FLOOR` heightmap.
+
 ### JSON format
 
 <pre>

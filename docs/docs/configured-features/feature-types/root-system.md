@@ -18,7 +18,7 @@ The game's code needs to be checked to get the complete information to finish th
 
 The `minecraft:root_system` feature type is used to place a system of roots from a cave up to the surface, and place a feature on top of it. In vanilla, this is used to place Rooted Dirt under Azalea trees.
 
-### Json format
+### JSON format
 
 <pre>
 {

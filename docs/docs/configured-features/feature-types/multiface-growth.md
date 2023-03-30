@@ -18,7 +18,7 @@ The `minecraft:multiface_growth` feature type is used to place a small patch of 
 {: .condition }
 > This feature is only placed if the block at the placement position is Air or Water.
 
-### Json format
+### JSON format
 
 <pre>
 {

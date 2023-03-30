@@ -20,7 +20,7 @@ The `minecraft:seagrass` feature type is used to place a single seagrass. In van
 >
 > The change in position of where the seagrass is placed on the x and z coordinates relative to the starting point functions identically to an `xz_spread` of 7 with the `minecraft:random_patch` feature type.
 
-### Json format
+### JSON format
 
 <pre>
 {

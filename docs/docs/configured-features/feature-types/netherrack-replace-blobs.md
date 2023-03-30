@@ -15,7 +15,7 @@ nav_order: 38
 
 The `minecraft:netherrack_replace_blobs` feature type is used to replace all blocks within a certain radius with another block. The feature will move the starting position down until a valid position can be found.
 
-### Json format
+### JSON format
 
 <pre>
 {

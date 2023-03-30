@@ -15,7 +15,7 @@ nav_order: 42
 
 The `minecraft:pointed_dripstone` feature type is used to place a small patch of dripstone blocks with a Pointed Dripstone on top. In vanilla, this is used in the Dripstone Caves biome.
 
-### Json format
+### JSON format
 
 <pre>
 {

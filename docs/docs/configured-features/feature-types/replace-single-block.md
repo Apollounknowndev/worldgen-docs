@@ -15,7 +15,7 @@ nav_order: 46
 
 The `minecraft:replace_single_block` feature type is used to replace a single block in the world with another block. In vanilla, this is currently unused. It was formerly used to place Emerald Ore back before 1.18 when they only generated in veins of one.
 
-### Json format
+### JSON format
 
 <pre>
 {

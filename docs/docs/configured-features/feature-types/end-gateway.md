@@ -15,7 +15,7 @@ nav_order: 17
 
 The `minecraft:end_gateway` feature type is used to place an end gateway that warps entities into and out of the Outer End. In vanilla, they are placed in the End Highlands biome.
 
-### Json format
+### JSON format
 
 <pre>
 {

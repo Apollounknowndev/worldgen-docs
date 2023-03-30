@@ -15,7 +15,7 @@ nav_order: 39
 
 The `minecraft:no_bonemeal_flower` feature type is used to place a patch of placed features. In vanilla, it is unused.
 
-### Json format
+### JSON format
 
 <pre>
 {

@@ -26,7 +26,7 @@ The `minecraft:fossil` feature type is used to place a small structure in the wo
 
 
 
-### Json format
+### JSON format
 
 <pre>
 {

@@ -15,7 +15,7 @@ nav_order: 43
 
 The `minecraft:random_boolean_selector` feature type is used to choose to place between two different placed features. The chance of each feature generating is equal. In vanilla, this feature is used in the placement of clay pools in Lush Caves and mushroom placement in Mushroom Fields.
 
-### Json format
+### JSON format
 
 <pre>
 {

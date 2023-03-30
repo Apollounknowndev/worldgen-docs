@@ -15,7 +15,7 @@ nav_order: 48
 
 The `minecraft:scattered_ore` feature type is used to replace some blocks in an area with another blob of blocks. In vanilla, this is used to generate Ancient Debris.
 
-### Json format
+### JSON format
 
 <pre>
 {

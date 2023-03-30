@@ -15,7 +15,7 @@ nav_order: 45
 
 The `minecraft:random_selector` feature type is used to randomly select betwen a list of placed features. In vanilla, it is used in many places where the feature to get placed at a certain position should be randomized. This includes things like types of trees to place in a Forest biome.
 
-### Json format
+### JSON format
 
 <pre>
 {

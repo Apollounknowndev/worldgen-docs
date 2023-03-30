@@ -18,7 +18,7 @@ The `minecraft:large_dripstone` feature type is used to place a large stalagnate
 {: .condition }
 > This feature is only placed if the block at the placement position is Air or Water.
 
-### Json format
+### JSON format
 
 <pre>
 {

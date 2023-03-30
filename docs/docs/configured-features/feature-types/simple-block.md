@@ -15,7 +15,7 @@ nav_order: 52
 
 The `minecraft:simple_block` feature type is used to place a single block. In vanilla, this is used to place Spore Blossoms in Lush Caves.
 
-### Json format
+### JSON format
 
 <pre>
 {

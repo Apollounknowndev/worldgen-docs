@@ -18,7 +18,7 @@ The `minecraft:huge_fungus` feature type is used to place a huge fungus. In vani
 {: .condition }
 > The placement of this feature depends on the `valid_base_block` and `planted` configurations (see below).
 
-### Json format
+### JSON format
 
 <pre>
 {

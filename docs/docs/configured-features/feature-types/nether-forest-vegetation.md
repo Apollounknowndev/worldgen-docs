@@ -18,7 +18,7 @@ The `minecraft:nether_forest_vegetation` feature type is used to place a patch o
 {: .condition }
 > This feature is only placed if the block below the placement position is in the `minecraft:nylium` block tag.
 
-### Json format
+### JSON format
 
 <pre>
 {

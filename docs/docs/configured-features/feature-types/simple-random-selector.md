@@ -15,7 +15,7 @@ nav_order: 53
 
 The `minecraft:simple_random_selector` feature type is used to choose to place between a number of different placed features. The chance of each feature generating is equal. In vanilla, this feature is used in a few places, one of which being the selection of which coral type to place in the Warm Ocean biome.
 
-### Json format
+### JSON format
 
 <pre>
 {

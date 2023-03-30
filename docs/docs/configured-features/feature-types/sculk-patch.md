@@ -19,7 +19,7 @@ The `minecraft:sculk_patch` feature type is used to generate a patch of sculk. I
 
 The game takes the values from the configured feature config and simulates sculk spreading with it. This is why sculk from world and sculk from Sculk Catalysts look so similar.
 
-### Json format
+### JSON format
 
 <pre>
 {

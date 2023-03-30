@@ -15,7 +15,7 @@ nav_order: 41
 
 The `minecraft:ore` feature type is used to replace a blob of blocks with another blob of blocks. In vanilla, this is used to generate all ores (excluding ores in the massive copper/iron ore veins and ancient debris).
 
-### Json format
+### JSON format
 
 <pre>
 {

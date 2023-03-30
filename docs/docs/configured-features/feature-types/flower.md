@@ -15,7 +15,7 @@ nav_order: 21
 
 The `minecraft:flower` feature type is used to place a patch of placed features. In vanilla, it is used to place patches of flowers.
 
-### Json format
+### JSON format
 
 <pre>
 {

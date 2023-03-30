@@ -15,7 +15,7 @@ nav_order: 44
 
 The `minecraft:random_patch` feature type is used to place a patch of placed features. In vanilla, it is used to place patches of lily pads, sugar cane and other block patches.
 
-### Json format
+### JSON format
 
 <pre>
 {

@@ -15,7 +15,7 @@ nav_order: 33
 
 The `minecraft:lake` feature type is used to place a small pool of a fluid. In vanilla, this is used for lava lakes in the Overworld.
 
-### Json format
+### JSON format
 
 <pre>
 {

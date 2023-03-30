@@ -15,6 +15,17 @@ nav_order: 23
 
 The `minecraft:fossil` feature type is used to place a small structure in the world. In vanilla, it is used to place fossils in the Desert and Swamp biomes.
 
+{: .position }
+> If necesarry, the placement position is moved downwards to the lowest position of the `OCEAN_FLOOR_WG` heightmap within the bounding box of the placed structure file.
+>
+> Afterwards, the position is moved further downwards by 10 to 25 blocks.
+
+
+{: .condition }
+> The `max_empty_corners_allowed` configuration affects whether this feature is be placed (see below). However, it is impossible to configure this feature to always be placed.
+
+
+
 ### Json format
 
 <pre>

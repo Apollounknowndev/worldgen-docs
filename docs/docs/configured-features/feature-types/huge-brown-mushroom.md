@@ -15,6 +15,9 @@ nav_order: 27
 
 The `minecraft:huge_brown_mushroom` feature type is used to place a mushroom with the brown mushroom cap. In vanilla, this is used for the large Brown Mushrooms in the Dark Forest and Mushroom Fields biomes.
 
+{: .condition }
+> This feature is only placed if the block below the placement position is in the `minecraft:dirt` or `minecraft:mushroom_grow_block` block tag. Additionally there needs to be sufficient space to place the feature filled with Air or blocks in the `minecraft:leaves` block tag.
+
 ### Json format
 
 <pre>

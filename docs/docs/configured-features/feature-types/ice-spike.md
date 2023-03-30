@@ -15,8 +15,11 @@ nav_order: 30
 
 The `minecraft:ice_spike` feature type is used to place a large ice spike. In vanilla, this is used in the Ice Spikes biome.
 
+{: .position }
+> The placement position is moved downwards until it reaches a non-air block.
+
 {: .condition }
-The feature will fail to place if it attempts to be placed on any block that is not a snow block.
+> This feature is only placed if the block at the (moved) placement position is Snow.
 
 ### JSON format
 

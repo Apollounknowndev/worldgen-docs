@@ -18,6 +18,9 @@ The game's code needs to be checked to get the complete information to finish th
 
 The `minecraft:dripstone_cluster` feature type is used to place clusters of dripstone on the floor or a ceiling of a surface. In vanilla, this is used in the Dripstone Caves biome.
 
+{: .condition }
+> This feature is only placed if the block at the placement position is Air or Water.
+
 ### JSON format
 
 <pre>

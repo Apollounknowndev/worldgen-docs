@@ -15,6 +15,9 @@ nav_order: 34
 
 The `minecraft:large_dripstone` feature type is used to place a large stalagnate of dripstone. In vanilla, this is used in the Dripstone Caves biome.
 
+{: .condition }
+> This feature is only placed if the block at the placement position is Air or Water.
+
 ### Json format
 
 <pre>

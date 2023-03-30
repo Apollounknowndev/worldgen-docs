@@ -15,6 +15,9 @@ nav_order: 26
 
 The `minecraft:glowstone_blob` feature type is used to place a blob of glowstone. In vanilla, this is used in all Nether biomes.
 
+{: .condition }
+> This feature is only placed if the placement position is Air and the block above is Netherrack, Basalt, or Blackstone.
+
 ### JSON format
 
 <pre>

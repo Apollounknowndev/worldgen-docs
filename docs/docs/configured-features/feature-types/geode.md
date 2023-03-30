@@ -15,6 +15,9 @@ nav_order: 25
 
 The `minecraft:geode` feature type is used to place a geode. In vanilla, these are used to generate Amethyst Geodes for the Overworld.
 
+{: .condition }
+> The `invalid_blocks_threshold` configuration affects the placement of this feature (see below).
+
 ### Generation explanation
 
 The geode feature type is one of the most complex feature types in the game, so it requires an explanation of its own before each field is explained.

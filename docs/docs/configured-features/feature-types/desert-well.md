@@ -15,6 +15,12 @@ nav_order: 14
 
 The `minecraft:desert_well` feature type is used to place desert wells. In vanilla, it is placed in the Desert biome.
 
+{: .position }
+> The placement position is moved downwards until it reaches a non-air block.
+
+{: .condition }
+> This feature is only placed if the block at the (moved) placement position is Sand (not Red Sand).
+
 ### JSON format
 
 <pre>

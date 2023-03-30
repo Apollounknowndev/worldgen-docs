@@ -13,7 +13,13 @@ nav_order: 2
     {% include field-type-colors.html %}
 </head>
 
-The `minecraft:bamboo` feature type is used to place a pillar of bamboo that is 5-16 blocks tall, and occasionally a disk of podzol under it. In vanilla, this feature type is used to generate bamboo in the Jungle biomes.
+The `minecraft:bamboo` feature type is used to place a pillar of bamboo that is 5-16 blocks tall, and occasionally a disk of podzol. In vanilla, this feature type is used to generate bamboo in the Jungle biomes.
+
+{: .condition }
+> This feature is only placed if the placement position is air and a bamboo block can survive at this location.
+
+{: .position }
+> The disk of podzol is always placed at the height of the `WORLD_SURFACE` heightmap.
 
 ### JSON format
 

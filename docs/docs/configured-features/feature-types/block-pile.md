@@ -15,6 +15,11 @@ nav_order: 6
 
 The `minecraft:block_pile` feature type is used to place a pile of blocks. In vanilla, this feature type is used to place piles of Hay in Villages.
 
+{: .condition }
+> This feature is not placed if the placement position is within the bottom 5 blocks of the world. 
+>
+> Additionally, each block in the pile is only placed if the block below it has a sturdy upper face or is a Dirt Path. In the latter case the block is only placed with a probability of 50%. 
+
 ### JSON format
 
 <pre>

@@ -15,6 +15,10 @@ nav_order: 8
 
 The `minecraft:bonus_chest` feature type is used to place the game's often forgotten bonus chest.
 
+{: .position }
+> The chest is placed at a random position within the chunk at the height of the `MOTION_BLOCKING_NO_LEAVES` heightmap if this position is Air or a block with no collision.
+> If there is no block in the chunk that fulfills these conditions the placement fails.
+
 ### JSON format
 
 <pre>

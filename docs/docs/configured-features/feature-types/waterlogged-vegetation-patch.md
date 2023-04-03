@@ -19,7 +19,7 @@ The `minecraft:waterlogged_vegetation_patch` feature type is used to place a pat
 
 <pre>
 {
-   "type": "minecraft:vegetation_patch",
+   "type": "minecraft:waterlogged_vegetation_patch",
    "config": {
       "surface": "floor",
       "depth": 3,

@@ -1,16 +1,17 @@
 ---
 layout: page
 title: Introduction
-permalink: /docs/worldgen/configured-features/introduction/latest
+permalink: /docs/worldgen/configured-features/introduction/
 parent: Configured Features
 grand_parent: Documentation
 nav_order: 1
 ---
-<style>
-pu {color:#CE52FE;font-weight:bold}
-</style>
 
 # Intro to Configured Features
+
+<head>
+    {% include field-type-colors.html %}
+</head>
 
 Configured feature files contain configuration information about a feature. 
 
@@ -22,11 +23,12 @@ Configured features simply define the *configuration* of that feature. Placed fe
 
 Configured features are stored in the `/worldgen/configured_feature` folder.
 
-As of 1.19, there are 61 configured features types, each with their own configuration. Because of this large amount, each configured feature type has its own page.
+There are currently 61 configured features types, each with their own configuration. Because of this large amount, each configured feature type has its own page.
 
 ## JSON format
 
 Let's take a look at an example configured feature configuration:
+
 <pre>
 {
    "type": "minecraft:no_op",

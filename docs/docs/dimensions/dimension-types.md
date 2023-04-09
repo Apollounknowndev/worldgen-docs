@@ -1,13 +1,18 @@
 ---
 layout: page
 title: Dimension Types
-permalink: /docs/dimension-types/latest/
+permalink: /docs/dimension-types/
 parent: Dimensions
 grand_parent: Documentation
 nav_order: 2
 ---
 
 # Dimension Types
+
+<head>
+    {% include version-select.html %}
+    {% include field-type-colors.html %}
+</head>
 
 Dimension type files control the properties of a dimension. These properties include things like whether beds work or not, whether sky light should be calculated, etc.
 
@@ -27,16 +32,14 @@ Let's take a look at an example dimension type file, this one being for the Over
     "height": 384,
     "infiniburn": "#minecraft:infiniburn_overworld",
     "logical_height": 384,
-    "min_y": -64,
-    "monster_spawn_block_light_limit": 0,
+    "min_y": -64,<ver-s data-version=">=1.19">    "monster_spawn_block_light_limit": 0,
     "monster_spawn_light_level": {
         "type": "minecraft:uniform",
         "value": {
             "max_inclusive": 7,
             "min_inclusive": 0
         }
-    },
-    "natural": true,
+    },</ver-s><ver-h data-version="<=1.18.2"></ver-h>    "natural": true,
     "piglin_safe": false,
     "respawn_anchor_works": false,
     "ultrawarm": false
@@ -59,8 +62,8 @@ Let's break this down line by line:
 * `infiniburn`: A block tag. Fire on the blocks in this block tag will never burn out.
 * `logical_height`: The maximum height that chorus fruit will teleport entities and nether portals can be generated. *Must be a multiple of 16, and cannot be greater than `height`!*
 * `min_y`: The lower build limit of the dimension. *Must be a multiple of 16!*
-* `monster_spawn_block_light_limit`: The maximum block light level where mobs can spawn. *Must be an integer between 0 and 15 (inclusive)!*
-* `monster_spawn_light_level`: The range of light levels where mobs can spawn, taking into account sky light. *Must be an integer provider between 0 and 15 (inclusive)!*
+* <ver-s data-version=">=1.19"><code>monster_spawn_block_light_limit</code>: The maximum block light level where mobs can spawn. <i>Must be an integer between 0 and 15 (inclusive)!</i></ver-s>
+* <ver-s data-version=">=1.19"><code>monster_spawn_light_level</code>: The range of light levels where mobs can spawn, taking into account sky light. <i>Must be an integer provider between 0 and 15 (inclusive)!</i></ver-s>
 * `natural`: If set to true:
     * Compasses point towards the world spawn.
     * Nether Portals spawn Zombified Piglins.

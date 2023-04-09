@@ -3,4 +3,4 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
-docs/test.md
+docs/debug.md

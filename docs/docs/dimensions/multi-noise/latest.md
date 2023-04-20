@@ -9,6 +9,11 @@ nav_order: 3
 
 # Multi-Noise Biome Source
 
+<head>
+    {% include field-type-colors.html %}
+</head>
+
+
 {: .warning }
 This page is not complete yet. Some information may be worded poorly or completely omitted.
 
@@ -64,7 +69,7 @@ A dimension file has a list of biomes and their ideal inputs (known in the files
    }
 ]
 </pre>
-Here, the Plains biome will generate if `humidity` is between -1 and 0 and the Forst biome will generate if `humidity` is between 0 and 1. Since all other parameters are set to 0, they do not matter.
+Here, the Plains biome will generate if `humidity` is between -1 and 0 and the Forest biome will generate if `humidity` is between 0 and 1. Since all other parameters are set to 0, they do not matter.
 
 The `humidity` value normally fluctuates between -1 and 1, but what if it goes outside the range? If no biomes in the biome source match the parameters, the game will choose the closest parameters. For example, if `humidity` was -1.1, the Plains biome would be chosen as it has parameters closer to the -1.1 humidity than the Forest biome.
 

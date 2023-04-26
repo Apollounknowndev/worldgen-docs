@@ -9,10 +9,17 @@ nav_order: 1
 
 # Adding Cave Biomes
 
+<head>
+    {% include field-type-colors.html %}
+</head>
+
 Compared to adding biomes above ground, adding biomes underground is much simpler. In this tutorial we'll add a Spider Caves biome to the Overworld.
 
 {: .note }
 This guide does not show how to create the cave biome itself, but rather shows how to add it to Overworld generation.
+
+{: .warning }
+This guide is currently only for 1.19+. It will not work on 1.18.x. On 1.20 it will work, but the Cherry Grove will not generate.
 
 Download [this datapack](/docs/guides/biomes/files/adding-cave-biomes/adding-cave-biomes-template.zip), which has all the files needed for this tutorial. Extract the contents of it and open it up in your editor of choice. For this example, Visual Studio Code will be used because it has the incredibly helpful [Datapack Helper Plus](https://marketplace.visualstudio.com/items?itemName=SPGoding.datapack-language-server) extension. You don't actually need a code editor though; you can do this with Notepad if you really want.
 

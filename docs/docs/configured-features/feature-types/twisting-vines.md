@@ -28,6 +28,6 @@ The `minecraft:twisting_vines` feature type is used to place a patch of Twisting
 }
 </pre>
 
-* ‌<bl>[I]</bl> `spread_width`: The x and z-coordinate spread that the feature can generate in, as a radius. 
-* ‌<bl>[I]</bl> `spread_height`: The y-coordinate spread that the feature can generate in, as a radius.
-* ‌<bl>[I]</bl> `max_height`: The max height that a column of Twisting Vines can grow to. There is a small chance that the column of Twisting Vines will actually be taller than this value, however.
+* <span int>[I]</span> `spread_width`: The x and z-coordinate spread that the feature can generate in, as a radius. 
+* <span int>[I]</span> `spread_height`: The y-coordinate spread that the feature can generate in, as a radius.
+* <span int>[I]</span> `max_height`: The max height that a column of Twisting Vines can grow to. There is a small chance that the column of Twisting Vines will actually be taller than this value, however.

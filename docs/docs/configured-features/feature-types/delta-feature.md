@@ -38,5 +38,5 @@ The `minecraft:delta_feature` feature type is used to place a delta. In vanilla,
 
 * `contents`: The block provider that will be used for the delta.
 * `rim`: The block provider that will be used for the rim around the delta.
-* ‌<bl>[I]</bl> `size`: The radius of the delta, as an integer provider between 0 and 16 (inclusive).
-* ‌<bl>[I]</bl> `rim_size`: The size of the delta rim, as an integer provider between 0 and 16 (inclusive).
+* <span int>[I]</span> `size`: The radius of the delta, as an integer provider between 0 and 16 (inclusive).
+* <span int>[I]</span> `rim_size`: The size of the delta rim, as an integer provider between 0 and 16 (inclusive).

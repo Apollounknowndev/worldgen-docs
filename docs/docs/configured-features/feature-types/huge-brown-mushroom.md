@@ -43,4 +43,4 @@ The `minecraft:huge_brown_mushroom` feature type is used to place a mushroom wit
 
 * `cap_provider`: The block provider that will be used for the cap of the mushroom.
 * `stem_provider`: The block provider that will be used for the stem of the mushroom.
-* ‌<bl>[I]</bl> `foliage_radius`: The radius of the mushroom cap. Defaults to 2.
+* <span int>[I]</span> `foliage_radius`: The radius of the mushroom cap. Defaults to 2.

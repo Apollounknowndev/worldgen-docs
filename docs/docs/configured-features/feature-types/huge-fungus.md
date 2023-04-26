@@ -47,5 +47,5 @@ The `minecraft:huge_fungus` feature type is used to place a huge fungus. In vani
 * `hat_state`: The block state that will be used for the cap of the fungus.
 * `decor_state`: The block state that will be used for decoration in the cap.
 * `stem_state`: The block state that will be used for the stem of the fungus.
-* `stem_state`: The block state that the fungus must be planted on.
-* ‌<or>[B]</or> `planted`: (optional) If enabled, the fungus can generate above the world generation height limit (not the dimension height limit) and can replace plants upon generation. Defaults to false.
+* `valid_base_block`: The block state that the fungus must be planted on.
+* <span bool>[B]</span> `planted`: (optional) If enabled, the fungus can generate above the world generation height limit (not the dimension height limit) and can replace plants upon generation. Defaults to false.

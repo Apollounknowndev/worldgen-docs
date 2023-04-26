@@ -36,8 +36,8 @@ The `minecraft:random_selector` feature type is used to randomly select betwen a
 }
 </pre>
 
-* ‌<re>[L]</re> `features`: The list of features to use.
-    * ‌<ye>[F]</ye> `chance`: The chance for this feature to be placed, as a float between 0.0 and 1.0.
+* <span list>[L]</span> `features`: The list of features to use.
+    * <span float>[F]</span> `chance`: The chance for this feature to be placed, as a float between 0.0 and 1.0.
     * `feature`: The placed feature to be used if this entry is selected.
 * `default`: The default placed feature to use if none of the features in `features` are selected.
 

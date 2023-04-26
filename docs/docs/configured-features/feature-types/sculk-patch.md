@@ -36,10 +36,10 @@ The game takes the values from the configured feature config and simulates sculk
 }
 </pre>
 
-* ‌<bl>[I]</bl> `charge_count`: The number of charges in this sculk patch, as a value between 1 and 32.
-* ‌<bl>[I]</bl> `amount_per_charge`: The initial value of each chargem as a value between 1 and 500.
-* ‌<bl>[I]</bl> `spread_attempts`: The amount of attempts for the sculk to spread for each spread round, as a value between 1 and 64.
-* ‌<bl>[I]</bl> `growth_rounds`: The number of growth rounds, as a value between 0 and 8.
-* ‌<bl>[I]</bl> `spread_rounds`: The number of spread rounds, as a value between 0 and 8.
-* ‌<bl>[I]</bl> `extra_rare_growths`: The maximum number of attempts for a Sculk Shrieker to be generated, as an integer provider.
-* ‌<ye>[F]</ye> `catalyst_chance`: The chance for a Sculk Catalyst to generate, as a value between 0.0 and 1.0.
+* <span int>[I]</span> `charge_count`: The number of charges in this sculk patch, as a value between 1 and 32.
+* <span int>[I]</span> `amount_per_charge`: The initial value of each chargem as a value between 1 and 500.
+* <span int>[I]</span> `spread_attempts`: The amount of attempts for the sculk to spread for each spread round, as a value between 1 and 64.
+* <span int>[I]</span> `growth_rounds`: The number of growth rounds, as a value between 0 and 8.
+* <span int>[I]</span> `spread_rounds`: The number of spread rounds, as a value between 0 and 8.
+* <span int>[I]</span> `extra_rare_growths`: The maximum number of attempts for a Sculk Shrieker to be generated, as an integer provider.
+* <span float>[F]</span> `catalyst_chance`: The chance for a Sculk Catalyst to generate, as a value between 0.0 and 1.0.

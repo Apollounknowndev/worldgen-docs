@@ -31,4 +31,4 @@ The `minecraft:sea_pickle` feature type is used to place a patch of sea pickles.
 }
 </pre>
 
-* ‌<bl>[I]</bl> `count`: The number of sea pickes to be generated, as an integer provider between 0 and 256.
+* <span int>[I]</span> `count`: The number of sea pickes to be generated, as an integer provider between 0 and 256.

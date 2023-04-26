@@ -30,4 +30,4 @@ The `minecraft:simple_random_selector` feature type is used to choose to place b
 }
 </pre>
 
-* ‌<re>[L]</re> `features`: The list of placed features to select from. Each placed feature in the list has an equal chance of generating.
+* <span list>[L]</span> `features`: The list of placed features to select from. Each placed feature in the list has an equal chance of generating.

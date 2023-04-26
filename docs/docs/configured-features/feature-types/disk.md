@@ -41,9 +41,9 @@ The `minecraft:disk` feature type is used to place disks of blocks. They're used
 
 * `state_provider`: The block the disk will place.
    * `fallback`: The block provider that will be used if none of the rules pass.
-   * ‌<re>[L]</re> `rules`: (can be empty) The list of rules to check before using the state provided in `fallback`.
+   * <span list>[L]</span> `rules`: (can be empty) The list of rules to check before using the state provided in `fallback`.
       * `if_true`: The [block predicate](/docs/misc/block-predicates/) that must be passed for the `then` block state to be used.
       * `then`: The block state that should be used if the block predicate from `if_true` passes.
 * `target`: The [block predicate](/docs/misc/block-predicates/) that must be passed at the starting block position for the disk to be placed at all.
-* ‌<bl>[I]</bl> `radius`: The radius of disk, as an integer provider between 0 and 8 (inclusive).
-* ‌<bl>[I]</bl> `half_height`: Half of the disk's height, as an integer between 0 and 4 (inclusive).
+* <span int>[I]</span> `radius`: The radius of disk, as an integer provider between 0 and 8 (inclusive).
+* <span int>[I]</span> `half_height`: Half of the disk's height, as an integer between 0 and 4 (inclusive).

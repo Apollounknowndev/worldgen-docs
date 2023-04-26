@@ -32,7 +32,7 @@ The `minecraft:basalt_columns` feature type is used to place clusters of basalt 
 }
 </pre>
 
-* ‌<bl>[I]</bl> `reach`: The radius of a cluster of basalt, as an integer provider between 0 and 3 (inclusive).
-* ‌<bl>[I]</bl> `height`: The maximum height of a cluster of basalt, as an integer provider between 1 and 10 (inclusive).
+* <span int>[I]</span> `reach`: The radius of a cluster of basalt, as an integer provider between 0 and 3 (inclusive).
+* <span int>[I]</span> `height`: The maximum height of a cluster of basalt, as an integer provider between 1 and 10 (inclusive).
 
 Please note that multiple clusters of basalt can generate as one feature, so just because the `reach` value is 3 or below, it doesn't mean that the maximum radius for a basalt columns feature is 3.

@@ -60,14 +60,14 @@ The `minecraft:root_system` feature type is used to place a system of roots from
 }
 </pre>
 
-* ‌<bl>[I]</bl> `required_vertical_space_for_tree`: An integer between 1 and 64.
-* ‌<bl>[I]</bl> `root_radius`: An integer between 1 and 64.
-* ‌<bl>[I]</bl> `root_placement_attempts`: An integer between 1 and 256.
-* ‌<bl>[I]</bl> `root_column_max_height`: An integer between 1 and 4096.
-* ‌<bl>[I]</bl> `hanging_root_radius`: An integer between 1 and 64.
-* ‌<bl>[I]</bl> `hanging_roots_vertical_span`: An integer between 0 and 16.
-* ‌<bl>[I]</bl> `hanging_root_placement_attempts`: An integer between 1 and 256.
-* ‌<bl>[I]</bl> `allowed_vertical_water_for_tree`: The maximum amount of water the top feature can generate in, as an integer between 1 and 64.
+* <span int>[I]</span> `required_vertical_space_for_tree`: An integer between 1 and 64.
+* <span int>[I]</span> `root_radius`: An integer between 1 and 64.
+* <span int>[I]</span> `root_placement_attempts`: An integer between 1 and 256.
+* <span int>[I]</span> `root_column_max_height`: An integer between 1 and 4096.
+* <span int>[I]</span> `hanging_root_radius`: An integer between 1 and 64.
+* <span int>[I]</span> `hanging_roots_vertical_span`: An integer between 0 and 16.
+* <span int>[I]</span> `hanging_root_placement_attempts`: An integer between 1 and 256.
+* <span int>[I]</span> `allowed_vertical_water_for_tree`: The maximum amount of water the top feature can generate in, as an integer between 1 and 64.
 * `root_replaceable`: A block tag that roots can replace.
 * `root_state_provider`: The block state provider for the roots to use.
 * `hanging_root_state_provider`: The block state provider for the hanging roots to use.

@@ -29,9 +29,9 @@ The `minecraft:random_patch` feature type is used to place a patch of placed fea
 }
 </pre>
 
-* ‌<bl>[I]</bl> `tries`: The number of tries for a placed feature to generate. Can be any positive integer, defaults to 127.
-* ‌<bl>[I]</bl> `xz_spread`: The x and z-coordinate spread that the feature can generate in, as a radius. Defaults to 7.
-* ‌<bl>[I]</bl> `y_spread`: The y-coordinate spread that the feature can generate in, as a radius. Defaults to 3.
+* <span int>[I]</span> `tries`: The number of tries for a placed feature to generate. Can be any positive integer, defaults to 127.
+* <span int>[I]</span> `xz_spread`: The x and z-coordinate spread that the feature can generate in, as a radius. Defaults to 7.
+* <span int>[I]</span> `y_spread`: The y-coordinate spread that the feature can generate in, as a radius. Defaults to 3.
 * `feature`: The placed feature that will be placed.
 
 ### Additional Info

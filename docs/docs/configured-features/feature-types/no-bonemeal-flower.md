@@ -29,9 +29,9 @@ The `minecraft:no_bonemeal_flower` feature type is used to place a patch of plac
 }
 </pre>
 
-* ‌<bl>[I]</bl> `tried`: The number of tries for a placed feature to generate. Can be any positive integer, defaults to 127.
-* ‌<bl>[I]</bl> `xz_spread`: The x and z-coordinate spread that the feature can generate in, as a radius. Defaults to 7.
-* ‌<bl>[I]</bl> `y_spread`: The y-coordinate spread that the feature can generate in, as a radius. Defaults to 3.
+* <span int>[I]</span> `tried`: The number of tries for a placed feature to generate. Can be any positive integer, defaults to 127.
+* <span int>[I]</span> `xz_spread`: The x and z-coordinate spread that the feature can generate in, as a radius. Defaults to 7.
+* <span int>[I]</span> `y_spread`: The y-coordinate spread that the feature can generate in, as a radius. Defaults to 3.
 * `feature`: The placed feature that will be placed.
 
 ### Additional Info

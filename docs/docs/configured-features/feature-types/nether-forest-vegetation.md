@@ -37,5 +37,5 @@ The `minecraft:nether_forest_vegetation` feature type is used to place a patch o
 </pre>
 
 * `state_provider`: The block state provider that the feature places.
-* ‌<bl>[I]</bl> `spread_width`: The horizontal radius that the feature places the plants in, as a positive integer.
-* ‌<bl>[I]</bl> `spread_height`: The vertical radius that the feature places the plants in, as a positive integer.
+* <span int>[I]</span> `spread_width`: The horizontal radius that the feature places the plants in, as a positive integer.
+* <span int>[I]</span> `spread_height`: The vertical radius that the feature places the plants in, as a positive integer.

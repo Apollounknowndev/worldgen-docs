@@ -31,4 +31,4 @@ The `minecraft:seagrass` feature type is used to place a single seagrass. In van
 }
 </pre>
 
-* ‌<ye>[F]</ye> `probability`: The chance for tall seagrass to generate instead of normal seagrass, as a float between 0.0 and 1.0.
+* <span float>[F]</span> `probability`: The chance for tall seagrass to generate instead of normal seagrass, as a float between 0.0 and 1.0.

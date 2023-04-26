@@ -40,11 +40,11 @@ The `minecraft:end_spike` feature type is used to place end pillars in the cente
 }
 </pre>
 
-* ‌<or>[B]</or> `crystal_invulnerable`: Determines whether or not the end crystal on top of the spike(s) are invulerable.
+* <span bool>[B]</span> `crystal_invulnerable`: Determines whether or not the end crystal on top of the spike(s) are invulerable.
 * `crystal_beam_target`: (optional) The coordinates that the end crystal will generate a beam towards. If this field is empty, no beam comes out of the end crystal.
-* ‌<re>[L]</re> `spikes`: (optional) A list of spikes that this feature places.
-    * ‌<bl>[I]</bl> `centerX`: The x-coordinate that the end spike is centered on.
-    * ‌<bl>[I]</bl> `centerZ`: The z-coordinate that the end spike is centered on.
-    * ‌<bl>[I]</bl> `radius`: The radius of the end spike.
-    * ‌<bl>[I]</bl> `height`: The y-coordinate that the end spike generates up to. This starts from the bottom y-coordinate of the world.
-    * ‌<or>[B]</or> `guarded`: Determines whether or not the end crystal on top of the spike is guarded by iron bars.
+* <span list>[L]</span> `spikes`: (optional) A list of spikes that this feature places.
+    * <span int>[I]</span> `centerX`: The x-coordinate that the end spike is centered on.
+    * <span int>[I]</span> `centerZ`: The z-coordinate that the end spike is centered on.
+    * <span int>[I]</span> `radius`: The radius of the end spike.
+    * <span int>[I]</span> `height`: The y-coordinate that the end spike generates up to. This starts from the bottom y-coordinate of the world.
+    * <span bool>[B]</span> `guarded`: Determines whether or not the end crystal on top of the spike is guarded by iron bars.

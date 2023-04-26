@@ -42,14 +42,14 @@ The `minecraft:dripstone_cluster` feature type is used to place clusters of drip
 }
 </pre>
 
-* ‌<bl>[I]</bl> `floor_to_ceiling_search_range`: The distance that will be searched for a floor or ceiling, as an integer between 1 and 512 (inclusive).
-* ‌<bl>[I]</bl> `height`: The height of the dripstone cluster, as an integer provider between 1 and 128 (inclusive).
-* ‌<bl>[I]</bl> `radius`: The radius of the dripstone cluster, as an integer provider between 1 and 128 (inclusive).
-* ‌<bl>[I]</bl> `max_stalagmite_stalactite_height_diff`: An integer between 0 and 64 (inclusive).
-* ‌<bl>[I]</bl> `height_deviation`: An integer between 1 and 64 (inclusive).
-* ‌<bl>[I]</bl> `dripstone_block_layer_thickness`: An integer provider between 0 and 128 (inclusive).
-* ‌<ye>[F]</ye> `density`: A float provider between 0.0 and 2.0 (inclusive).
-* ‌<ye>[F]</ye> `wetness`: A float provider between 0.0 and 2.0 (inclusive).
-* ‌<ye>[F]</ye> `chance_of_dripstone_column_at_max_distance_from_center`: A float between 0.0 and 1.0 (inclusive).
-* ‌<bl>[I]</bl> `max_distance_from_edge_affecting_chance_of_dripstone_column`: An integer between 1 and 64 (inclusive).
-* ‌<bl>[I]</bl> `max_distance_from_center_affecting_height_bias`: An integer between 1 and 64 (inclusive).
+* <span int>[I]</span> `floor_to_ceiling_search_range`: The distance that will be searched for a floor or ceiling, as an integer between 1 and 512 (inclusive).
+* <span int>[I]</span> `height`: The height of the dripstone cluster, as an integer provider between 1 and 128 (inclusive).
+* <span int>[I]</span> `radius`: The radius of the dripstone cluster, as an integer provider between 1 and 128 (inclusive).
+* <span int>[I]</span> `max_stalagmite_stalactite_height_diff`: An integer between 0 and 64 (inclusive).
+* <span int>[I]</span> `height_deviation`: An integer between 1 and 64 (inclusive).
+* <span int>[I]</span> `dripstone_block_layer_thickness`: An integer provider between 0 and 128 (inclusive).
+* <span float>[F]</span> `density`: A float provider between 0.0 and 2.0 (inclusive).
+* <span float>[F]</span> `wetness`: A float provider between 0.0 and 2.0 (inclusive).
+* <span float>[F]</span> `chance_of_dripstone_column_at_max_distance_from_center`: A float between 0.0 and 1.0 (inclusive).
+* <span int>[I]</span> `max_distance_from_edge_affecting_chance_of_dripstone_column`: An integer between 1 and 64 (inclusive).
+* <span int>[I]</span> `max_distance_from_center_affecting_height_bias`: An integer between 1 and 64 (inclusive).

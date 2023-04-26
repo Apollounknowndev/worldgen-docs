@@ -47,8 +47,8 @@ The `minecraft:fossil` feature type is used to place a small structure in the wo
 }
 </pre>
 
-* ‌<bl>[I]</bl> `max_empty_corners_allowed`: The maximum corners of the structures that are allowed to not be buried, as an integer between 0 and 7.
-* ‌<re>[L]</re> `fossil_structures`: A list of structure files that this feature uses.
-* ‌<re>[L]</re> `overlay_structures`: A list of structure files that this feature overlays over the `fossil_structure` in the same index.
+* <span int>[I]</span> `max_empty_corners_allowed`: The maximum corners of the structures that are allowed to not be buried, as an integer between 0 and 7.
+* <span list>[L]</span> `fossil_structures`: A list of structure files that this feature uses.
+* <span list>[L]</span> `overlay_structures`: A list of structure files that this feature overlays over the `fossil_structure` in the same index.
 * `fossil_processors`: The processor list to run on the structure from the `fossil_structures` list.
 * `overlay_processors`: The processor list to run on the structure from the `overlay_structures` list.

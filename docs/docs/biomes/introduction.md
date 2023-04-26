@@ -107,40 +107,40 @@ There's a lot to configure in biomes. The settings are as follows:
 
 * <ver-h data-version="<=1.18.2"><pu>[S] </pu><code>category</code>: (optional) The category the biome is a part of. Can be either <code>beach</code>, <code>desert</code>, <code>extreme_hills</code>, <code>forest</code>, <code>icy</code>, <code>jungle</code>, <code>mesa</code>, <code>mountain</code>, <code>mushroom</code>, <code>nether</code>, <code>none</code>, <code>ocean</code>, <code>plains</code>, <code>river</code>, <code>savanna</code>, <code>swamp</code>, <code>taiga</code>, <code>the_end</code>, or <code>underground</code>.</ver-h>
 * `carvers`: The configured carvers the biome should use.
-    * ‌<re>[L]</re> `air`: (optional) A list of carvers that carve through terrain in the `air` cave generation step. 
-    * ‌<re>[L]</re> `liquid`: (optional) A list of carvers that carve through terrain in the `liquid` cave generation step. Unused in vanilla as of 1.18.
-* ‌<ye>[F]</ye> `creature_spawn_probability`: (optional) Controls how frequently creatures spawn, as a value between 0 and 1.
-* ‌<ye>[F]</ye> `downfall`:  Controls the grass and foliage color if those colors are unset.
+    * <span list>[L]</span> `air`: (optional) A list of carvers that carve through terrain in the `air` cave generation step. 
+    * <span list>[L]</span> `liquid`: (optional) A list of carvers that carve through terrain in the `liquid` cave generation step. Unused in vanilla as of 1.18.
+* <span float>[F]</span> `creature_spawn_probability`: (optional) Controls how frequently creatures spawn, as a value between 0 and 1.
+* <span float>[F]</span> `downfall`:  Controls the grass and foliage color if those colors are unset.
 * `effects`: The effects in the biome.
     * `additions_sound`: (optional) The additional sound settings.
-        * ‌<pu>[S]</pu> `sound`: The ID for the sound to be used.
-        * ‌<gr>[D]</gr> `tick_chance`: The chance per tick for the sound to start being played, as a value between 0 and 1.
-    * ‌<pu>[S]</pu> `ambient_sound`: (optional) The ID for the ambient sound to be used.
-    * ‌<bl>[I]</bl> `fog_color`: The biome's fog color, as a decimal value.
-    * ‌<bl>[I]</bl> `foliage_color`: (optional) The biome's foliage color, as a decimal value. The downfall and temperature values will determine the foliage color if none is provided.
-    * ‌<bl>[I]</bl> `grass_color`: (optional) The biome's grass color, as a decimal value. The downfall and temperature values will determine the grass color if none is provided.
-    * ‌<pu>[S]</pu> `grass_color_modifier`: (optional) The grass color modifier to use.
+        * <span str>[S]</span> `sound`: The ID for the sound to be used.
+        * <span double>[D]</span> `tick_chance`: The chance per tick for the sound to start being played, as a value between 0 and 1.
+    * <span str>[S]</span> `ambient_sound`: (optional) The ID for the ambient sound to be used.
+    * <span int>[I]</span> `fog_color`: The biome's fog color, as a decimal value.
+    * <span int>[I]</span> `foliage_color`: (optional) The biome's foliage color, as a decimal value. The downfall and temperature values will determine the foliage color if none is provided.
+    * <span int>[I]</span> `grass_color`: (optional) The biome's grass color, as a decimal value. The downfall and temperature values will determine the grass color if none is provided.
+    * <span str>[S]</span> `grass_color_modifier`: (optional) The grass color modifier to use.
         * If set to `none`, no color modifier will be applied. This is the default.
         * If set to `dark_forest`, the grass will have the dark forest color.
         * If set to `swamp`, the grass will alternate between the two swamp colors.
     * `mood_sound`: (optional) The mood sound settings.
-        * ‌<pu>[S]</pu> `sound`: The ID for the sound to be used.
-        * ‌<bl>[I]</bl> `tick_delay`: The minimum delay between mood sounds.
-        * ‌<bl>[I]</bl> `block_search_extent`: The range of areas where the mood sound will be played. Centered on the player, the cubic range where a mood sound can be played is calulated as `2 * block_search_extent`.
-        * ‌<gr>[D]</gr> `offset`: The minimum distance from the player that the mood sound can play from.
+        * <span str>[S]</span> `sound`: The ID for the sound to be used.
+        * <span int>[I]</span> `tick_delay`: The minimum delay between mood sounds.
+        * <span int>[I]</span> `block_search_extent`: The range of areas where the mood sound will be played. Centered on the player, the cubic range where a mood sound can be played is calulated as `2 * block_search_extent`.
+        * <span double>[D]</span> `offset`: The minimum distance from the player that the mood sound can play from.
     * `music`: (optional) The music settings.
-        * ‌<pu>[S]</pu> `sound`: The ID for the music to be played.
-        * ‌<bl>[I]</bl> `min_delay`: The minimum delay being two pieces of music being started, in ticks.
-        * ‌<bl>[I]</bl> `max_delay`: The maximum delay between two pieces of music being started, in ticks.
-        * ‌<gr>[D]</gr> `replace_current_music`: Whether or not music that is already playing should be replaced with new music.
+        * <span str>[S]</span> `sound`: The ID for the music to be played.
+        * <span int>[I]</span> `min_delay`: The minimum delay being two pieces of music being started, in ticks.
+        * <span int>[I]</span> `max_delay`: The maximum delay between two pieces of music being started, in ticks.
+        * <span double>[D]</span> `replace_current_music`: Whether or not music that is already playing should be replaced with new music.
     * `particle`: (optional) The biome particle settings.
-        * ‌<ye>[F]</ye> `probability`: How often the particle should spawn, as a value between 0 and 1. 
+        * <span float>[F]</span> `probability`: How often the particle should spawn, as a value between 0 and 1. 
         * `options`: The particle options. 
-            * ‌<pu>[S]</pu> `type`: The particle type. For more information on particle fields, see the [wiki article](https://minecraft.fandom.com/wiki/Commands/particle) on particles for more information. 
-    * ‌<bl>[I]</bl> `sky_color`: The biome's sky color, as a decimal value.
-    * ‌<bl>[I]</bl> `water_color`: The biome's water color, as a decimal value.
-    * ‌<bl>[I]</bl> `water_fog_color`: The biome's water fog color, as a decimal value.
-* ‌<re>[L]</re> `features`: (can be empty) The list of placed features to use. Inside this list can be up to 11 lists of placed features. Without any features this will look like this:
+            * <span str>[S]</span> `type`: The particle type. For more information on particle fields, see the [wiki article](https://minecraft.fandom.com/wiki/Commands/particle) on particles for more information. 
+    * <span int>[I]</span> `sky_color`: The biome's sky color, as a decimal value.
+    * <span int>[I]</span> `water_color`: The biome's water color, as a decimal value.
+    * <span int>[I]</span> `water_fog_color`: The biome's water fog color, as a decimal value.
+* <span list>[L]</span> `features`: (can be empty) The list of placed features to use. Inside this list can be up to 11 lists of placed features. Without any features this will look like this:
     <pre>
     "features": [
        [],
@@ -176,8 +176,8 @@ There's a lot to configure in biomes. The settings are as follows:
     * <ver-h data-version="<=1.19.3">If set to `snow`, snow will occur. Some buggy behavior will happen if the biome's `temperature` is above 0.15 and `snow` is the precipitation type.</ver-h>
 * `spawn_costs`: (can be empty) The list of mobs that use the spawn cost mechanism. The spawn cost mechanism is effectively social distancing for mob spawning, where mobs cannot spawn too close to each other. Learn more about this mechanic [here](https://minecraft.fandom.com/wiki/Spawn#Spawn_costs).
     * `<entity id>`: The entity ID of the mob.
-        * ‌<gr>[D]</gr> `energy_budget`: The maximum potential for a possible mob spawn.
-        * ‌<gr>[D]</gr> `charge`: The mob's charge.
+        * <span double>[D]</span> `energy_budget`: The maximum potential for a possible mob spawn.
+        * <span double>[D]</span> `charge`: The mob's charge.
     
     Example of how this looks:
     
@@ -194,11 +194,11 @@ There's a lot to configure in biomes. The settings are as follows:
     }
     </pre>
 * `spawners`: (can be empty) The mob spawn settings.
-    * ‌<re>[L]</re> `<mob category>`: The mob category. Must be `monster`, `creature`, `ambient`, `axolotls`, `underground_water_creature`, `water_creature`, `water_ambient`, or `misc`. A list of elements.
-        * ‌<pu>[S]</pu> `type`: The entity ID of the mob.
-        * ‌<bl>[I]</bl> `weight`: The weight of the mob in comparison to other mobs in the category.
-        * ‌<bl>[I]</bl> `minCount`: The minimum amount of mobs that can spawn as a pack.
-        * ‌<bl>[I]</bl> `maxCount`: The maximum amount of mobs that can spawn as a pack.
+    * <span list>[L]</span> `<mob category>`: The mob category. Must be `monster`, `creature`, `ambient`, `axolotls`, `underground_water_creature`, `water_creature`, `water_ambient`, or `misc`. A list of elements.
+        * <span str>[S]</span> `type`: The entity ID of the mob.
+        * <span int>[I]</span> `weight`: The weight of the mob in comparison to other mobs in the category.
+        * <span int>[I]</span> `minCount`: The minimum amount of mobs that can spawn as a pack.
+        * <span int>[I]</span> `maxCount`: The maximum amount of mobs that can spawn as a pack.
 
     Example of how this looks:
 
@@ -223,8 +223,8 @@ There's a lot to configure in biomes. The settings are as follows:
     }
     </pre>
 
-* ‌<ye>[F]</ye> `temperature`: Controls the grass and foliage color if those colors are unset. Also controls things like the altitude where snow starts, whether rain or so is the precipitation of the biome, and details of some generation features.
-* ‌<pu>[S]</pu> `temperature_modifier`: (optional) The temperature modifier to use.
+* <span float>[F]</span> `temperature`: Controls the grass and foliage color if those colors are unset. Also controls things like the altitude where snow starts, whether rain or so is the precipitation of the biome, and details of some generation features.
+* <span str>[S]</span> `temperature_modifier`: (optional) The temperature modifier to use.
     * If set to `none`, no temperature modifier will be applied.
     * If set to `frozen`, the temperature will flucuate in the biome somewhat, occasionally reaching above 0.2 where it can rain. Only used in the Frozen Ocean biomes in vanilla.
 

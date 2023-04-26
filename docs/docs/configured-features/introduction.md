@@ -38,7 +38,7 @@ Let's take a look at an example configured feature configuration:
 
 There are two fields:
 
-* ‌<pu>[S]</pu> `type`: The ID of the configured feature type. This references a hardcoded configured feature type like `minecraft:tree`, `minecraft:ore`, etc.
+* <span str>[S]</span> `type`: The ID of the configured feature type. This references a hardcoded configured feature type like `minecraft:tree`, `minecraft:ore`, etc.
 * `config`: The configuration of the feature. The properties inside this object depend on the configured feature type being used. In this example, since we're using the `minecraft:no_op` configured feature type, there are no other fields to configure.
 
 The level of customization available in a configured feature can vary significantly depending on the feature type. Some configured feature types like trees and geodes have more than a dozen parameters that can be adjusted and experimented with. However, other features like dungeons and ice spikes do not have any parameters to configure. If you're unsure about what configuration options are available for a particular feature type, you can check the page for the specific configured feature type to learn more.

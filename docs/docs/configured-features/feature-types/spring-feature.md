@@ -36,7 +36,7 @@ The `minecraft:spring_feature` feature type is used to place a spring of a certa
 </pre>
 
 * `state`: The fluid state that this spring places.
-* ‌<bl>[I]</bl> `rock_count`: The number of blocks in all directions to the starting position (excluding above the starting position) that must be from the `valid_blocks` block tag. This is an exact number and not a threshold; if `rock_count` is 3 and 4 blocks adjacent to the starting position are in the `valid_blocks` block tag, the spring will fail to place.
-* ‌<bl>[I]</bl> `hole_count`: The number of blocks in all directions to the starting position (excluding above the starting position) that must be air. This is an exact number and not a threshold; if `hole_count` is 1 and 2 blocks adjacent to the starting position are air, the spring will fail to place.
-* ‌<or>[B]</or> `requires_block_below`: Whether or not the block below where the spring attempts to generate needs to not be air. Defaults to true.
+* <span int>[I]</span> `rock_count`: The number of blocks in all directions to the starting position (excluding above the starting position) that must be from the `valid_blocks` block tag. This is an exact number and not a threshold; if `rock_count` is 3 and 4 blocks adjacent to the starting position are in the `valid_blocks` block tag, the spring will fail to place.
+* <span int>[I]</span> `hole_count`: The number of blocks in all directions to the starting position (excluding above the starting position) that must be air. This is an exact number and not a threshold; if `hole_count` is 1 and 2 blocks adjacent to the starting position are air, the spring will fail to place.
+* <span bool>[B]</span> `requires_block_below`: Whether or not the block below where the spring attempts to generate needs to not be air. Defaults to true.
 * `valid_blocks`: A block tag with the blocks that the spring will check for in the `rock_count` check.

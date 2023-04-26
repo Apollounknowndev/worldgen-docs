@@ -31,5 +31,5 @@ The `minecraft:end_gateway` feature type is used to place an end gateway that wa
 }
 </pre>
 
-* ‌<or>[B]</or> `exact`: Determines whether or not the end gatewy will teleport entities to the exact exit location.
+* <span bool>[B]</span> `exact`: Determines whether or not the end gatewy will teleport entities to the exact exit location.
 * `exit`: (optional) The coordinates that the end gateway will teleport entities to. An `exit` of [100,50,0] will teleport the player to the obsidian platform that you enter the End on.

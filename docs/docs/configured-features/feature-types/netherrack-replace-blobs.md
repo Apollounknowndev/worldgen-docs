@@ -34,4 +34,4 @@ The `minecraft:netherrack_replace_blobs` feature type is used to replace all blo
 
 * `state`: The block state that the feature places.
 * `target`: The target block state to be replaced by the feature.
-* ‌<bl>[I]</bl> `radius`: The radius of the block replacement, as an integer provider between 0 and 12.
+* <span int>[I]</span> `radius`: The radius of the block replacement, as an integer provider between 0 and 12.

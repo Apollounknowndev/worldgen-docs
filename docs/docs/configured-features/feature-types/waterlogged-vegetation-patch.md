@@ -40,13 +40,13 @@ The `minecraft:waterlogged_vegetation_patch` feature type is used to place a pat
 }
 </pre>
 
-* ‌<pu>[S]</pu> `surface`: The surface this vegetation patch is placed on. Can be either `floor` or `ceiling`.
-* ‌<bl>[I]</bl> `depth`: An integer provider between 1 and 128.
-* ‌<bl>[I]</bl> `vertical_range`: An integer between 1 and 256.
-* ‌<ye>[F]</ye> `extra_bottom_block_chance`: The chance that an extra block from the `ground_state` will be added into the surface, as a value between 0.0 and 1.0.
-* ‌<ye>[F]</ye> `extra_edge_column_chance`: The chance that an extra block on the edge of the vegetation patch will generate, as a value between 0.0 and 1.0.
-* ‌<ye>[F]</ye> `vegetation_chance`: The chance for each block that the feature in `vegetation_feature` will be placed on the block, as a value between 0.0 and 1.0.
-* ‌<bl>[I]</bl> `xz_radius`: The radius of the vegetation patch, as an integer provider.
+* <span str>[S]</span> `surface`: The surface this vegetation patch is placed on. Can be either `floor` or `ceiling`.
+* <span int>[I]</span> `depth`: An integer provider between 1 and 128.
+* <span int>[I]</span> `vertical_range`: An integer between 1 and 256.
+* <span float>[F]</span> `extra_bottom_block_chance`: The chance that an extra block from the `ground_state` will be added into the surface, as a value between 0.0 and 1.0.
+* <span float>[F]</span> `extra_edge_column_chance`: The chance that an extra block on the edge of the vegetation patch will generate, as a value between 0.0 and 1.0.
+* <span float>[F]</span> `vegetation_chance`: The chance for each block that the feature in `vegetation_feature` will be placed on the block, as a value between 0.0 and 1.0.
+* <span int>[I]</span> `xz_radius`: The radius of the vegetation patch, as an integer provider.
 * `replaceable`: A block tag for the blocks that the `ground_state` can replace.
 * `ground_state`: The block state provider for the vegetation patch to place.
 * `vegetation_feature`: The placed feature for the vegetation patch to place.

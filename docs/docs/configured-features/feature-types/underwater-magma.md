@@ -28,6 +28,6 @@ The `minecraft:underwater_magma` feature type is used to place a patch of magma 
 }
 </pre>
 
-* ‌<bl>[I]</bl> `floor_search_range`: The amount of blocks the game will search for a cave floor, as an integer between 0 and 512.
-* ‌<bl>[I]</bl> `placement_radius_around_floor`: The radius around the cave floor that magma can be placed, as an integer between 0 and 64.
-* ‌<ye>[F]</ye> `placement_probability_per_valid_position`: The probability for each valid position that magma blocks will actually be placed. Float between 0.0 and 1.0.
+* <span int>[I]</span> `floor_search_range`: The amount of blocks the game will search for a cave floor, as an integer between 0 and 512.
+* <span int>[I]</span> `placement_radius_around_floor`: The radius around the cave floor that magma can be placed, as an integer between 0 and 64.
+* <span float>[F]</span> `placement_probability_per_valid_position`: The probability for each valid position that magma blocks will actually be placed. Float between 0.0 and 1.0.

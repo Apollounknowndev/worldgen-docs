@@ -32,4 +32,4 @@ The `minecraft:bamboo` feature type is used to place a pillar of bamboo that is 
 }
 </pre>
 
-* ‌<ye>[F]</ye> `probability`: The chance that a podzol disk will generate under the bamboo, as a value between 0.0 and 1.0 (inclusive).
+* <span float>[F]</span> `probability`: The chance that a podzol disk will generate under the bamboo, as a value between 0.0 and 1.0 (inclusive).

@@ -36,7 +36,7 @@ The `minecraft:replace_single_block` feature type is used to replace a single bl
 }
 </pre>
 
-* ‌<re>[L]</re> `targets`: A list of targets for the feature.
+* <span list>[L]</span> `targets`: A list of targets for the feature.
     * `target`: The target predicate.
         * `predicate_type`: The rule test that needs to pass for the block in `state` to be placed.
         * `state`: The block state that gets placed if the aforementioned predicate passes.

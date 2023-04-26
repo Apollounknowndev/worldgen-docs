@@ -4,3 +4,5 @@ _site
 .jekyll-metadata
 vendor
 docs/debug.md
+docs/docs/noise-settings/index.md
+docs/docs/noise-settings/introduction.md

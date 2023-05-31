@@ -11,6 +11,7 @@ github_username:  Apollounknowndev
 remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 # JTD Theme Settings
 search_enabled: true

@@ -102,7 +102,7 @@ There is a special case of this error. It will look like this:
 java.lang.RuntimeException: No key preset in MapLike[...]
 </pre>
 
-The [...] will contain the entire dimension file that is causing the error. This occurs because there is a biome referenced in the dimension file that does not exist. Check through the dimension file and scan for any mispellings in biome names or other biome references that do not exist.
+The [...] will contain the entire dimension file that is causing the error. This occurs because either there is a biome referenced in the dimension file that does not exist, or a biome referenced in the dimension is invalid. Check through the dimension file and scan for any mispellings in biome names or other biome references that do not exist.
 
 -----
 

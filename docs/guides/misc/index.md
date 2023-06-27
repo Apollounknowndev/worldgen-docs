@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Biomes
+title: Misc
 has_children: true
-nav_order: 1
-permalink: /guides/biomes/
+nav_order: 2
+permalink: /guides/misc/
 parent: Guides
 ---

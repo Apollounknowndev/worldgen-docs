@@ -443,8 +443,7 @@ Several changes listed here include the removal of fields in certain files. **Th
 1.18.2
 <pre>
 {
-  "type": "minecraft:leave_vine",
-  "probability": 0.25
+  "type": "minecraft:leave_vine"
 }
 </pre>
 

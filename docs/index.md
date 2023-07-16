@@ -12,7 +12,7 @@ permalink: /
 
 This website provides documentation on the data-driven world generation system for Minecraft: Java edition. 
 
-The information here is primarily for **1.19.4**, but there is also documention for worldgen in every version above 1.18. This includes 1.18, 1.18.2, 1.19, 1.19.3, and 1.20.
+The information here is primarily for **1.20**, but there is also documention for worldgen in every version 1.18 and above.
 
 ### 🚧 **Under construction** 🚧
 

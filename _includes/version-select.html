@@ -21,6 +21,7 @@
 </style>
 
 <select id="select">
+    <option value="1194">1.20</option>
     <option value="1194">1.19.4</option>
     <option value="1193">1.19.3</option>
     <option value="1190">1.19</option>
@@ -35,12 +36,15 @@
         for (var i = 0; i < elements.length; i++) {
             var element = elements[i];
             var version = element.getAttribute('data-version');
-            if (version == '1.19.4' || version == '>=1.19' || version == '>=1.18.2') {
+            if (version == '1.20' || version == '>=1.19.4' || version == '>=1.19' || version == '>=1.18.2') {
                 element.style.display = 'block'
             } else {
                 element.style.display = 'none'
             }
             switch (element.getAttribute('data-version')) {
+                case '1.20':
+                    if (this.value != 1120) { element.style.display = 'none' }
+                    break;
                 case '1.19.4':
                     if (this.value != 1194) { element.style.display = 'none' }
                     break;
@@ -55,6 +59,9 @@
                     break;
                 case '1.18':
                     if (this.value == 1180) { element.style.display = 'block' }
+                    break;
+                case '>=1.19.4':
+                    if (this.value < 1194) { element.style.display = 'none' }
                     break;
                 case '>=1.19':
                     if (this.value < 1190) { element.style.display = 'none' }

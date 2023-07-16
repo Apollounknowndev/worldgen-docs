@@ -169,11 +169,11 @@ There's a lot to configure in biomes. The settings are as follows:
     * `FLUID_SPRINGS`: Used for the single blocks of lava and water.
     * `VEGETAL_DECORATION`: Used for vegetation like trees, grass, mushrooms, etc.
     * `TOP_LAYER_MODIFICATION`: Used for placing snow and ice in cold areas.
-* <ver-s data-version="1.19.4"><or>[B] </or><code>has_precipitation</code>: Determines whether or not preciptation happens. If the biome's <code>temperature</code> is below 0.15, the precipitation will be snow. Otherwise, it will be rain.</ver-s>
-* <ver-h data-version="<=1.19.3"><pu>[S] </pu><code>precipitation</code>: The precipitation type to use.</ver-h>
-    * <ver-h data-version="<=1.19.3">If set to `none`, no precipitation will occur.</ver-h>
-    * <ver-h data-version="<=1.19.3">If set to `rain`, rain will occur. Some buggy behavior will happen if the biome's `temperature` is below 0.15 and `rain` is the precipitation type.</ver-h>
-    * <ver-h data-version="<=1.19.3">If set to `snow`, snow will occur. Some buggy behavior will happen if the biome's `temperature` is above 0.15 and `snow` is the precipitation type.</ver-h>
+* <ver-s data-version="1.19.4"><span bool>[B] </span><code>has_precipitation</code>: Determines whether or not preciptation happens. If the biome's <code>temperature</code> is below 0.15, the precipitation will be snow. Otherwise, it will be rain.</ver-s>
+* <ver-h data-version="<=1.19.3"><span str>[S] </span><code>precipitation</code>: The precipitation type to use.</ver-h>
+    * <ver-h data-version="<=1.19.3">If set to <code>none</code>, no precipitation will occur.</ver-h>
+    * <ver-h data-version="<=1.19.3">If set to <code>rain</code>, rain will occur. Some buggy behavior will happen if the biome's <code>temperature</code> is below 0.15 and <code>rain</code> is the precipitation type.</ver-h>
+    * <ver-h data-version="<=1.19.3">If set to <code>snow</code>, snow will occur. Some buggy behavior will happen if the biome's <code>temperature</code> is above 0.15 and <code>snow</code> is the precipitation type.</ver-h>
 * `spawn_costs`: (can be empty) The list of mobs that use the spawn cost mechanism. The spawn cost mechanism is effectively social distancing for mob spawning, where mobs cannot spawn too close to each other. Learn more about this mechanic [here](https://minecraft.fandom.com/wiki/Spawn#Spawn_costs).
     * `<entity id>`: The entity ID of the mob.
         * <span double>[D]</span> `energy_budget`: The maximum potential for a possible mob spawn.

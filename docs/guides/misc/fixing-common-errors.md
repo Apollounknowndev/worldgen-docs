@@ -114,7 +114,9 @@ java.lang.IllegalStateException: Feature order cycle found, involved biomes: [..
 
 This error occurs when two or more biomes in the same dimension reference the same placed features in the same step, but in different orders to one another.
 
-The game enforces a dimension-wide order to feature placement. This prevents feature order randomly changing based on the order biomes in a chunk are generated in. For example, let's say Biome A places rocks before trees (in the same step), and Biome B places trees before rocks. If these biomes are in the same chunk, which gets placed first? The answer is that it would differ depending on how the chunk is loaded, making worldgen less deterministic.
+The game enforces a dimension-wide order to feature placement*. This prevents feature order randomly changing based on the order biomes in a chunk are generated in. For example, let's say Biome A places rocks before trees (in the same step), and Biome B places trees before rocks. If these biomes are in the same chunk, which gets placed first? The answer is that it would differ depending on how the chunk is loaded, making worldgen less deterministic.
+
+*(\* it's actually more complex than that, but for most cases it is functionally dimension-wide.)*
 
 The error should say which biomes are causing the error. For example, this error tells you that the conflicting biomes are `example:forest` and `example:plains`:
 

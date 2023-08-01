@@ -67,7 +67,7 @@ Let's take a look at an example dimension file. This one is identical to the Ove
 
 The settings are as follows:
 
-* `type`: The dimension type file this dimension uses. Learn how dimension type files work [here](https://astraunknowndev.github.io/docs/dimension-types/).
+* `type`: The dimension type file this dimension uses. Learn how dimension type files work [here](/docs/dimensions/dimension-types/).
 * `generator`: Controls the terrain generation and biome source for the dimension.
 	* `type`: The generator type.
 		* If set to `minecraft:debug`, there are no further fields. This is only used for the `debug` world type, and doesn't have any practical use.

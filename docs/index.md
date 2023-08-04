@@ -19,3 +19,6 @@ The information here is primarily for **1.20**, but there is also documention fo
 Future plans include:
 * Documentation on all aspects of worldgen
 * Guides on how to add things like biomes, ores, trees, structures, etc.
+
+{: .important }
+NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.

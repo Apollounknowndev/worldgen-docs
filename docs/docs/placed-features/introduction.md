@@ -47,4 +47,4 @@ A placed feature consists of two fields, as seen in this example:
 The placed feature has two fields:
 
 * <span str>[S]</span> `feature`: The ID of the configured feature to place. This references a file in the `/worldgen/configured_feature` folder.
-* <span list>[L]</span> `placement`: A list of placement modifiers to change how the feature is placed. Each placement modifier is run in order, changing how many of a feature is placed, where in the chunk a feature is placed, etc. If the list is empty, the feature will place itself on the northwesternmost corner of each chunk at y0.
+* <span list>[L]</span> `placement`: A list of placement modifiers to change how the feature is placed. Each placement modifier is run in order, changing how many of a feature is placed, where in the chunk a feature is placed, etc. If the list is empty, the feature will place itself on the northwesternmost corner of each chunk at the bottom layer of the world.

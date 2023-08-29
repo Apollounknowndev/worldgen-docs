@@ -102,7 +102,50 @@ There is a special case of this error. It will look like this:
 java.lang.RuntimeException: No key preset in MapLike[...]
 </pre>
 
-The [...] will contain the entire dimension file that is causing the error. This occurs because either there is a biome referenced in the dimension file that does not exist, or a biome referenced in the dimension is invalid. Check through the dimension file and scan for any mispellings in biome names or other biome references that do not exist.
+The [...] will contain the entire dimension file that is causing the error. This can occur for a few different reasons:
+
+- A biome referenced in the dimension file does not exist.
+- A biome referenced in the dimension file is invalid.
+<pre>
+"biomes": [
+  {
+    "biome": "example:plainss", <--- example:plainss either doesn't exist, or the biome has an error in it
+    "parameters": {
+      "temperature": 0,
+      "humidity": [
+        0,
+        0
+      ],
+      "continentalness": 0,
+      "erosion": 0,
+      "weirdness": 0,
+      "depth": 0,
+      "offset": 0
+    }
+  }
+]
+</pre>
+
+- Two values in a parameter range are not in ascending order.
+<pre>
+"biomes": [
+  {
+    "biome": "minecraft:plains",
+    "parameters": {
+      "temperature": 0,
+      "humidity": [
+        -0.2,
+        -0.5 <--- -0.5 is less than -0.2, so it should come first
+      ],
+      "continentalness": 0,
+      "erosion": 0,
+      "weirdness": 0,
+      "depth": 0,
+      "offset": 0
+    }
+  }
+]
+</pre>
 
 -----
 

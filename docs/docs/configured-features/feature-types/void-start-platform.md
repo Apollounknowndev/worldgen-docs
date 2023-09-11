@@ -4,7 +4,6 @@ title: Void Start Platform
 permalink: /docs/configured-features/feature-types/void-start-platform/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 60
 ---
 
 ## Void Start Platform

@@ -4,7 +4,6 @@ title: Iceberg
 permalink: /docs/configured-features/feature-types/iceberg/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 31
 ---
 
 ## Iceberg

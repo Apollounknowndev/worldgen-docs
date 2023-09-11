@@ -4,7 +4,6 @@ title: Multiface Growth
 permalink: /docs/configured-features/feature-types/multiface-growth/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 36
 ---
 
 ## Multiface Growth

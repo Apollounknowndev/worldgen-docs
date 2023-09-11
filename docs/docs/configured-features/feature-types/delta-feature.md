@@ -4,7 +4,6 @@ title: Delta Feature
 permalink: /docs/configured-features/feature-types/delta-feature/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 13
 ---
 
 ## Delta Feature

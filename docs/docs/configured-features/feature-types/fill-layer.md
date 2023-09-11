@@ -4,7 +4,6 @@ title: Fill Layer
 permalink: /docs/configured-features/feature-types/fill-layer/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 20
 ---
 
 ## Fill Layer

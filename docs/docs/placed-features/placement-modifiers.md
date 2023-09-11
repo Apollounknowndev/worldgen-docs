@@ -4,7 +4,6 @@ title: Placement Modifiers
 permalink: /docs/worldgen/placed-features/placement-modifiers/
 parent: Placed Features
 grand_parent: Documentation
-nav_order: 2
 ---
 
 # Placement Modifiers
@@ -109,11 +108,11 @@ The below images show where features are placed at a birds-eye view, with a red 
 
 This image is where the `noise_factor` is 20.
 
-![A visualization of feature placements, with about a dozen small areas with a few feature placements](/docs/docs/placed-features/images/nbc-factor-20.png)
+![A visualization of feature placements, with about a dozen small areas with a few feature placements](/assets/images/docs/placement-modifiers/nbc-factor-20.png)
 
 This image is where the `noise_factor` is 40.
 
-![A visualization of feature placements, with three small areas with a few feature placements and three large areas with many](/docs/docs/placed-features/images/nbc-factor-40.png)
+![A visualization of feature placements, with three small areas with a few feature placements and three large areas with many](/assets/images/docs/placement-modifiers/nbc-factor-40.png)
 
 The image where the `noise_factor` is higher has slower-moving noise, and thus has fewer, larger condensed areas of features.
 

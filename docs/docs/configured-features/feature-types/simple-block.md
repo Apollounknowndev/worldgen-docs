@@ -4,7 +4,6 @@ title: Simple Block
 permalink: /docs/configured-features/feature-types/simple-block/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 52
 ---
 
 ## Simple Block

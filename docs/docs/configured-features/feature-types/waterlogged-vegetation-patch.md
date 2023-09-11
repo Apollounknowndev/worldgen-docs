@@ -4,7 +4,6 @@ title: Waterlogged Vegetation Patch
 permalink: /docs/configured-features/feature-types/waterlogged-vegetation-patch/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 61
 ---
 
 ## Waterlogged Vegetation Patch

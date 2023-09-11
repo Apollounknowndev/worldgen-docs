@@ -4,7 +4,6 @@ title: Coral Claw
 permalink: /docs/configured-features/feature-types/coral-claw/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 10
 ---
 
 ## Coral Claw

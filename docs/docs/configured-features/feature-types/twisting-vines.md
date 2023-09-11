@@ -4,7 +4,6 @@ title: Twisting Vines
 permalink: /docs/configured-features/feature-types/twisting-vines/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 56
 ---
 
 ## Twisting Vines

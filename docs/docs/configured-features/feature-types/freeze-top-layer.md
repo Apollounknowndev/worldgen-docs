@@ -4,7 +4,6 @@ title: Freeze Top Layer
 permalink: /docs/configured-features/feature-types/freeze-top-layer/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 24
 ---
 
 ## Freeze Top Layer

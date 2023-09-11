@@ -4,7 +4,6 @@ title: Ore
 permalink: /docs/configured-features/feature-types/ore/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 41
 ---
 
 ## Ore

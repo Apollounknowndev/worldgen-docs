@@ -4,7 +4,6 @@ title: Bamboo
 permalink: /docs/configured-features/feature-types/bamboo/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 2
 ---
 
 ## Bamboo

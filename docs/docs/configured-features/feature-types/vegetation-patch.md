@@ -4,7 +4,6 @@ title: Vegetation Patch
 permalink: /docs/configured-features/feature-types/vegetation-patch/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 58
 ---
 
 ## Vegetation Patch

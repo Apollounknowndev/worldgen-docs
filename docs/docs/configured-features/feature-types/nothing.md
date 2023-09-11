@@ -4,7 +4,6 @@ title: Nothing
 permalink: /docs/configured-features/feature-types/nothing/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 40
 ---
 
 ## Nothing

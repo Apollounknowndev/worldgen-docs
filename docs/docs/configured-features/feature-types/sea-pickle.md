@@ -4,7 +4,6 @@ title: Sea Pickle
 permalink: /docs/configured-features/feature-types/sea-pickle/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 50
 ---
 
 ## Sea Pickle

@@ -4,7 +4,6 @@ title: Block Pile
 permalink: /docs/configured-features/feature-types/block-pile/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 6
 ---
 
 ## Block Pile

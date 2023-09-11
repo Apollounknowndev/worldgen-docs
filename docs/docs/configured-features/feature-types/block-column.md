@@ -4,7 +4,6 @@ title: Block Column
 permalink: /docs/configured-features/feature-types/block-column/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 5
 ---
 
 ## Block Column
@@ -52,7 +51,7 @@ The `minecraft:block_column` feature type is used to place a column of blocks in
 
 You may notice in some cases that the block column will stop one block before it reaches the point where the block predicate would fail. For example, here's what happens when a block column places downwards and the block predicate checks for air:
 
-![(Image of the block column stopping a block before hitting the ground)](/docs/docs/configured-features/feature-types/images/block-column/1.png)
+![(Image of the block column stopping a block before hitting the ground)](/assets/images/block-column/broken.png)
 
 This happens because the game moves the block predicate check one block in the specified `direction` before testing the first block. For downwards facing block columns, this means the block predicate filter is always ran one block below where it should be run. This can be fixed by adding an offset to the block predicate filter like this:
 
@@ -70,6 +69,6 @@ This happens because the game moves the block predicate check one block in the s
 
 Adding that offset fixes the issue.
 
-![(Image of the block column touching the ground)](/docs/docs/configured-features/feature-types/images/block-column/2.png)
+![(Image of the block column touching the ground)](/assets/images/block-column/fixed.png)
 
 The offset should be opposite of the `direction` for any given direction. If your block column goes up, the offset should be one block down. If your block column goes west, the offset should be one block east. This is the same across all directions.

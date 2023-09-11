@@ -4,7 +4,6 @@ title: Spring Feature
 permalink: /docs/configured-features/feature-types/spring-feature/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 54
 ---
 
 ## Spring Feature

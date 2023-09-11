@@ -4,7 +4,6 @@ title: Seagrass
 permalink: /docs/configured-features/feature-types/seagrass/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 51
 ---
 
 ## Seagrass

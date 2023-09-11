@@ -4,7 +4,6 @@ title: Huge Red Mushroom
 permalink: /docs/configured-features/feature-types/huge-red-mushroom/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 29
 ---
 
 ## Huge Red Mushroom

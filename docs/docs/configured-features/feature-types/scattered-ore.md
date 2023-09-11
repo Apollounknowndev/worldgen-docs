@@ -4,7 +4,6 @@ title: Scattered Ore
 permalink: /docs/configured-features/feature-types/scattered-ore/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 48
 ---
 
 ## Scattered Ore

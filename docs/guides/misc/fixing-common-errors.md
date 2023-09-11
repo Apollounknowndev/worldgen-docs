@@ -4,7 +4,6 @@ title: Fixing Common Errors
 permalink: /guides/misc/fixing-common-errors/
 parent: Misc
 grand_parent: Guides
-nav_order: 1
 ---
 
 # Fixing Common Errors
@@ -50,7 +49,6 @@ java.lang.IllegalStateException: Unbound values in registry ResourceKey
 This error tells you that one of your files is trying to reference the `minecraft:aok` configured feature, even though it does not exist. 
 
 In this case, you would need to either change the feature being referenced (probably to `minecraft:oak`) or add a `minecraft:aok` configured feature.
-
 -----
 
 ### No key (...) in MapLike
@@ -146,7 +144,6 @@ The [...] will contain the entire dimension file that is causing the error. This
   }
 ]
 </pre>
-
 -----
 
 ### Feature order cycle

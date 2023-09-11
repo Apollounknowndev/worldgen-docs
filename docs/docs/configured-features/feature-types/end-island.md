@@ -4,7 +4,6 @@ title: End Island
 permalink: /docs/configured-features/feature-types/end-island/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 18
 ---
 
 ## End Island

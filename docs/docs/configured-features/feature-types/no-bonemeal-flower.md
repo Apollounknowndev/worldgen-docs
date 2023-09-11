@@ -4,7 +4,6 @@ title: No Bonemeal Flower
 permalink: /docs/configured-features/feature-types/no-bonemeal-flower/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 39
 ---
 
 ## No Bonemeal Flower

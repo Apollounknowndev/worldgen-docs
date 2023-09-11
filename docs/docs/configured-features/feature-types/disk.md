@@ -4,7 +4,6 @@ title: Disk
 permalink: /docs/configured-features/feature-types/disk/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 15
 ---
 
 ## Disk

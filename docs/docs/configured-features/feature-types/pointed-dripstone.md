@@ -4,7 +4,6 @@ title: Pointed Dripstone
 permalink: /docs/configured-features/feature-types/pointed-dripstone/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 42
 ---
 
 ## Pointed Dripstone

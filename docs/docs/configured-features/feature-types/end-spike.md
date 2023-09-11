@@ -4,7 +4,6 @@ title: End Spike
 permalink: /docs/configured-features/feature-types/end-spike/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 19
 ---
 
 ## End Spike

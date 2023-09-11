@@ -4,7 +4,6 @@ title: Chorus Plant
 permalink: /docs/configured-features/feature-types/chorus-plant/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 9
 ---
 
 ## Chorus Plant

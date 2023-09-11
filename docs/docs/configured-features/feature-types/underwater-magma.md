@@ -4,7 +4,6 @@ title: Underwater Magma
 permalink: /docs/configured-features/feature-types/underwater-magma/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 57
 ---
 
 ## Underwater Magma

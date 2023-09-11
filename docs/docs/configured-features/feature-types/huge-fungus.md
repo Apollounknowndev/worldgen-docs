@@ -4,7 +4,6 @@ title: Huge Fungus
 permalink: /docs/configured-features/feature-types/huge-fungus/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 28
 ---
 
 ## Huge Fungus

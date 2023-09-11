@@ -4,7 +4,6 @@ title: Coral Tree
 permalink: /docs/configured-features/feature-types/coral-tree/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 12
 ---
 
 ## Coral Tree

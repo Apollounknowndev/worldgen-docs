@@ -4,7 +4,6 @@ title: Blue Ice
 permalink: /docs/configured-features/feature-types/blue-ice/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 7
 ---
 
 ## Blue Ice

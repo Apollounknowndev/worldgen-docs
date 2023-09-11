@@ -4,7 +4,6 @@ title: Random Patch
 permalink: /docs/configured-features/feature-types/random-patch/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 44
 ---
 
 ## Random Patch

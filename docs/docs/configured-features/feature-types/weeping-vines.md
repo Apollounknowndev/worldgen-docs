@@ -4,7 +4,6 @@ title: Weeping Vines
 permalink: /docs/configured-features/feature-types/weeping-vines/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 62
 ---
 
 ## Weeping Vines

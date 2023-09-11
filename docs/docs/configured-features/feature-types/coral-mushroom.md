@@ -4,7 +4,6 @@ title: Coral Mushroom
 permalink: /docs/configured-features/feature-types/coral-mushroom/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 10
 ---
 
 ## Coral Mushroom

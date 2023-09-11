@@ -4,7 +4,6 @@ title: Dimension Types
 permalink: /docs/dimensions/dimension-types/
 parent: Dimensions
 grand_parent: Documentation
-nav_order: 2
 ---
 
 # Dimension Types

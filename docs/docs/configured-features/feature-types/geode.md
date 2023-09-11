@@ -4,7 +4,6 @@ title: Geode
 permalink: /docs/configured-features/feature-types/geode/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 25
 ---
 
 ## Geode

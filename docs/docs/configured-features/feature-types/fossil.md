@@ -4,7 +4,6 @@ title: Fossil
 permalink: /docs/configured-features/feature-types/fossil/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 23
 ---
 
 ## Fossil

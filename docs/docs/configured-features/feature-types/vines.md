@@ -4,7 +4,6 @@ title: Vines
 permalink: /docs/configured-features/feature-types/vines/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 59
 ---
 
 ## Vines

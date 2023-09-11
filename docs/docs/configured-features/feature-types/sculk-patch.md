@@ -4,7 +4,6 @@ title: Sculk Patch
 permalink: /docs/configured-features/feature-types/sculk-patch/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 49
 ---
 
 ## Sculk Patch

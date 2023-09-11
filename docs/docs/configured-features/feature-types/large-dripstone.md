@@ -4,7 +4,6 @@ title: Large Dripstone
 permalink: /docs/configured-features/feature-types/large-dripstone/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 34
 ---
 
 ## Large Dripstone

@@ -4,7 +4,6 @@ title: Forest Rock
 permalink: /docs/configured-features/feature-types/forest-rock/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 22
 ---
 
 ## Forest Rock

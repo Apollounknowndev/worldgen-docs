@@ -12,14 +12,12 @@ nav_order: 1
 <head>
     {% include field-type-colors.html %}
 </head>
-
-Placed feature files contain information about how a configured feature is placed in the world. 
+placed feature files contain information about how a configured feature is placed in the world. 
 
 ### What is a feature?
 
 A feature is a "decoration" that gets placed after the world's terrain shaping has been done. Small features like trees, rocks, plants, and ores are all features. Some small structures like dungeons, overworld fossils and desert wells are also features. Features cannot be located with `/locate`; this is why you can't use `/locate` to find dungeons.
-
-Placed features are stored in the `/worldgen/placed_feature` folder. They are referenced either from the `features` list in biome files, or in some specific configured feature types such as the `vegetation_feature` field in the `minecraft:vegetation_patch` feature type.
+placed features are stored in the `/worldgen/placed_feature` folder. They are referenced either from the `features` list in biome files, or in some specific configured feature types such as the `vegetation_feature` field in the `minecraft:vegetation_patch` feature type.
 
 ## JSON format
 

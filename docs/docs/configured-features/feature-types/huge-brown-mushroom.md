@@ -4,7 +4,6 @@ title: Huge Brown Mushroom
 permalink: /docs/configured-features/feature-types/huge-brown-mushroom/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 27
 ---
 
 ## Huge Brown Mushroom

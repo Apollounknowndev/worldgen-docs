@@ -4,7 +4,6 @@ title: Flower
 permalink: /docs/configured-features/feature-types/flower/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 21
 ---
 
 ## Flower

@@ -4,7 +4,6 @@ title: End Gateway
 permalink: /docs/configured-features/feature-types/end-gateway/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 17
 ---
 
 ## End Gateway

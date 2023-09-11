@@ -4,7 +4,6 @@ title: Dripstone Cluster
 permalink: /docs/configured-features/feature-types/dripstone-cluster/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 16
 ---
 
 ## Dripstone Cluster

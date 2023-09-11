@@ -4,7 +4,6 @@ title: Bonus Chest
 permalink: /docs/configured-features/feature-types/bonus-chest/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 8
 ---
 
 ## Bonus Chest

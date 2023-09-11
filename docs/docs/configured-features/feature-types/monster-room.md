@@ -4,7 +4,6 @@ title: Monster Room
 permalink: /docs/configured-features/feature-types/monster-room/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 35
 ---
 
 ## Monster Room

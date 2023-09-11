@@ -4,7 +4,6 @@ title: Glowstone Blob
 permalink: /docs/configured-features/feature-types/glowstone-blob/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 26
 ---
 
 ## Glowstone Blob

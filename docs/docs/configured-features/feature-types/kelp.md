@@ -4,7 +4,6 @@ title: Kelp
 permalink: /docs/configured-features/feature-types/kelp/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 32
 ---
 
 ## Kelp

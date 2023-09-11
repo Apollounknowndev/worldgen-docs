@@ -4,7 +4,6 @@ title: Desert Well
 permalink: /docs/configured-features/feature-types/desert-well/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 14
 ---
 
 ## Desert Well

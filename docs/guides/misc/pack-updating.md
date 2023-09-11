@@ -4,7 +4,6 @@ title: Updating Worldgen Packs
 permalink: /guides/misc/pack-updating/
 parent: Misc
 grand_parent: Guides
-nav_order: 2
 ---
 
 # Updating Worldgen Packs
@@ -154,7 +153,6 @@ Several changes listed here include the removal of fields in certain files. **Th
   "config": {}
 }
 </pre>
-
 -----
 
 ## 1.18.2 -> 1.19
@@ -475,7 +473,6 @@ Several changes listed here include the removal of fields in certain files. **Th
   "smear_scale_multiplier": 8
 }
 </pre>
-
 -----
 
 ## 1.19 -> 1.19.3
@@ -498,7 +495,6 @@ Several changes listed here include the removal of fields in certain files. **Th
   "elements": []
 }
 </pre>
-
 -----
 
 ## 1.19.3 -> 1.19.4
@@ -528,7 +524,6 @@ Several changes listed here include the removal of fields in certain files. **Th
   }
 }
 </pre>
-
 -----
 
 ## 1.19.4 -> 1.20

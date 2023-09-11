@@ -4,7 +4,6 @@ title: Basalt Pillar
 permalink: /docs/configured-features/feature-types/basalt-pillar/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 4
 ---
 
 ## Basalt Pillar

@@ -4,7 +4,6 @@ title: Lake
 permalink: /docs/configured-features/feature-types/lake/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 33
 ---
 
 ## Lake

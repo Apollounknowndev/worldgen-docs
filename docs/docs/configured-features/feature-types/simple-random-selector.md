@@ -4,7 +4,6 @@ title: Simple Random Selector
 permalink: /docs/configured-features/feature-types/simple-random-selector/
 parent: Configured Features
 grand_parent: Documentation
-nav_order: 53
 ---
 
 ## Simple Random Selector

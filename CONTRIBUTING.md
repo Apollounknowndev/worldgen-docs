@@ -18,6 +18,8 @@ nav_order: 1
 
 Once you save the file, the page will be on the local server and update every time the file is saved.
 
+The landing page for the website has all the information on what documentation/guides need to be written under "Future Plans".
+
 ## Conventions
 
 ### Version-specific data

@@ -66,7 +66,7 @@ Several field types have special tags so at a glance it is easier to see what ty
  Here's an example with a boolean field and an integer field:
 
 * <span style="color: #FEC856;font-weight:bold">[B]</span> `some_boolean`: Example boolean, does nothing.
-* <span style="color: #5573FF;font-weight:bold">[I]</span> `some_boolean`: Example integer, does nothing.
+* <span style="color: #5573FF;font-weight:bold">[I]</span> `some_integer`: Example integer, does nothing.
 
 To do this, add this text between the bullet point and the field name:
 <pre>

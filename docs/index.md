@@ -16,8 +16,26 @@ The information here is primarily for **1.20**, but there is also documention fo
 ### 🚧 **Under construction** 🚧
 
 Future plans include:
-* Documentation on all aspects of worldgen
-* Guides on how to add things like biomes, ores, trees, structures, etc.
+- Documentation on the following:
+    - Configured carvers
+    - Surface rules
+    - Terrain generation
+        - Noise router
+        - Density functions
+        - Noise
+        - Aquifers
+        - Ore veins
+    - Structures
+        - Structure sets
+        - Structure features
+        - Template pools
+        - Processor lists
+    - World type and superflat presets
+- Guides on the following:
+    - Worldgen datapack structure
+    - Using tools like Snowcapped and misode.github.io
+    - Adding and using all parts of worldgen explained in the documentation
+- Additional pages for non-vanilla data-driven worldgen, such as Forge biome modifiers
 
 {: .important }
 NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.

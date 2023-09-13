@@ -56,6 +56,7 @@ Let's start by getting our trees to the surface. There is a `heightmap` placemen
 Create a new world with the updated pack aaaaand...
 
 ![Forest biome with trees in a grid](/assets/images/guides/building-placed-features/grid-trees.png)
+
 -----
 
 ...that's not *quite* what we wanted. The features are all spawning in a grid, which doesn't look natural at all, and they're spawning on blocks they shouldn't like sand and water. Let's ignore the water issue for now and focus on the grid spawning issue. This can be fixed by adding an `in_square` placement modifier, a placement modifier that moves the feature around in the chunk. The placed feature should now look like this:
@@ -78,6 +79,7 @@ Create a new world with the updated pack aaaaand...
 Open a world with the datapack, and this will be the result.
 
 ![Forest biome with no tree grid, but some floating trees](/assets/images/guides/building-placed-features/floating-trees.png)
+
 -----
 
 Wait, how did that happen? Didn't we move the trees to the `WORLD_SURFACE` heightmap? Well, this is due to the placement modifier order.
@@ -104,6 +106,7 @@ To fix this, the feature should be put on the heightmap *after* its x/z position
 Open the world with the datapack, and you'll see that trees no longer float in the air!
 
 ![Sparse forest biome with trees in water](/assets/images/guides/building-placed-features/sparse-trees.png)
+
 -----
 
 Next, let's increase the number of trees. There is a `count` placement modifier that increases the number of feature placements per chunk. Let's add this modifier with a `count` of 10. Here is what the placed feature should look like now:
@@ -156,6 +159,7 @@ Every tree is generated in the same position, because we never tell them to be p
 In game, it now looks like this:
 
 ![Forest biome, with trees stacking on one another](/assets/images/guides/building-placed-features/stacking-trees.png)
+
 -----
 
 Why are trees are stacking on top of other trees now? This is due to the fact that features get placed one at the time; this means a tree can move to the `WORLD_SURFACE` heightmap after another tree has generated at that position, moving the new tree above the previous one.
